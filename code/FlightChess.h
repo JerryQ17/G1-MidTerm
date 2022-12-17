@@ -21,7 +21,7 @@
 #define FONT_SIZE 60          //字体大小
 #define NUMBER_SIZE 40        //数字大小
 #define DICE_ROTATE_TIME 2000 //骰子旋转时间(ms)
-#define DICE_ROTATE_SPEED 50   //骰子旋转速度
+#define DICE_ROTATE_SPEED 50  //骰子旋转速度
 
 //类型定义
 
@@ -30,7 +30,6 @@ typedef enum color{           //定义颜色
   GREEN = 2,                  //绿 = 2
   YELLOW = 3,                 //黄 = 3
   BLUE = 4,                   //蓝 = 4
-  INVALID = 5                 //不合法 = 5
 }color;
 
 typedef enum direction{       //定义棋子指向
@@ -44,12 +43,12 @@ typedef enum direction{       //定义棋子指向
   UL = 315                    //左上 = 顺时针旋转315°
 }direction;
 
-typedef enum state{           //定义棋子的状态
+typedef enum ChessState{      //定义棋子的状态
   AIRPORT = 0,                //在机场
   MAIN = 1,                   //在主棋盘上
   RUNWAY = 2,                 //在终点线
   FINISH = 3                  //已到达终点
-}state;
+}ChessState;
 
 typedef enum PlayerType{      //玩家类型
   Player = 1,                 //真人
@@ -59,7 +58,7 @@ typedef enum PlayerType{      //玩家类型
 typedef struct chess{         //定义棋子
   int num;                    //棋子的编号
   int pos;                    //棋子所在的位置
-  state state;                //棋子的状态
+  ChessState state;           //棋子的状态
   color color;                //棋子的颜色
   direction dir;              //棋子当前的指向
   SDL_Surface *sur;           //棋子的表面
@@ -81,7 +80,7 @@ typedef struct GameState{     //游戏状态
   int round;                  //当前游戏轮数
   color player;               //当前玩家颜色
   type player_type;           //当前玩家类型
-  char cur_color[7];          //当前颜色字符串
+  char color_str[7];          //当前颜色字符串
 }GameState;
 
 //声明全局变量
@@ -145,10 +144,12 @@ void game_init(void);
 int set_player(void);
 void chess_init(void);
 void game_render(void);
+void game_state_adjust(void);
 void game_event_loop(void);
 
 //dice.c中的函数声明
 
 int roll(void);
-void draw_die(int roll);
+void draw_dice(int roll);
+
 #endif

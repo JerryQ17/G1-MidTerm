@@ -105,7 +105,7 @@ void main_event_loop(void) {  //主事件循环
         if (record) fprintf(rec_file, "MainEventLoop:Mouse button up (%d, %d)\n", MainEvent.button.x, MainEvent.button.y);
         if (MainEvent.button.x > 555 && MainEvent.button.x < 722 && MainEvent.button.y > 311 && MainEvent.button.y < 404){  //开始
           if (record) fprintf(rec_file, "MainEventLoop:Game start by start button\n");
-          game_init();
+          game();
         }else if (MainEvent.button.x > 555 && MainEvent.button.x < 722 && MainEvent.button.y > 463 && MainEvent.button.y < 547){ //帮助
           if (record) fprintf(rec_file, "MainEventLoop:Press get help button\n");
           int open_readme = system("start README.md");

@@ -45,7 +45,7 @@ int roll(void){   //debug = 1时根据键盘输入得到骰子的点数，debug 
   return value;
 }
 
-void draw_die(int roll){  //加载roll函数给出的骰子点数对应的动画
+void draw_dice(int roll){  //加载roll函数给出的骰子点数对应的动画
   //处理要加载的文件名
   roll += 48;
   char file_name[] = {'i', 'm', 'g', '/', (char)roll, '.', 'p', 'n', 'g', 0};
