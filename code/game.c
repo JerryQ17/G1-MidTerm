@@ -6,24 +6,27 @@ void game(void){
   if (record) fprintf(rec_file, "Game Start:\nTotal number = %d\nPlayer number = %d\nAI number = %d\n",
                       current_state.total_number, current_state.player_number, current_state.ai_number);
   //游戏开始
-  current_state.round++;
-  if (record) fprintf(rec_file, "Round%d %s%s:\n", current_state.round,
-                      current_state.player_type == Player ? "Player" : "AI", current_state.color_str);
-  draw_text("Round",0,50);
-  draw_number(current_state.round, 170, 65);
-  //判断当前玩家是否有待起飞的飞机
-  bool flag_airport = false;
-  for (int i = (int)(current_state.player - 1) * 4; i < current_state.player * 4; i++){
-    if (Chess[i].state == AIRPORT) flag_airport = true;
-  }
-
-  //跳转至下一玩家
-  bool flag_jump = true;
-  while (flag_jump) {
-    if (current_state.player == current_state.total_number) current_state.player = RED;
-    else current_state.player++;
+  while (true) {
+    current_state.round++;
+    if (record)
+      fprintf(rec_file, "Round%d %s%s:\n", current_state.round,
+              current_state.player_type == Player ? "Player" : "AI", current_state.color_str);
+    draw_text("Round", 0, 50);
+    draw_number(current_state.round, 170, 65);
+    //判断当前玩家是否有待起飞的飞机
+    bool flag_airport = false;
     for (int i = (int) (current_state.player - 1) * 4; i < current_state.player * 4; i++) {
-      if (Chess[i].state != FINISH) flag_jump = false;
+      if (Chess[i].state == AIRPORT) flag_airport = true;
+    }
+    game_event();
+    //判断游戏是否结束
+    game_judge();
+//    if ()
+    //跳转至下一玩家
+    while (true) {
+      if (current_state.player == current_state.total_number) current_state.player = RED;
+      else current_state.player++;
+      if (!current_state.win[current_state.player]) break;
     }
   }
 }
@@ -35,6 +38,7 @@ void game_init(void){  //游戏部分的初始化
   current_state.round = 0;
   current_state.player = RED;
   game_state_adjust();
+  for (int i = 0; i < current_state.total_number; i++) current_state.win[i] = false;
   //初始化棋子
   chess_init();
   //渲染gameUI和棋子
@@ -51,13 +55,13 @@ int set_player(void){  //确定游戏人数
     SDL_WaitEvent(&SetPlayerEvent);
     switch (SetPlayerEvent.type) {
       case SDL_QUIT:  //关闭窗口
-        if (record) fprintf(rec_file, "SetPlayer:Quit by SDL_QUIT\n");
+        if (record) fprintf(rec_file, "SetPlayer: Quit by SDL_QUIT\n");
         quit();
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (SetPlayerEvent.key.keysym.sym) {
           case SDLK_ESCAPE: //Esc
-            if (record) fprintf(rec_file, "SetPlayer:Quit by Esc\n");
+            if (record) fprintf(rec_file, "SetPlayer: Quit by Esc\n");
             quit();
             break;
             //判断键盘输入并赋值
@@ -98,7 +102,7 @@ int set_player(void){  //确定游戏人数
       case SDL_MOUSEBUTTONDOWN:
         if (record)
           fprintf(rec_file,
-                  "SetPlayer:Mouse button down (%d, %d)\n",
+                  "SetPlayer: Mouse button down (%d, %d)\n",
                   SetPlayerEvent.button.x,
                   SetPlayerEvent.button.y);
         break;
@@ -106,12 +110,12 @@ int set_player(void){  //确定游戏人数
       case SDL_MOUSEBUTTONUP:
         if (record)
           fprintf(rec_file,
-                  "SetPlayer:Mouse button up (%d, %d)\n",
+                  "SetPlayer: Mouse button up (%d, %d)\n",
                   SetPlayerEvent.button.x,
                   SetPlayerEvent.button.y);
         if (SetPlayerEvent.button.x > 555 && SetPlayerEvent.button.x < 722 && SetPlayerEvent.button.y > 463
             && SetPlayerEvent.button.y < 547) { //帮助
-          if (record) fprintf(rec_file, "SetPlayer:Press get help button\n");
+          if (record) fprintf(rec_file, "SetPlayer: Press get help button\n");
           int open_readme = system("start README.md");
           if (open_readme) draw_text("Failed to get help:(", 400, 569);
         }
@@ -125,7 +129,7 @@ int set_player(void){  //确定游戏人数
       || current_state.total_number < 2 || current_state.total_number > 4){
     main_render();
     draw_text("Invalid Number", 500, 569);
-    if (record) fprintf(rec_file, "SetPlayer:Invalid Number\n");
+    if (record) fprintf(rec_file, "SetPlayer: Invalid Number\n");
     SDL_Delay(1000);
     return 1;
   }
@@ -191,40 +195,47 @@ void game_state_adjust(void){
   }
 }
 
-void game_event_loop(void){   //游戏事件循环
+void game_event(void){   //游戏事件
   SDL_Event GameEvent;
   while (SDL_WaitEvent(&GameEvent)) {
     switch (GameEvent.type) {
       case SDL_QUIT:  //关闭窗口
-        if (record) fprintf(rec_file, "Quit by SDL_QUIT in game\n");
+        if (record) fprintf(rec_file, "GameEvent: Quit by SDL_QUIT in game\n");
         quit();
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (GameEvent.key.keysym.sym) {
         case SDLK_RETURN:case SDLK_SPACE: //回车和空格都可以掷骰子
-            if (record) fprintf(rec_file, "Roll dice by Keydown Enter/Space\n");
+            if (record) fprintf(rec_file, "GameEvent: Roll dice by Keydown Enter/Space\n");
             int roll_value = roll();
             draw_dice(roll_value);
             break;
           case SDLK_ESCAPE: //Esc
-            if (record) fprintf(rec_file, "Quit by Esc in game\n");
+            if (record) fprintf(rec_file, "GameEvent: Quit by Esc in game\n");
             quit();
             break;
           default:break;
         }
         break;
       case SDL_MOUSEBUTTONDOWN:
-        if (record) fprintf(rec_file, "Mouse button down in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
+        if (record) fprintf(rec_file, "GameEvent: Mouse button down in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
         printf("Mouse button down in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
         break;
       case SDL_MOUSEBUTTONUP:
-        if (record) fprintf(rec_file, "Mouse button up in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
+        if (record) fprintf(rec_file, "GameEvent: Mouse button up in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
         if (GameEvent.button.x > 999 && GameEvent.button.x < WIN_WIDTH && GameEvent.button.y > 0 && GameEvent.button.y < 95){  //返回主界面
-          if (record) fprintf(rec_file,"Return to mainUI\n");
+          if (record) fprintf(rec_file,"GameEvent: Return to mainUI\n");
           main_event_loop();
         }
         break;
       default:break;
     }
+  }
+}
+
+void game_judge(void){   //判断当前是否有人赢了
+  for (int i = 0; i < current_state.total_number; i++) current_state.win[i] = true;
+  for (int i = 0; i < current_state.total_number * 4; i++){
+    if (Chess[i].state != FINISH) current_state.win[i / 4] = false;
   }
 }

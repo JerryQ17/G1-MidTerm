@@ -23,46 +23,52 @@ int main_init(void) {   //程序初始化
   //读取设置文件
   cfg = fopen("code/cfg.txt", "r");
   if (cfg != NULL) {
-    fscanf(cfg, "record = %d\ndebug = %d", &record, &debug);
+    if (fscanf(cfg, "record = %d\ndebug = %d", &record, &debug) < 2){
+      //读取设置失败，不影响游戏运行，只需要报告错误
+      printf("MainInit: Error occurred when loading configs, ");
+      if (feof(cfg)) printf("EOF\n");
+      if (ferror(cfg)) printf("Read Error\n");
+      else printf("Match Error\n");
+    }
     fclose(cfg);
-  }
+  }else fprintf(stderr, "MainInit: Fail to find cfg.txt\n");
   //根据设置文件 以及日志文件是否能正常写入 来决定是否记录信息
   if (record == 1){
     rec_file = fopen("code/log.txt", "a+");
     if (rec_file == NULL) record = 0;   //日志文件不能正常写入，不记录信息
     else{
       time_t cur_time = time(NULL);
-      fprintf(rec_file, "MainInit:Program start at %srecord = %d debug = %d\n", ctime(&cur_time), record, debug);
+      fprintf(rec_file, "MainInit: Program start at %srecord = %d debug = %d\n", ctime(&cur_time), record, debug);
     }
   }
   //SDL初始化
   if (SDL_Init(SDL_INIT_VIDEO)) {
-    if (record) fprintf(rec_file, "MainInit:Cannot init video, %s\n", SDL_GetError());
-    else SDL_Log("MainInit:Cannot init video, %s", SDL_GetError());
+    if (record) fprintf(rec_file, "MainInit: Cannot init video, %s\n", SDL_GetError());
+    else SDL_Log("MainInit: Cannot init video, %s", SDL_GetError());
     return 1;   //SDL初始化失败则返回1
   }
   Window = SDL_CreateWindow("飞行棋",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,WIN_WIDTH,WIN_HEIGHT,SDL_WINDOW_SHOWN);
   if (Window == NULL) {
-    if (record) fprintf(rec_file, "MainInit:Cannot create window, %s\n", SDL_GetError());
-    else SDL_Log("MainInit:Cannot create window, %s", SDL_GetError());
+    if (record) fprintf(rec_file, "MainInit: Cannot create window, %s\n", SDL_GetError());
+    else SDL_Log("MainInit: Cannot create window, %s", SDL_GetError());
     return 2;   //窗口初始化失败则返回2
   }
   Renderer = SDL_CreateRenderer(Window, -1, SDL_RENDERER_ACCELERATED);
   if (Renderer == NULL) {
-    if (record) fprintf(rec_file, "MainInit:Cannot create Renderer, %s\n", SDL_GetError());
-    else SDL_Log("MainInit:Cannot create Renderer, %s", SDL_GetError());
+    if (record) fprintf(rec_file, "MainInit: Cannot create Renderer, %s\n", SDL_GetError());
+    else SDL_Log("MainInit: Cannot create Renderer, %s", SDL_GetError());
     return 3;   //渲染器初始化失败则返回3
   }
   if (TTF_Init()) {
-    if (record) fprintf(rec_file, "MainInit:Cannot init ttf, %s\n", TTF_GetError());
-    else SDL_Log("MainInit:Cannot init ttf, %s", TTF_GetError());
+    if (record) fprintf(rec_file, "MainInit: Cannot init ttf, %s\n", TTF_GetError());
+    else SDL_Log("MainInit: Cannot init ttf, %s", TTF_GetError());
     return 4;   //字体初始化失败则返回4
   }
   Font = TTF_OpenFont("font/calibri.ttf", FONT_SIZE);
   NumberFont = TTF_OpenFont("font/calibri.ttf", NUMBER_SIZE);
   if (Font == NULL || NumberFont == NULL) {
-    if (record) fprintf(rec_file, "MainInit:Cannot open font, %s\n", SDL_GetError());
-    else SDL_Log("MainInit:Cannot open font, %s", SDL_GetError());
+    if (record) fprintf(rec_file, "MainInit: Cannot open font, %s\n", SDL_GetError());
+    else SDL_Log("MainInit: Cannot open font, %s", SDL_GetError());
     return 5;   //字体打开失败则返回5
   }
   return 0;     //初始化正常则返回0
@@ -82,36 +88,36 @@ void main_event_loop(void) {  //主事件循环
   while (SDL_WaitEvent(&MainEvent)) {
     switch (MainEvent.type) {
       case SDL_QUIT:  //关闭窗口
-        if (record) fprintf(rec_file, "MainEventLoop:Quit by SDL_QUIT\n");
+        if (record) fprintf(rec_file, "MainEventLoop: Quit by SDL_QUIT\n");
         quit();
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (MainEvent.key.keysym.sym) {
           case SDLK_RETURN: //回车
-            if (record) fprintf(rec_file, "MainEventLoop:Game start by Keydown Enter\n");
+            if (record) fprintf(rec_file, "MainEventLoop: Game start by Keydown Enter\n");
             game();
             break;
           case SDLK_ESCAPE: //Esc
-            if (record) fprintf(rec_file, "MainEventLoop:Quit by Esc\n");
+            if (record) fprintf(rec_file, "MainEventLoop: Quit by Esc\n");
             quit();
             break;
           default:break;
         }
         break;
       case SDL_MOUSEBUTTONDOWN:
-        if (record) fprintf(rec_file, "MainEventLoop:Mouse button down (%d, %d)\n", MainEvent.button.x, MainEvent.button.y);
+        if (record) fprintf(rec_file, "MainEventLoop: Mouse button down (%d, %d)\n", MainEvent.button.x, MainEvent.button.y);
         break;
       case SDL_MOUSEBUTTONUP:
-        if (record) fprintf(rec_file, "MainEventLoop:Mouse button up (%d, %d)\n", MainEvent.button.x, MainEvent.button.y);
+        if (record) fprintf(rec_file, "MainEventLoop: Mouse button up (%d, %d)\n", MainEvent.button.x, MainEvent.button.y);
         if (MainEvent.button.x > 555 && MainEvent.button.x < 722 && MainEvent.button.y > 311 && MainEvent.button.y < 404){  //开始
-          if (record) fprintf(rec_file, "MainEventLoop:Game start by start button\n");
+          if (record) fprintf(rec_file, "MainEventLoop: Game start by start button\n");
           game();
         }else if (MainEvent.button.x > 555 && MainEvent.button.x < 722 && MainEvent.button.y > 463 && MainEvent.button.y < 547){ //帮助
-          if (record) fprintf(rec_file, "MainEventLoop:Press get help button\n");
+          if (record) fprintf(rec_file, "MainEventLoop: Press get help button\n");
           int open_readme = system("start README.md");
           if (open_readme) {
             main_render();
-            draw_text("MainEventLoop:Failed to get help:(", 400, 569);
+            draw_text("Failed to get help:(", 400, 569);
           }
         }
         break;
@@ -148,7 +154,7 @@ void draw_text(char *text, int x, int y){   //根据参数渲染文本
   FontRect = (SDL_Rect){x, y, FontSurface->w, FontSurface->h};
   SDL_RenderCopy(Renderer, FontTexture, NULL, &FontRect);
   SDL_RenderPresent(Renderer);
-  if (record) fprintf(rec_file, "DrawText(%d,%d):%s\n", x, y, text);
+  if (record) fprintf(rec_file, "DrawText(%d,%d): %s\n", x, y, text);
 }
 
 void draw_number(int num, int x, int y){   //根据参数渲染数字
@@ -169,7 +175,7 @@ void draw_number(int num, int x, int y){   //根据参数渲染数字
   NumberFontRect = (SDL_Rect){x, y, NumberFontSurface->w, NumberFontSurface->h};
   SDL_RenderCopy(Renderer, NumberFontTexture, NULL, &NumberFontRect);
   SDL_RenderPresent(Renderer);
-  if (record) fprintf(rec_file, "DrawNumber(%d,%d):%s\n", x, y, text);
+  if (record) fprintf(rec_file, "DrawNumber(%d,%d): %s\n", x, y, text);
 }
 
 void draw_rect(int x, int y, int w, int h, Uint32 color){
@@ -207,7 +213,7 @@ void quit(void) {   //销毁各指针并退出程序
   //record stop time
   if (record) {
     time_t cur_time = time(NULL);
-    fprintf(rec_file, "Quit:Program stop at %s\n", ctime(&cur_time));
+    fprintf(rec_file, "Quit: Program stop at %s\n", ctime(&cur_time));
     fclose(rec_file);
   }
 }

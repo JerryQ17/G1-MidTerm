@@ -81,6 +81,7 @@ typedef struct GameState{     //游戏状态
   color player;               //当前玩家颜色
   type player_type;           //当前玩家类型
   char color_str[7];          //当前颜色字符串
+  bool win[4];                //当前玩家胜利情况
 }GameState;
 
 //声明全局变量
@@ -145,7 +146,8 @@ int set_player(void);
 void chess_init(void);
 void game_render(void);
 void game_state_adjust(void);
-void game_event_loop(void);
+void game_event(void);
+void game_judge(void);
 
 //dice.c中的函数声明
 
