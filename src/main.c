@@ -23,7 +23,7 @@ int main_init(void) {   //程序初始化
   //读取设置文件
   cfg = fopen(CFG_PATH, "r");
   if (cfg != NULL) {
-    if (fscanf(cfg, "record = %d\ndebug = %d", &record, &debug) < 2){
+    if (fscanf(cfg, "record=%d\ndebug=%d", &record, &debug) < 2){
       //读取设置失败，不影响游戏运行，只需要报告错误
       printf("MainInit: Error occurred when loading configs, ");
       if (feof(cfg)) printf("EOF\n");
@@ -134,7 +134,7 @@ void load_picture(void){   //加载所有表面和纹理
   MainTexture = SDL_CreateTextureFromSurface(Renderer, MainSurface);
   MainRect = (SDL_Rect){0, 0, WIN_WIDTH, WIN_HEIGHT};
   //gameUI
-  GameSurface = IMG_Load("img/board.png");
+  GameSurface = IMG_Load("img/gameUI.png");
   GameTexture = SDL_CreateTextureFromSurface(Renderer, GameSurface);
   GameRect = (SDL_Rect){0, 0, WIN_WIDTH, WIN_HEIGHT};
   //chess
@@ -183,4 +183,5 @@ void quit(void) {   //销毁各指针并退出程序
     fprintf(rec_file, "Quit: Program stop at %s\n", ctime(&cur_time));
     fclose(rec_file);
   }
+  exit(0);
 }

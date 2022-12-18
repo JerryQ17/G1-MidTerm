@@ -20,6 +20,7 @@
 #define FRAMERATE 60          //动画帧率
 #define FONT_SIZE 60          //字体大小
 #define NUMBER_SIZE 40        //数字大小
+#define ANIMATION_TIME 1000   //动画时间(ms)
 #define DICE_ROTATE_TIME 2000 //骰子旋转时间(ms)
 #define DICE_ROTATE_SPEED 50  //骰子旋转速度
 #define CFG_PATH "cfg/cfg.txt"//配置文件路径
@@ -142,20 +143,26 @@ void quit(void);
 
 void game(void);
 void game_init(void);
-int set_player(void);
+int game_player(void);
 void game_render(void);
 void game_state_adjust(void);
 void game_event(void);
+void game_round(void);
 void game_judge(void);
 
 //dice.c中的函数声明
 
 int dice_roll(void);
-void dice_draw(int roll);
+void dice_present(int roll);
 
 //chess.c中的函数声明
 
 void chess_init(void);
+void chess_move(int num, int step);
+void chess_move_line(int num, int vec_t);
+void chess_departure(int chess_number);
+int chess_click(void);
+void chess_crash(int num);
 
 //draw.c中的函数声明
 void draw_text(char *text, int x, int y);

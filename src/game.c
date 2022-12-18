@@ -7,21 +7,25 @@ void game(void){
                       current_state.total_number, current_state.player_number, current_state.ai_number);
   //游戏开始
   while (true) {
+    //判断游戏是否结束
+    int flag_break = 0;
+    for (int i = 0; i < current_state.total_number; i++){
+      if (current_state.win[i]) flag_break++;
+    }
+    if (flag_break == 3){
+      break;
+    }
+    //渲染gameUI和棋子
+    game_render();
     current_state.round++;
     if (record)
-      fprintf(rec_file, "Round%d %s%s:\n", current_state.round,
+      fprintf(rec_file, "Round%d %s %s:\n", current_state.round,
               current_state.player_type == Player ? "Player" : "AI", current_state.color_str);
-    draw_text("Round", 0, 50);
-    draw_number(current_state.round, 170, 65);
-    //判断当前玩家是否有待起飞的飞机
-    bool flag_airport = false;
-    for (int i = (int) (current_state.player - 1) * 4; i < current_state.player * 4; i++) {
-      if (Chess[i].state == AIRPORT) flag_airport = true;
-    }
+
+
     game_event();
-    //判断游戏是否结束
+    //判断玩家是否胜利
     game_judge();
-//    if ()
     //跳转至下一玩家
     while (true) {
       if (current_state.player == current_state.total_number) current_state.player = RED;
@@ -33,7 +37,7 @@ void game(void){
 
 void game_init(void){  //游戏部分的初始化
   //确定游戏人数
-  while(set_player());
+  while(game_player());
   //对游戏要用到的部分变量进行初始化
   current_state.round = 0;
   current_state.player = RED;
@@ -41,27 +45,25 @@ void game_init(void){  //游戏部分的初始化
   for (int i = 0; i < current_state.total_number; i++) current_state.win[i] = false;
   //初始化棋子
   chess_init();
-  //渲染gameUI和棋子
-  game_render();
 }
 
-int set_player(void){  //确定游戏人数
-  SDL_Event SetPlayerEvent;
+int game_player(void){  //确定游戏人数
+  SDL_Event GamePlayerEvent;
   for (int flag = 0; flag < 2; flag++) {
     main_render();
     if (!flag) draw_text("Please Input Total Player", 360, 569);  //先输入总人数
     else draw_text("Please Input AI Player", 400, 569);           //再输入电脑数
-    Again:
-    SDL_WaitEvent(&SetPlayerEvent);
-    switch (SetPlayerEvent.type) {
+    GamePlayerLoop:
+    SDL_WaitEvent(&GamePlayerEvent);
+    switch (GamePlayerEvent.type) {
       case SDL_QUIT:  //关闭窗口
-        if (record) fprintf(rec_file, "SetPlayer: Quit by SDL_QUIT\n");
+        if (record) fprintf(rec_file, "GamePlayer: Quit by SDL_QUIT\n");
         quit();
         break;
       case SDL_KEYDOWN: //按下键盘
-        switch (SetPlayerEvent.key.keysym.sym) {
+        switch (GamePlayerEvent.key.keysym.sym) {
           case SDLK_ESCAPE: //Esc
-            if (record) fprintf(rec_file, "SetPlayer: Quit by Esc\n");
+            if (record) fprintf(rec_file, "GamePlayer: Quit by Esc\n");
             quit();
             break;
             //判断键盘输入并赋值
@@ -102,25 +104,25 @@ int set_player(void){  //确定游戏人数
       case SDL_MOUSEBUTTONDOWN:
         if (record)
           fprintf(rec_file,
-                  "SetPlayer: Mouse button down (%d, %d)\n",
-                  SetPlayerEvent.button.x,
-                  SetPlayerEvent.button.y);
+                  "GamePlayer: Mouse button down (%d, %d)\n",
+                  GamePlayerEvent.button.x,
+                  GamePlayerEvent.button.y);
         break;
         //本函数仍在mainUI里，能看见开始和帮助按钮，只保留帮助功能
       case SDL_MOUSEBUTTONUP:
         if (record)
           fprintf(rec_file,
-                  "SetPlayer: Mouse button up (%d, %d)\n",
-                  SetPlayerEvent.button.x,
-                  SetPlayerEvent.button.y);
-        if (SetPlayerEvent.button.x > 555 && SetPlayerEvent.button.x < 722 && SetPlayerEvent.button.y > 463
-            && SetPlayerEvent.button.y < 547) { //帮助
-          if (record) fprintf(rec_file, "SetPlayer: Press get help button\n");
+                  "GamePlayer: Mouse button up (%d, %d)\n",
+                  GamePlayerEvent.button.x,
+                  GamePlayerEvent.button.y);
+        if (GamePlayerEvent.button.x > 555 && GamePlayerEvent.button.x < 722 && GamePlayerEvent.button.y > 463
+            && GamePlayerEvent.button.y < 547) { //帮助
+          if (record) fprintf(rec_file, "GamePlayer: Press get help button\n");
           int open_readme = system("start README.md");
           if (open_readme) draw_text("Failed to get help:(", 400, 569);
         }
         break;
-      default:goto Again;
+      default:goto GamePlayerLoop;
     }
   }
   //判断玩家输入的数字是否合法
@@ -136,31 +138,31 @@ int set_player(void){  //确定游戏人数
   return 0;
 }
 
-void game_render(void){   //渲染gameUI和棋子
+void game_render(void){   //渲染gameUI，棋子，Information
+  //渲染gameUI
   SDL_RenderClear(Renderer);
   SDL_RenderCopy(Renderer, GameTexture, NULL, &GameRect);
   for (int i = 0; i < 16; i++) {
-    SDL_RenderCopyEx(Renderer,Chess[i].tex,NULL,&(Chess[i].rect),Chess[i].dir,NULL,SDL_FLIP_NONE);
+    if (Chess[i].state != FINISH) {
+      SDL_RenderCopyEx(Renderer,Chess[i].tex,NULL,&(Chess[i].rect),Chess[i].dir,NULL,SDL_FLIP_NONE);
+    }
   }
+  //渲染Information
+  draw_text("Round", 0, 50);
+  draw_number(current_state.round, 170, 65);
+  draw_text(current_state.player_type == Player ? "Player" : "AI", 0, 100);
+  draw_text(current_state.color_str, 0, 155);
 }
 
-void game_state_adjust(void){
+void game_state_adjust(void){   //调整游戏状态
   //调整玩家类型
   current_state.player_type = current_state.player > current_state.player_number ? AI : Player;
   //调整颜色字符串
-  if (current_state.player == RED){
-    memset(current_state.color_str, 7, sizeof(char));
-    strcat(current_state.color_str, "Red");
-  }else if (current_state.player == GREEN){
-    memset(current_state.color_str, 7, sizeof(char));
-    strcat(current_state.color_str, "Green");
-  }else if (current_state.player == YELLOW){
-    memset(current_state.color_str, 7, sizeof(char));
-    strcat(current_state.color_str, "Yellow");
-  }else if (current_state.player == BLUE){
-    memset(current_state.color_str, 7, sizeof(char));
-    strcat(current_state.color_str, "Blue");
-  }
+  memset(current_state.color_str, 0, sizeof(current_state.color_str));
+  if (current_state.player == RED) strcat(current_state.color_str, "Red");
+  else if (current_state.player == GREEN) strcat(current_state.color_str, "Green");
+  else if (current_state.player == YELLOW) strcat(current_state.color_str, "Yellow");
+  else if (current_state.player == BLUE) strcat(current_state.color_str, "Blue");
 }
 
 void game_event(void){   //游戏事件
@@ -174,9 +176,7 @@ void game_event(void){   //游戏事件
       case SDL_KEYDOWN: //按下键盘
         switch (GameEvent.key.keysym.sym) {
         case SDLK_RETURN:case SDLK_SPACE: //回车和空格都可以掷骰子
-            if (record) fprintf(rec_file, "GameEvent: Roll dice by Keydown Enter/Space\n");
-            int roll_value = dice_roll();
-            dice_draw(roll_value);
+            game_round();
             break;
           case SDLK_ESCAPE: //Esc
             if (record) fprintf(rec_file, "GameEvent: Quit by Esc in game\n");
@@ -198,6 +198,30 @@ void game_event(void){   //游戏事件
         break;
       default:break;
     }
+  }
+}
+
+void game_round(void){
+  //掷骰子
+  int roll_value = dice_roll();
+  dice_present(roll_value);
+  //判断当前玩家是否有待起飞的飞机
+  int flag_airport = 0;
+  for (int i = (int) (current_state.player - 1) * 4; i < current_state.player * 4; i++) {
+    if (Chess[i].state == AIRPORT) flag_airport++;
+  }
+  if (flag_airport == 4){   //全在机场
+    if (roll_value == 6){   //该玩家第一个棋子起飞
+      chess_departure((int)((current_state.player - 1) * 4));
+    }
+  }else if(flag_airport){   //机场有
+    if (roll_value == 6) {
+      int chess_clicked = chess_click();
+      if (Chess[chess_clicked].state == AIRPORT) chess_departure(chess_clicked);
+      else chess_move(chess_clicked, roll_value);
+    }
+  }else{                    //机场没有
+    chess_move(chess_click(), roll_value);
   }
 }
 

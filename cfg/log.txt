@@ -20,3 +20,73 @@ Roll: dice 5(random)
 GameEvent: Quit by SDL_QUIT in game
 Quit: Program stop at Sun Dec 18 16:39:36 2022
 
+MainInit: Program start at Sun Dec 18 17:35:10 2022
+record = 1 debug = 0
+Loading picture...Loaded
+MainEventLoop: Mouse button down (615, 348)
+MainEventLoop: Mouse button up (615, 348)
+MainEventLoop: Game start by start button
+DrawText(360,569): Please Input Total Player
+DrawText(630,620): 4
+DrawText(400,569): Please Input AI Player
+DrawText(630,620): 1
+Game Start:
+Total number = 4
+Player number = 3
+AI number = 1
+Round1 PlayerRed:
+DrawText(0,50): Round
+DrawNumber(170,65): 1
+DrawText(0,100): Red
+GameEvent: Quit by SDL_QUIT in game
+Quit: Program stop at Sun Dec 18 17:35:32 2022
+
+MainInit: Program start at Sun Dec 18 17:37:49 2022
+record = 1 debug = 0
+Loading picture...Loaded
+MainEventLoop: Mouse button down (621, 368)
+MainEventLoop: Mouse button up (621, 368)
+MainEventLoop: Game start by start button
+DrawText(360,569): Please Input Total Player
+DrawText(630,620): 4
+DrawText(400,569): Please Input AI Player
+DrawText(630,620): 4
+Game Start:
+Total number = 4
+Player number = 0
+AI number = 4
+Round1 AI Red:
+DrawText(0,50): Round
+DrawNumber(170,65): 1
+DrawText(0,100): Red
+GameEvent: Quit by SDL_QUIT in game
+Quit: Program stop at Sun Dec 18 17:37:58 2022
+
+MainInit: Program start at Sun Dec 18 17:41:08 2022
+record = 1 debug = 0
+Loading picture...Loaded
+MainEventLoop: Mouse button down (663, 367)
+MainEventLoop: Mouse button up (663, 367)
+MainEventLoop: Game start by start button
+DrawText(360,569): Please Input Total Player
+DrawText(630,620): 4
+DrawText(400,569): Please Input AI Player
+DrawText(630,620): 0
+Game Start:
+Total number = 4
+Player number = 4
+AI number = 0
+Round1 Player Red:
+DrawText(0,50): Round
+DrawNumber(170,65): 1
+DrawText(0,100): Player
+DrawText(0,150): Red
+GameEvent: Mouse button down in game (152, 112)
+GameEvent: Mouse button up in game (152, 112)
+GameEvent: Mouse button down in game (152, 107)
+GameEvent: Mouse button up in game (152, 107)
+GameEvent: Mouse button down in game (158, 105)
+GameEvent: Mouse button up in game (158, 105)
+GameEvent: Quit by SDL_QUIT in game
+Quit: Program stop at Sun Dec 18 17:41:50 2022
+

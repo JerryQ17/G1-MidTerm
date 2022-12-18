@@ -45,7 +45,7 @@ int dice_roll(void){   //debug = 1时根据键盘输入得到骰子的点数，d
   return value;
 }
 
-void dice_draw(int roll){  //加载roll函数给出的骰子点数对应的动画
+void dice_present(int roll){  //加载roll函数给出的骰子点数对应的动画
   //处理要加载的文件名
   roll += 48;
   char file_name[] = {'i', 'm', 'g', '/', (char)roll, '.', 'p', 'n', 'g', 0};
@@ -64,7 +64,7 @@ void dice_draw(int roll){  //加载roll函数给出的骰子点数对应的动�
     SDL_RenderPresent(Renderer);
     SDL_DestroyTexture(RotateTexture);
     cur = SDL_GetTicks();
-    long long delay_time = (1000 / FRAMERATE) - (cur - begin);
+    long long delay_time = (ANIMATION_TIME / FRAMERATE) - (cur - begin);
     if (delay_time > 0) SDL_Delay(delay_time);
   }
   //渲染最终的骰子图片
@@ -74,12 +74,3 @@ void dice_draw(int roll){  //加载roll函数给出的骰子点数对应的动�
   SDL_FreeSurface(DieSurface);
   SDL_DestroyTexture(DieTexture);
 }
-
-/*
-void frame_rate(){
-  uint32_t begin_time = SDL_GetTicks();
-
-  uint32_t current_time = SDL_GetTicks();
-  long long delay_time = (1000 / FRAMERATE) - (current_time - begin_time);
-  if (delay_time > 0) SDL_Delay(delay_time);
-}*/

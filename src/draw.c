@@ -29,7 +29,3 @@ void draw_number(int num, int x, int y){   //根据参数渲染数字
   SDL_RenderPresent(Renderer);
   if (record) fprintf(rec_file, "DrawNumber(%d,%d): %s\n", x, y, text);
 }
-
-void draw_rect(int x, int y, int w, int h, Uint32 color){
-  if (record) fprintf(rec_file, "DrawRect(%d,%d,%d,%d,%x)\n", x, y, w, h, color);
-}
