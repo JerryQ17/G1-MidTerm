@@ -21,7 +21,7 @@ int SDL_main(int argc, char *argv[]) {
 
 int main_init(void) {   //程序初始化
   //读取设置文件
-  cfg = fopen("code/cfg.txt", "r");
+  cfg = fopen(CFG_PATH, "r");
   if (cfg != NULL) {
     if (fscanf(cfg, "record = %d\ndebug = %d", &record, &debug) < 2){
       //读取设置失败，不影响游戏运行，只需要报告错误
@@ -34,7 +34,7 @@ int main_init(void) {   //程序初始化
   }else fprintf(stderr, "MainInit: Fail to find cfg.txt\n");
   //根据设置文件 以及日志文件是否能正常写入 来决定是否记录信息
   if (record == 1){
-    rec_file = fopen("code/log.txt", "a+");
+    rec_file = fopen(LOG_PATH, "a+");
     if (rec_file == NULL) record = 0;   //日志文件不能正常写入，不记录信息
     else{
       time_t cur_time = time(NULL);

@@ -1,0 +1,22 @@
+MainInit: Program start at Sun Dec 18 16:37:33 2022
+record = 1 debug = 0
+Loading picture...Loaded
+MainEventLoop: Mouse button down (605, 360)
+MainEventLoop: Mouse button up (605, 360)
+MainEventLoop: Game start by start button
+DrawText(360,569): Please Input Total Player
+DrawText(630,620): 4
+DrawText(400,569): Please Input AI Player
+DrawText(630,620): 4
+Game Start:
+Total number = 4
+Player number = 0
+AI number = 4
+Round1 AIRed:
+DrawText(0,50): Round
+DrawNumber(170,65): 1
+GameEvent: Roll dice by Keydown Enter/Space
+Roll: dice 5(random)
+GameEvent: Quit by SDL_QUIT in game
+Quit: Program stop at Sun Dec 18 16:39:36 2022
+

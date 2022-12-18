@@ -22,6 +22,8 @@
 #define NUMBER_SIZE 40        //数字大小
 #define DICE_ROTATE_TIME 2000 //骰子旋转时间(ms)
 #define DICE_ROTATE_SPEED 50  //骰子旋转速度
+#define CFG_PATH "cfg/cfg.txt"//配置文件路径
+#define LOG_PATH "cfg/log.txt"//日志文件路径
 
 //类型定义
 
