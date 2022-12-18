@@ -130,14 +130,12 @@ extern SDL_Texture *BlueTexture;
 
 extern const board board_vec[96];           //棋盘
 
-//SDL_main.c中的函数声明
+//main.c中的函数声明
 
 int main_init(void);
 void main_render(void);
 void main_event_loop(void);
-void LoadPicture(void);
-void draw_text(char *text, int x, int y);
-void draw_number(int num, int x, int y);
+void load_picture(void);
 void quit(void);
 
 //game.c中的函数声明
@@ -145,7 +143,6 @@ void quit(void);
 void game(void);
 void game_init(void);
 int set_player(void);
-void chess_init(void);
 void game_render(void);
 void game_state_adjust(void);
 void game_event(void);
@@ -153,7 +150,15 @@ void game_judge(void);
 
 //dice.c中的函数声明
 
-int roll(void);
-void draw_dice(int roll);
+int dice_roll(void);
+void dice_draw(int roll);
+
+//chess.c中的函数声明
+
+void chess_init(void);
+
+//draw.c中的函数声明
+void draw_text(char *text, int x, int y);
+void draw_number(int num, int x, int y);
 
 #endif

@@ -136,38 +136,6 @@ int set_player(void){  //确定游戏人数
   return 0;
 }
 
-void chess_init(void){  //初始化棋子
-  int temp = 52;
-  for (int i = 0; i < current_state.total_number * 4; i++, temp++){
-    if (i % 4 == 0 && i) temp++;
-    Chess[i].num = i % 4 + 1;
-    Chess[i].pos = temp;
-    Chess[i].state = AIRPORT;
-    Chess[i].color = i / 4 + 1;
-    Chess[i].dir = board_vec[temp].dir;
-    switch (Chess[i].color){
-      case RED:
-        Chess[i].sur = RedSurface;
-        Chess[i].tex = RedTexture;
-        break;
-      case GREEN:
-        Chess[i].sur = GreenSurface;
-        Chess[i].tex = GreenTexture;
-        break;
-      case YELLOW:
-        Chess[i].sur = YellowSurface;
-        Chess[i].tex = YellowTexture;
-        break;
-      case BLUE:
-        Chess[i].sur = BlueSurface;
-        Chess[i].tex = BlueTexture;
-        break;
-      default:break;
-    }
-    Chess[i].rect = (SDL_Rect){board_vec[temp].x, board_vec[temp].y, Chess[i].sur->w, Chess[i].sur->h};
-  }
-}
-
 void game_render(void){   //渲染gameUI和棋子
   SDL_RenderClear(Renderer);
   SDL_RenderCopy(Renderer, GameTexture, NULL, &GameRect);
@@ -207,8 +175,8 @@ void game_event(void){   //游戏事件
         switch (GameEvent.key.keysym.sym) {
         case SDLK_RETURN:case SDLK_SPACE: //回车和空格都可以掷骰子
             if (record) fprintf(rec_file, "GameEvent: Roll dice by Keydown Enter/Space\n");
-            int roll_value = roll();
-            draw_dice(roll_value);
+            int roll_value = dice_roll();
+            dice_draw(roll_value);
             break;
           case SDLK_ESCAPE: //Esc
             if (record) fprintf(rec_file, "GameEvent: Quit by Esc in game\n");
