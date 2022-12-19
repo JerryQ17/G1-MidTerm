@@ -17,14 +17,18 @@
 
 #define WIN_WIDTH 1280        //窗口宽度
 #define WIN_HEIGHT 720        //窗口高度
-#define FRAMERATE 60          //动画帧率
+
 #define FONT_SIZE 60          //字体大小
 #define NUMBER_SIZE 40        //数字大小
-#define ANIMATION_TIME 1000   //动画时间(ms)
+
 #define DICE_ROTATE_TIME 2000 //骰子旋转时间(ms)
 #define DICE_ROTATE_SPEED 50  //骰子旋转速度
+
 #define CFG_PATH "cfg/cfg.txt"//配置文件路径
 #define LOG_PATH "cfg/log.txt"//日志文件路径
+
+#define ANIMATION_TIME 1000                     //动画时间(ms)
+#define FRAMERATE (60 * ANIMATION_TIME / 1000)  //动画帧率
 
 //类型定义
 
@@ -49,8 +53,9 @@ typedef enum direction{       //定义棋子指向
 typedef enum ChessState{      //定义棋子的状态
   AIRPORT = 0,                //在机场
   MAIN = 1,                   //在主棋盘上
-  RUNWAY = 2,                 //在终点线
-  FINISH = 3                  //已到达终点
+  RUNWAY_IN = 2,              //在终点线前进
+  RUNWAY_OUT = 3,             //在终点线后退
+  FINISH = 4                  //已到达终点
 }ChessState;
 
 typedef enum PlayerType{      //玩家类型
@@ -59,7 +64,6 @@ typedef enum PlayerType{      //玩家类型
 }type;
 
 typedef struct chess{         //定义棋子
-  int num;                    //棋子的编号
   int pos;                    //棋子所在的位置
   ChessState state;           //棋子的状态
   color color;                //棋子的颜色
@@ -160,9 +164,13 @@ void dice_present(int roll);
 void chess_init(void);
 void chess_move(int num, int step);
 void chess_move_line(int num, int vec_t);
+void chess_move_rect(int num, int xt, int yt);
+void chess_rotate(int num, double angle0, double angle_t);
 void chess_departure(int chess_number);
 int chess_click(void);
 void chess_crash(int num);
+void chess_fly(int num);
+void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos);
 
 //draw.c中的函数声明
 void draw_text(char *text, int x, int y);

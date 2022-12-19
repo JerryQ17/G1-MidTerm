@@ -13,25 +13,34 @@ void game(void){
       if (current_state.win[i]) flag_break++;
     }
     if (flag_break == 3){
+      if (record) fprintf(rec_file, "Game: Game Over\n");
       break;
     }
     //渲染gameUI和棋子
     game_render();
     current_state.round++;
-    if (record)
-      fprintf(rec_file, "Round%d %s %s:\n", current_state.round,
+    if (record) fprintf(rec_file, "Round%d %s %s:\n", current_state.round,
               current_state.player_type == Player ? "Player" : "AI", current_state.color_str);
-
-
     game_event();
     //判断玩家是否胜利
     game_judge();
+    //记录回合信息
+    if (record) {
+      fprintf(rec_file, "Current Situation:\n");
+      for (int i = 0; i < current_state.total_number * 4; i++) {
+        fprintf(rec_file, "Chess%d: pos = %d, state = %d, dir = %d\n",
+                i, Chess[i].pos, Chess[i].state, Chess[i].dir);
+      }
+      fprintf(rec_file, "Round%d ends\n\n", current_state.round);
+    }
     //跳转至下一玩家
     while (true) {
       if (current_state.player == current_state.total_number) current_state.player = RED;
       else current_state.player++;
       if (!current_state.win[current_state.player]) break;
     }
+    game_state_adjust();
+    SDL_Delay(1000);
   }
 }
 
@@ -166,6 +175,10 @@ void game_state_adjust(void){   //调整游戏状态
 }
 
 void game_event(void){   //游戏事件
+  if (current_state.player_type == AI){
+    game_round();
+    return;
+  }
   SDL_Event GameEvent;
   while (SDL_WaitEvent(&GameEvent)) {
     switch (GameEvent.type) {
@@ -175,7 +188,7 @@ void game_event(void){   //游戏事件
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (GameEvent.key.keysym.sym) {
-        case SDLK_RETURN:case SDLK_SPACE: //回车和空格都可以掷骰子
+        case SDLK_RETURN:case SDLK_SPACE: //回车和空格都可以进入游戏回合
             game_round();
             break;
           case SDLK_ESCAPE: //Esc

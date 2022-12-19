@@ -82,11 +82,11 @@ void main_render(void){   //渲染mainUI
 }
 
 void main_event_loop(void) {  //主事件循环
-  //渲染mainUI
-  main_render();
   //主事件循环
   SDL_Event MainEvent;
   while (SDL_WaitEvent(&MainEvent)) {
+    //渲染mainUI
+    main_render();
     switch (MainEvent.type) {
       case SDL_QUIT:  //关闭窗口
         if (record) fprintf(rec_file, "MainEventLoop: Quit by SDL_QUIT\n");
@@ -94,8 +94,8 @@ void main_event_loop(void) {  //主事件循环
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (MainEvent.key.keysym.sym) {
-          case SDLK_RETURN: //回车
-            if (record) fprintf(rec_file, "MainEventLoop: Game start by Keydown Enter\n");
+        case SDLK_RETURN:case SDLK_SPACE: //回车或空格开始游戏
+            if (record) fprintf(rec_file, "MainEventLoop: Game start by Keydown Enter/Space\n\n");
             game();
             break;
           case SDLK_ESCAPE: //Esc
@@ -111,7 +111,7 @@ void main_event_loop(void) {  //主事件循环
       case SDL_MOUSEBUTTONUP:
         if (record) fprintf(rec_file, "MainEventLoop: Mouse button up (%d, %d)\n", MainEvent.button.x, MainEvent.button.y);
         if (MainEvent.button.x > 555 && MainEvent.button.x < 722 && MainEvent.button.y > 311 && MainEvent.button.y < 404){  //开始
-          if (record) fprintf(rec_file, "MainEventLoop: Game start by start button\n");
+          if (record) fprintf(rec_file, "MainEventLoop: Game start by start button\n\n");
           game();
         }else if (MainEvent.button.x > 555 && MainEvent.button.x < 722 && MainEvent.button.y > 463 && MainEvent.button.y < 547){ //帮助
           if (record) fprintf(rec_file, "MainEventLoop: Press get help button\n");
