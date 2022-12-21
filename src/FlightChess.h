@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <stdarg.h>
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"
 #include "SDL2/SDL_ttf.h"
@@ -141,7 +142,8 @@ int main_init(void);
 void main_render(void);
 void main_event_loop(void);
 void load_picture(void);
-void quit(void);
+void recordf(const char* format, ...);
+void quit(int code);
 
 //game.c中的函数声明
 

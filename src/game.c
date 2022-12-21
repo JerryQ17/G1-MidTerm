@@ -3,8 +3,8 @@
 void game(void){
   //初始化游戏
   game_init();
-  if (record) fprintf(rec_file, "Game Start:\nTotal number = %d\nPlayer number = %d\nAI number = %d\n",
-                      current_state.total_number, current_state.player_number, current_state.ai_number);
+  recordf("Game Start:\nTotal number = %d\nPlayer number = %d\nAI number = %d\n",
+          current_state.total_number, current_state.player_number, current_state.ai_number);
   //游戏开始
   while (true) {
     //判断游戏是否结束
@@ -13,26 +13,22 @@ void game(void){
       if (current_state.win[i]) flag_break++;
     }
     if (flag_break == 3){
-      if (record) fprintf(rec_file, "Game: Game Over\n");
+      recordf("Game: Game Over\n");
       break;
     }
     //渲染gameUI和棋子
     game_render();
-    current_state.round++;
-    if (record) fprintf(rec_file, "Round%d %s %s:\n", current_state.round,
+    recordf("Round%d %s %s:\n", current_state.round,
               current_state.player_type == Player ? "Player" : "AI", current_state.color_str);
     game_event();
     //判断玩家是否胜利
     game_judge();
     //记录回合信息
-    if (record) {
-      fprintf(rec_file, "Current Situation:\n");
-      for (int i = 0; i < current_state.total_number * 4; i++) {
-        fprintf(rec_file, "Chess%d: pos = %d, state = %d, dir = %d\n",
-                i, Chess[i].pos, Chess[i].state, Chess[i].dir);
-      }
-      fprintf(rec_file, "Round%d ends\n\n", current_state.round);
+    recordf("Current Situation:\n");
+    for (int i = 0; i < current_state.total_number * 4; i++) {
+      recordf("Chess%d\tpos = %d\tstate = %d\tdir = %d\n", i, Chess[i].pos, Chess[i].state, Chess[i].dir);
     }
+    recordf("Round%d ends;\n\n", current_state.round);
     //跳转至下一玩家
     while (true) {
       if (current_state.player == current_state.total_number) current_state.player = RED;
@@ -41,6 +37,7 @@ void game(void){
     }
     game_state_adjust();
     SDL_Delay(1000);
+    current_state.round++;
   }
 }
 
@@ -48,7 +45,7 @@ void game_init(void){  //游戏部分的初始化
   //确定游戏人数
   while(game_player());
   //对游戏要用到的部分变量进行初始化
-  current_state.round = 0;
+  current_state.round = 1;
   current_state.player = RED;
   game_state_adjust();
   for (int i = 0; i < current_state.total_number; i++) current_state.win[i] = false;
@@ -67,13 +64,13 @@ int game_player(void){  //确定游戏人数
     switch (GamePlayerEvent.type) {
       case SDL_QUIT:  //关闭窗口
         if (record) fprintf(rec_file, "GamePlayer: Quit by SDL_QUIT\n");
-        quit();
+        quit(EXIT_SUCCESS);
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (GamePlayerEvent.key.keysym.sym) {
           case SDLK_ESCAPE: //Esc
             if (record) fprintf(rec_file, "GamePlayer: Quit by Esc\n");
-            quit();
+            quit(EXIT_SUCCESS);
             break;
             //判断键盘输入并赋值
           case SDLK_0:
@@ -111,22 +108,14 @@ int game_player(void){  //确定游戏人数
         SDL_Delay(1000);  //给玩家显示1s输入的值
         break;
       case SDL_MOUSEBUTTONDOWN:
-        if (record)
-          fprintf(rec_file,
-                  "GamePlayer: Mouse button down (%d, %d)\n",
-                  GamePlayerEvent.button.x,
-                  GamePlayerEvent.button.y);
+        recordf("GamePlayer: Mouse button down (%d, %d)\n", GamePlayerEvent.button.x, GamePlayerEvent.button.y);
         break;
         //本函数仍在mainUI里，能看见开始和帮助按钮，只保留帮助功能
       case SDL_MOUSEBUTTONUP:
-        if (record)
-          fprintf(rec_file,
-                  "GamePlayer: Mouse button up (%d, %d)\n",
-                  GamePlayerEvent.button.x,
-                  GamePlayerEvent.button.y);
+        recordf("GamePlayer: Mouse button up (%d, %d)\n", GamePlayerEvent.button.x, GamePlayerEvent.button.y);
         if (GamePlayerEvent.button.x > 555 && GamePlayerEvent.button.x < 722 && GamePlayerEvent.button.y > 463
-            && GamePlayerEvent.button.y < 547) { //帮助
-          if (record) fprintf(rec_file, "GamePlayer: Press get help button\n");
+            && GamePlayerEvent.button.y < 547) {    //帮助
+          recordf("GamePlayer: Press get help button\n");
           int open_readme = system("start README.md");
           if (open_readme) draw_text("Failed to get help:(", 400, 569);
         }
@@ -140,7 +129,7 @@ int game_player(void){  //确定游戏人数
       || current_state.total_number < 2 || current_state.total_number > 4){
     main_render();
     draw_text("Invalid Number", 500, 569);
-    if (record) fprintf(rec_file, "SetPlayer: Invalid Number\n");
+    recordf("SetPlayer: Invalid Number, total = %d, ai = %d\n", current_state.total_number, current_state.ai_number);
     SDL_Delay(1000);
     return 1;
   }
@@ -183,8 +172,8 @@ void game_event(void){   //游戏事件
   while (SDL_WaitEvent(&GameEvent)) {
     switch (GameEvent.type) {
       case SDL_QUIT:  //关闭窗口
-        if (record) fprintf(rec_file, "GameEvent: Quit by SDL_QUIT in game\n");
-        quit();
+        recordf("GameEvent: Quit by SDL_QUIT in game\n");
+        quit(EXIT_SUCCESS);
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (GameEvent.key.keysym.sym) {
@@ -192,20 +181,20 @@ void game_event(void){   //游戏事件
             game_round();
             break;
           case SDLK_ESCAPE: //Esc
-            if (record) fprintf(rec_file, "GameEvent: Quit by Esc in game\n");
-            quit();
+            recordf("GameEvent: Quit by Esc in game\n");
+            quit(EXIT_SUCCESS);
             break;
           default:break;
         }
         break;
       case SDL_MOUSEBUTTONDOWN:
-        if (record) fprintf(rec_file, "GameEvent: Mouse button down in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
+        recordf("GameEvent: Mouse button down in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
         printf("Mouse button down in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
         break;
       case SDL_MOUSEBUTTONUP:
-        if (record) fprintf(rec_file, "GameEvent: Mouse button up in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
+        recordf("GameEvent: Mouse button up in game (%d, %d)\n", GameEvent.button.x, GameEvent.button.y);
         if (GameEvent.button.x > 999 && GameEvent.button.x < WIN_WIDTH && GameEvent.button.y > 0 && GameEvent.button.y < 95){  //返回主界面
-          if (record) fprintf(rec_file,"GameEvent: Return to mainUI\n");
+          recordf("GameEvent: Return to mainUI\n");
           main_event_loop();
         }
         break;

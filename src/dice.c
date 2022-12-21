@@ -8,31 +8,31 @@ int dice_roll(void){   //debug = 1时根据键盘输入得到骰子的点数，d
       if (RollEvent.type == SDL_KEYDOWN) {
         switch (RollEvent.key.keysym.sym) { //Keydown1-6为对应点数，空格则随机得到一个点数，其它操作无效
           case SDLK_1:case SDLK_KP_1:
-            if (record) fprintf(rec_file, "Roll: dice 1(debug)\n");
+            recordf("DiceRoll: dice 1(debug)\n");
             return 1;
           case SDLK_2:case SDLK_KP_2:
-            if (record) fprintf(rec_file, "Roll: dice 2(debug)\n");
+            recordf("DiceRoll: dice 2(debug)\n");
             return 2;
           case SDLK_3:case SDLK_KP_3:
-            if (record) fprintf(rec_file, "Roll: dice 3(debug)\n");
+            recordf("DiceRoll: dice 3(debug)\n");
             return 3;
           case SDLK_4:case SDLK_KP_4:
-            if (record) fprintf(rec_file, "Roll: dice 4(debug)\n");
+            recordf("DiceRoll: dice 4(debug)\n");
             return 4;
           case SDLK_5:case SDLK_KP_5:
-            if (record) fprintf(rec_file, "Roll: dice 5(debug)\n");
+            recordf("DiceRoll: dice 5(debug)\n");
             return 5;
           case SDLK_6:case SDLK_KP_6:
-            if (record) fprintf(rec_file, "Roll: dice 6(debug)\n");
+            recordf("DiceRoll: dice 6(debug)\n");
             return 6;
           case SDLK_SPACE:
-            if (record) fprintf(rec_file, "Roll: random(debug);");
+            recordf("DiceRoll: goto random(debug);\n");
             goto random;
           default: break;
         }
       } else if (RollEvent.type == SDL_QUIT) {  //等待操作时防止出现不能退出程序的bug
-        if (record) fprintf(rec_file, "Roll: Quit by SDL_QUIT\n");
-        quit();
+        recordf("DiceRoll: Quit by SDL_QUIT\n");
+        quit(EXIT_SUCCESS);
       }
     }
   }
@@ -41,7 +41,7 @@ int dice_roll(void){   //debug = 1时根据键盘输入得到骰子的点数，d
   srand((unsigned int) time(NULL));
   int value = rand() % 7;
   while (value == 0) value = rand() % 7;
-  if (record) fprintf(rec_file, "Roll: dice %d(random)\n", value);
+  recordf("DiceRoll: dice %d(random)\n", value);
   return value;
 }
 

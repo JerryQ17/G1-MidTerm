@@ -41,40 +41,34 @@ void chess_move(int num, int step){       //棋子移动
     else if (current_state.player == RED && Chess[num].state == MAIN && Chess[num].pos == 49){               //红进跑道
       chess_move_line(num, 72);
       Chess[num].state = RUNWAY_IN;
-    }else if (current_state.player == RED && (Chess[num].pos == 77 || Chess[num].state == RUNWAY_OUT)){      //红反向
-      chess_move_line(num, Chess[num].pos - 1);
-      Chess[num].state = RUNWAY_OUT;
     }else if (current_state.player == RED && Chess[num].state == RUNWAY_OUT && Chess[num].pos == 72){        //红反向到头
       chess_move_line(num, 49);
       Chess[num].state = MAIN;
     }else if (current_state.player == GREEN && Chess[num].state == MAIN && Chess[num].pos == 10){            //绿进跑道
       chess_move_line(num, 78);
       Chess[num].state = RUNWAY_IN;
-    }else if (current_state.player == GREEN && (Chess[num].pos == 83 || Chess[num].state == RUNWAY_OUT)){    //绿反向
-      chess_move_line(num, Chess[num].pos - 1);
-      Chess[num].state = RUNWAY_OUT;
     }else if (current_state.player == GREEN && Chess[num].state == RUNWAY_OUT && Chess[num].pos == 78){      //绿反向到头
       chess_move_line(num, 10);
       Chess[num].state = MAIN;
     }else if (current_state.player == YELLOW && Chess[num].state == MAIN && Chess[num].pos == 23){           //黄进跑道
       chess_move_line(num, 84);
       Chess[num].state = RUNWAY_IN;
-    }else if (current_state.player == YELLOW && (Chess[num].pos == 89 || Chess[num].state == RUNWAY_OUT)){   //黄反向
-      chess_move_line(num, Chess[num].pos - 1);
-      Chess[num].state = RUNWAY_OUT;
     }else if (current_state.player == YELLOW && Chess[num].state == RUNWAY_OUT && Chess[num].pos == 84){     //黄反向到头
       chess_move_line(num, 23);
       Chess[num].state = MAIN;
     }else if (current_state.player == BLUE && Chess[num].state == MAIN && Chess[num].pos == 36){             //蓝进跑道
       chess_move_line(num, 90);
       Chess[num].state = RUNWAY_IN;
-    }else if (current_state.player == BLUE && (Chess[num].pos == 95 || Chess[num].state == RUNWAY_OUT)){     //蓝反向
-      chess_move_line(num, Chess[num].pos - 1);
-      Chess[num].state = RUNWAY_OUT;
     }else if (current_state.player == BLUE && Chess[num].state == RUNWAY_OUT && Chess[num].pos == 90){       //蓝反向到头
       chess_move_line(num, 36);
       Chess[num].state = MAIN;
-    }else chess_move_line(num, Chess[num].pos + 1);                                                    //前进一格
+    }else if ((current_state.player == RED && (Chess[num].pos == 77 || Chess[num].state == RUNWAY_OUT)) ||
+        (current_state.player == GREEN && (Chess[num].pos == 83 || Chess[num].state == RUNWAY_OUT)) ||
+        (current_state.player == YELLOW && (Chess[num].pos == 89 || Chess[num].state == RUNWAY_OUT)) ||
+        (current_state.player == BLUE && (Chess[num].pos == 95 || Chess[num].state == RUNWAY_OUT))){          //反向
+      chess_move_line(num, Chess[num].pos - 1);
+      Chess[num].state = RUNWAY_OUT;
+    }else chess_move_line(num, Chess[num].pos + 1);                                                     //前进一格
   }
   //是否到达终点
   if (Chess[num].pos == 77 || Chess[num].pos == 83 || Chess[num].pos == 89 || Chess[num].pos == 95){
@@ -134,13 +128,13 @@ void chess_rotate(int num, double angle0, double angle_t){   //棋子旋转
 }
 
 void chess_departure(int chess_number){   //棋子起飞
-  chess_move_line(chess_number, (int) (51 + current_state.player * 5));
+  int take_off_pos = (int)(51 + current_state.player * 5);
+  recordf("ChessDeparture: Chess%d moves to take-off point%d\n", chess_number, take_off_pos);
+  chess_move_line(chess_number, take_off_pos);
   int departure_value = dice_roll();
   dice_present(departure_value);
-  chess_move_line(chess_number, (int) (current_state.player * 13 - 11));
-  for (int step = 1; step < departure_value; step++){
-    chess_move_line(chess_number, Chess[chess_number].pos + 1);
-  }
+  chess_move_line(chess_number, (int) (current_state.player * 13 - 12));
+  //if ()chess_move(chess_number, departure_value - 1);
 }
 
 int chess_click(void) {    //判定点击的是哪个棋子
@@ -148,41 +142,33 @@ int chess_click(void) {    //判定点击的是哪个棋子
     srand((unsigned int) time(NULL));
     int value = (int)(current_state.player - 1) * 4 + rand() % 4;
     while (Chess[value].state == FINISH) value = (int)(current_state.player - 1) * 4 + rand() % 4;
-    if (record) fprintf(rec_file, "ChessClick: AI %s chooses chess%d\n", current_state.color_str, value);
+    recordf("ChessClick: AI %s chooses chess%d\n", current_state.color_str, value);
     return value;
   }
   SDL_Event ChessClickEvent;
   while (SDL_WaitEvent(&ChessClickEvent)) {
     switch (ChessClickEvent.type) {
       case SDL_QUIT:  //关闭窗口
-        if (record) fprintf(rec_file, "ChessClick: Quit by SDL_QUIT\n");
-        quit();
+        recordf("ChessClick: Quit by SDL_QUIT\n");
+        quit(EXIT_SUCCESS);
         break;
       case SDL_MOUSEBUTTONDOWN:
-        if (record)
-          fprintf(rec_file,
-                  "ChessClick: Mouse button down (%d, %d)\n",
-                  ChessClickEvent.button.x,
-                  ChessClickEvent.button.y);
+        recordf("ChessClick: Mouse button down (%d, %d)\n", ChessClickEvent.button.x, ChessClickEvent.button.y);
         break;
       case SDL_MOUSEBUTTONUP:
-        if (record)
-          fprintf(rec_file,
-                  "ChessClick: Mouse button up (%d, %d)\n",
-                  ChessClickEvent.button.x,
-                  ChessClickEvent.button.y);
+        recordf("ChessClick: Mouse button up (%d, %d)\n", ChessClickEvent.button.x, ChessClickEvent.button.y);
         for (int i = 0; i < current_state.total_number * 4; i++) {
           if (ChessClickEvent.button.x >= Chess[i].rect.x
               && ChessClickEvent.button.x <= Chess[i].rect.x + Chess[i].rect.w
               && ChessClickEvent.button.y >= Chess[i].rect.y
               && ChessClickEvent.button.y <= Chess[i].rect.y + Chess[i].rect.h) {
-            if (record) fprintf(rec_file, "ChessClick: Player %s chooses chess%d\n", current_state.color_str, i);
+            recordf("ChessClick: Player %s chooses chess%d\n", current_state.color_str, i);
             return i;
           }
         }
         if (ChessClickEvent.button.x > 999 && ChessClickEvent.button.x < WIN_WIDTH &&
             ChessClickEvent.button.y > 0 && ChessClickEvent.button.y < 95) {  //返回主界面
-          if (record) fprintf(rec_file, "ChessClick: Return to mainUI\n");
+          recordf("ChessClick: Return to mainUI\n");
           main_event_loop();
         }
         break;
@@ -214,13 +200,13 @@ void chess_crash(int num){ //碰撞处理
         }
       }
       if (flag_i_empty){
-        if (record) fprintf(rec_file, "ChessCrash: Crash chess %d\n", crashed);
+        recordf("ChessCrash: Crash chess %d\n", crashed);
         chess_move_line(crashed, i);
         break;
       }
     }
   }else{
-    if (record) fprintf(rec_file, "ChessCrash: No crash\n");
+    recordf("ChessCrash: No crash\n");
   }
 }
 
@@ -246,7 +232,7 @@ void chess_fly(int num){    //滑行道判断与处理
 
 void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos){
   int fly_crashed = 0;
-  if (record) fprintf(rec_file, "ChessFly: Chess%d fly,", num);
+  recordf("ChessFly: Chess%d fly,", num);
   //判断是否碰撞
   bool flag_fly_crash = false;
   for (int i = 0; i < current_state.total_number * 4; i++){
@@ -263,7 +249,7 @@ void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos){
   if (flag_fly_crash){    //发生碰撞
     //先到碰撞位
     chess_move_rect(num, board_vec[crash_pos].x, board_vec[crash_pos].y - Chess[fly_crashed].rect.y);
-    if (record) fprintf(rec_file, "In-flight crash chess %d\n", fly_crashed);
+    recordf("In-flight crash chess %d\n", fly_crashed);
     //检查机场哪个栏位为空
     for (int i = (int)(Chess[fly_crashed].color * 5 + 47); i < Chess[fly_crashed].color * 5 + 50; i++){
       bool flag_i_empty = true;
@@ -304,7 +290,7 @@ void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos){
       }
     }
   }else{    //不发生碰撞
-    if (record) fprintf(rec_file, "No in-flight crash\n");
+    recordf("No in-flight crash\n");
     chess_move_rect(num, board_vec[dest_pos].x, board_vec[dest_pos].y);
   }
   //定位pos
