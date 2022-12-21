@@ -8,7 +8,7 @@ chess Chess[16];                            //棋盘上的棋子
 int record = 0;                             //是否记录日志
 int debug = 0;                              //调试模式
 FILE *cfg = NULL;                           //配置文件指针
-FILE *rec_file = NULL;                      //记录文件指针
+FILE *log_file = NULL;                      //记录文件指针
 
 SDL_Window *Window = NULL;                  //窗口
 SDL_Renderer *Renderer = NULL;              //渲染器
@@ -42,7 +42,7 @@ SDL_Texture *YellowTexture = NULL;
 SDL_Surface *BlueSurface = NULL;            //蓝色
 SDL_Texture *BlueTexture = NULL;
 
-const board board_vec[96] = {                                                                                                     //棋盘(用函数初始化非常困难，不如打表)
+const board vec[96] = {                                                                                                     //棋盘(用函数初始化非常困难，不如打表)
     {BLUE,DL,903,462},{RED,L,860,478},{GREEN,L,820,478},          //-------------
     {YELLOW,DL,780,460},{BLUE,DR,745,500},{RED,D,760,540},        //     |
     {GREEN,D,760,580},{YELLOW,DL,745,620},{BLUE,L,702,637},       //     |

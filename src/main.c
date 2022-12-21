@@ -7,7 +7,7 @@ int SDL_main(int argc, char *argv[]) {
   if (init_value){
     if (record) {
       recordf("SDL_main: main_init error code %d\n", init_value);
-      fclose(rec_file);
+      fclose(log_file);
     }
     quit(init_value);
   }
@@ -33,14 +33,14 @@ int main_init(void) {   //程序初始化
   }else fprintf(stderr, "MainInit: Fail to find cfg.txt\n");
   //根据设置文件 以及日志文件是否能正常写入 来决定是否记录信息
   if (record){
-    rec_file = fopen(LOG_PATH, "a+");
-    if (rec_file == NULL) {   //日志文件不能正常写入，不记录信息
+    log_file = fopen(LOG_PATH, "a+");
+    if (log_file == NULL) {   //日志文件不能正常写入，不记录信息
       record = 0;
       fprintf(stderr, "Failed to get log");
     }
     else{
       time_t cur_time = time(NULL);
-      recordf("MainInit: Program start, record = %d debug = %d\n%s", record, debug, ctime(&cur_time));
+      recordf("MainInit: Program start at %srecord = %d debug = %d\n", ctime(&cur_time), record, debug);
     }
   }
   //SDL初始化
@@ -130,7 +130,6 @@ void main_event_loop(void) {  //主事件循环
 }
 
 void load_picture(void){   //加载所有表面和纹理
-  recordf("Loading picture...");
   //mainUI
   MainSurface = IMG_Load("img/art_mainUI.png");
   MainTexture = SDL_CreateTextureFromSurface(Renderer, MainSurface);
@@ -148,14 +147,14 @@ void load_picture(void){   //加载所有表面和纹理
   YellowTexture = SDL_CreateTextureFromSurface(Renderer, YellowSurface);
   BlueSurface = IMG_Load("img/BlueChess.png");
   BlueTexture = SDL_CreateTextureFromSurface(Renderer, BlueSurface);
-  recordf("Loaded\n");
+  recordf("LoadPicture: Complete!\n");
 }
 
 void recordf(const char* format, ...){    //向日志文件中记录信息
   if (record){
     va_list ap;
     va_start(ap, format);
-    vfprintf(rec_file, format, ap);
+    vfprintf(log_file, format, ap);
     va_end(ap);
   }
 }
@@ -192,7 +191,7 @@ void quit(int code) {   //销毁各指针并退出程序
   if (record) {
     time_t cur_time = time(NULL);
     recordf("Quit: Program stop at %s\n", ctime(&cur_time));
-    fclose(rec_file);
+    fclose(log_file);
   }
   exit(code);
 }

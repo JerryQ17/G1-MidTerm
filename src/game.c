@@ -3,7 +3,7 @@
 void game(void){
   //初始化游戏
   game_init();
-  recordf("Game Start:\nTotal number = %d\nPlayer number = %d\nAI number = %d\n",
+  recordf("Game Start:\nTotal number = %d\nPlayer number = %d\nAI number = %d\n\n",
           current_state.total_number, current_state.player_number, current_state.ai_number);
   //游戏开始
   while (true) {
@@ -63,13 +63,13 @@ int game_player(void){  //确定游戏人数
     SDL_WaitEvent(&GamePlayerEvent);
     switch (GamePlayerEvent.type) {
       case SDL_QUIT:  //关闭窗口
-        if (record) fprintf(rec_file, "GamePlayer: Quit by SDL_QUIT\n");
+        if (record) fprintf(log_file, "GamePlayer: Quit by SDL_QUIT\n");
         quit(EXIT_SUCCESS);
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (GamePlayerEvent.key.keysym.sym) {
           case SDLK_ESCAPE: //Esc
-            if (record) fprintf(rec_file, "GamePlayer: Quit by Esc\n");
+            if (record) fprintf(log_file, "GamePlayer: Quit by Esc\n");
             quit(EXIT_SUCCESS);
             break;
             //判断键盘输入并赋值
@@ -105,7 +105,6 @@ int game_player(void){  //确定游戏人数
             break;
           default:break;
         }
-        SDL_Delay(1000);  //给玩家显示1s输入的值
         break;
       case SDL_MOUSEBUTTONDOWN:
         recordf("GamePlayer: Mouse button down (%d, %d)\n", GamePlayerEvent.button.x, GamePlayerEvent.button.y);
@@ -122,6 +121,7 @@ int game_player(void){  //确定游戏人数
         break;
       default:goto GamePlayerLoop;
     }
+    SDL_Delay(1000);  //给玩家显示1s输入的值
   }
   //判断玩家输入的数字是否合法
   current_state.player_number = current_state.total_number - current_state.ai_number;
@@ -222,9 +222,7 @@ void game_round(void){
       if (Chess[chess_clicked].state == AIRPORT) chess_departure(chess_clicked);
       else chess_move(chess_clicked, roll_value);
     }
-  }else{                    //机场没有
-    chess_move(chess_click(), roll_value);
-  }
+  }else chess_move(chess_click(), roll_value);    //机场没有
 }
 
 void game_judge(void){   //判断当前是否有人赢了

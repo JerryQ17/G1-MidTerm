@@ -16,6 +16,8 @@
 
 //宏定义
 
+#define DEBUG
+
 #define WIN_WIDTH 1280        //窗口宽度
 #define WIN_HEIGHT 720        //窗口高度
 
@@ -29,7 +31,7 @@
 #define LOG_PATH "cfg/log.txt"//日志文件路径
 
 #define ANIMATION_TIME 1000                     //动画时间(ms)
-#define FRAMERATE (60 * ANIMATION_TIME / 1000)  //动画帧率
+#define FRAMERATE (60.0 * ANIMATION_TIME / 1000)  //动画帧率
 
 //类型定义
 
@@ -96,11 +98,12 @@ typedef struct GameState{     //游戏状态
 
 extern GameState current_state;    //游戏状态
 extern chess Chess[];              //棋盘上的棋子
+extern const board vec[96];        //棋盘
 
 extern int record;                 //是否记录日志
 extern int debug;                  //调试模式
 extern FILE *cfg;                  //配置文件指针
-extern FILE *rec_file;             //记录文件指针
+extern FILE *log_file;             //记录文件指针
 
 extern SDL_Window *Window;         //窗口
 extern SDL_Renderer *Renderer;     //渲染器
@@ -134,8 +137,6 @@ extern SDL_Texture *YellowTexture;
 extern SDL_Surface *BlueSurface;            //蓝色
 extern SDL_Texture *BlueTexture;
 
-extern const board board_vec[96];           //棋盘
-
 //main.c中的函数声明
 
 int main_init(void);
@@ -168,7 +169,7 @@ void chess_move(int num, int step);
 void chess_move_line(int num, int vec_t);
 void chess_move_rect(int num, int xt, int yt);
 void chess_rotate(int num, double angle0, double angle_t);
-void chess_departure(int chess_number);
+void chess_departure(int num);
 int chess_click(void);
 void chess_crash(int num);
 void chess_fly(int num);
