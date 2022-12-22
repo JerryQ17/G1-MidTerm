@@ -24,14 +24,18 @@
 #define FONT_SIZE 60          //字体大小
 #define NUMBER_SIZE 40        //数字大小
 
+#define CHESS_MOVE_SPEED 2    //棋子移动速度
+#define CHESS_ROTATE_SPEED 2.0//棋子旋转速度
 #define DICE_ROTATE_TIME 2000 //骰子旋转时间(ms)
 #define DICE_ROTATE_SPEED 50  //骰子旋转速度
 
 #define CFG_PATH "cfg/cfg.txt"//配置文件路径
 #define LOG_PATH "cfg/log.txt"//日志文件路径
 
-#define ANIMATION_TIME 1000                     //动画时间(ms)
-#define FRAMERATE (60.0 * ANIMATION_TIME / 1000)  //动画帧率
+#define ANIMATION_TIME 1000                         //动画时间(ms)
+#define FRAME_RATE (60 * ANIMATION_TIME / 1000)     //动画帧率
+#define ERROR_STEP 20                               //误差补偿次数
+#define ERROR_RATE (FRAME_RATE / ERROR_STEP)        //误差补偿频率
 
 //类型定义
 
@@ -168,7 +172,7 @@ void chess_init(void);
 void chess_move(int num, int step);
 void chess_move_line(int num, int vec_t);
 void chess_move_rect(int num, int xt, int yt);
-void chess_rotate(int num, double angle0, double angle_t);
+void chess_rotate(int num, double angle_t);
 void chess_departure(int num);
 int chess_click(void);
 void chess_crash(int num);

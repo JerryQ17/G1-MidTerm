@@ -64,7 +64,7 @@ void dice_present(int roll){  //加载roll函数给出的骰子点数对应的�
     SDL_RenderPresent(Renderer);
     SDL_DestroyTexture(RotateTexture);
     cur = SDL_GetTicks();
-    long long delay_time = (ANIMATION_TIME / FRAMERATE) - (cur - begin);
+    long long delay_time = (long long)(ANIMATION_TIME / FRAME_RATE) - (cur - begin);
     if (delay_time > 0) SDL_Delay(delay_time);
   }
   //渲染最终的骰子图片
