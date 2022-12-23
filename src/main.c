@@ -6,13 +6,13 @@ int SDL_main(int argc, char *argv[]) {
   //判断初始化是否正常
   if (init_value){
     if (record) {
-      recordf("SDL_main: main_init error code %d\n", init_value);
+      recordf("SDL_main: MainInit Error Code %d\n\n", init_value);
       fclose(log_file);
     }
     quit(init_value);
   }
   //加载所有表面和纹理
-  load_picture();
+  main_load();
   //进入主事件循环
   main_event_loop();
   return 0;
@@ -46,32 +46,37 @@ int main_init(void) {   //程序初始化
   //SDL初始化
   if (SDL_Init(SDL_INIT_VIDEO)) {
     recordf("MainInit: Cannot init video, %s\n", SDL_GetError());
-    SDL_Log("MainInit: Cannot init video, %s", SDL_GetError());
+    SDL_Log("MainInit: Cannot init video, %s\n", SDL_GetError());
     return 1;   //SDL初始化失败则返回1
   }
   Window = SDL_CreateWindow("飞行棋",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,WIN_WIDTH,WIN_HEIGHT,SDL_WINDOW_SHOWN);
   if (Window == NULL) {
     recordf("MainInit: Cannot create window, %s\n", SDL_GetError());
-    SDL_Log("MainInit: Cannot create window, %s", SDL_GetError());
+    SDL_Log("MainInit: Cannot create window, %s\n", SDL_GetError());
     return 2;   //窗口初始化失败则返回2
   }
   Renderer = SDL_CreateRenderer(Window, -1, SDL_RENDERER_ACCELERATED);
   if (Renderer == NULL) {
     recordf("MainInit: Cannot create Renderer, %s\n", SDL_GetError());
-    SDL_Log("MainInit: Cannot create Renderer, %s", SDL_GetError());
+    SDL_Log("MainInit: Cannot create Renderer, %s\n", SDL_GetError());
     return 3;   //渲染器初始化失败则返回3
   }
   if (TTF_Init()) {
     recordf("MainInit: Cannot init ttf, %s\n", TTF_GetError());
-    SDL_Log("MainInit: Cannot init ttf, %s", TTF_GetError());
+    SDL_Log("MainInit: Cannot init ttf, %s\n", TTF_GetError());
     return 4;   //字体初始化失败则返回4
   }
   Font = TTF_OpenFont("font/calibri.ttf", FONT_SIZE);
   NumberFont = TTF_OpenFont("font/calibri.ttf", NUMBER_SIZE);
   if (Font == NULL || NumberFont == NULL) {
     recordf("MainInit: Cannot open font, %s\n", SDL_GetError());
-    SDL_Log("MainInit: Cannot open font, %s", SDL_GetError());
+    SDL_Log("MainInit: Cannot open font, %s\n", SDL_GetError());
     return 5;   //字体打开失败则返回5
+  }
+  if (Mix_OpenAudio(MIX_DEFAULT_FREQUENCY, MIX_DEFAULT_FORMAT, MIX_DEFAULT_CHANNELS, 4096) == -1) {
+    recordf("MainInit: Cannot open audio, %s\n", SDL_GetError());
+    SDL_Log("MainInit: Cannot open audio, %s\n", SDL_GetError());
+    return 6;   //音频打开失败则返回6
   }
   return 0;     //初始化正常则返回0
 }
@@ -83,6 +88,8 @@ void main_render(void){   //渲染mainUI
 }
 
 void main_event_loop(void) {  //主事件循环
+  //播放音乐
+  Mix_PlayMusic(bgm, -1);
   //主事件循环
   SDL_Event MainEvent;
   while (SDL_WaitEvent(&MainEvent)) {
@@ -129,7 +136,7 @@ void main_event_loop(void) {  //主事件循环
   }
 }
 
-void load_picture(void){   //加载所有表面和纹理
+void main_load(void){   //加载所有资源
   //mainUI
   MainSurface = IMG_Load("img/art_mainUI.png");
   MainTexture = SDL_CreateTextureFromSurface(Renderer, MainSurface);
@@ -148,6 +155,9 @@ void load_picture(void){   //加载所有表面和纹理
   BlueSurface = IMG_Load("img/BlueChess.png");
   BlueTexture = SDL_CreateTextureFromSurface(Renderer, BlueSurface);
   recordf("LoadPicture: Complete!\n");
+  //bgm
+  bgm = Mix_LoadMUS(BGM_PATH);
+  Mix_VolumeMusic(45);
 }
 
 void recordf(const char* format, ...){    //向日志文件中记录信息
@@ -160,6 +170,10 @@ void recordf(const char* format, ...){    //向日志文件中记录信息
 }
 
 void quit(int code) {   //销毁各指针并退出程序
+  //close music
+  Mix_HaltMusic();
+  Mix_FreeMusic(bgm);
+  Mix_Quit();
   //close font
   TTF_CloseFont(Font);
   TTF_CloseFont(NumberFont);

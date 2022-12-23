@@ -203,26 +203,53 @@ void game_event(void){   //游戏事件
   }
 }
 
-void game_round(void){
+void game_round(void){    //游戏回合
   //掷骰子
-  int roll_value = dice_roll();
+  int roll_value = dice_roll(), chess_clicked;
   dice_present(roll_value);
   //判断当前玩家是否有待起飞的飞机
   int flag_airport = 0;
   for (int i = (int) (current_state.player - 1) * 4; i < current_state.player * 4; i++) {
     if (Chess[i].state == AIRPORT) flag_airport++;
   }
+  recordf("GameRound: %s %s airport %d, ",
+          current_state.player_type == Player ? "Player" : "AI", current_state.color_str, flag_airport);
   if (flag_airport == 4){   //全在机场
     if (roll_value == 6){   //该玩家第一个棋子起飞
+      recordf("departure Chess %d with dice %d\n", (current_state.player - 1) * 4, roll_value);
       chess_departure((int)((current_state.player - 1) * 4));
+      return;
     }
+    recordf("can't departure with dice %d\n", roll_value);
+    return;
   }else if(flag_airport){   //机场有
+    chess_clicked = chess_click();
     if (roll_value == 6) {
-      int chess_clicked = chess_click();
-      if (Chess[chess_clicked].state == AIRPORT) chess_departure(chess_clicked);
-      else chess_move(chess_clicked, roll_value);
+      if (Chess[chess_clicked].state == AIRPORT) {
+        recordf("departure Chess %d with dice %d\n", chess_clicked, roll_value);
+        chess_departure(chess_clicked);
+        return;
+      }
+    }else{
+      while (Chess[chess_clicked].state == AIRPORT){
+        recordf("can't departure Chess %d with dice %d\n\t", chess_clicked, roll_value);
+        if (current_state.player_type == Player) {
+          draw_text("Invalid Choice", 0, 210);
+          chess_clicked = chess_click();
+        }else{
+          for (int i = (int)current_state.player * 4 - 4; i < current_state.player; i++){
+            if (Chess[i].state != AIRPORT) {
+              chess_clicked = i;
+              break;
+            }
+          }
+          break;
+        }
+      }
     }
-  }else chess_move(chess_click(), roll_value);    //机场没有
+  }
+  recordf("move Chess %d by %d step(s)\n", chess_clicked, roll_value);
+  chess_move(chess_clicked, roll_value);
 }
 
 void game_judge(void){   //判断当前是否有人赢了

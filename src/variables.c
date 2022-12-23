@@ -42,6 +42,8 @@ SDL_Texture *YellowTexture = NULL;
 SDL_Surface *BlueSurface = NULL;            //蓝色
 SDL_Texture *BlueTexture = NULL;
 
+Mix_Music *bgm;                            //BGM
+
 const board vec[96] = {                                                                                                     //棋盘(用函数初始化非常困难，不如打表)
     {BLUE,DL,903,462},{RED,L,860,478},{GREEN,L,820,478},          //-------------
     {YELLOW,DL,780,460},{BLUE,DR,745,500},{RED,D,760,540},        //     |

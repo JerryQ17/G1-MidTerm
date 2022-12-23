@@ -1,8 +1,8 @@
-MainInit: Program start at Fri Dec 23 00:58:13 2022
+MainInit: Program start at Fri Dec 23 16:42:42 2022
 record = 1 debug = 0
 LoadPicture: Complete!
-MainEventLoop: Mouse button down (635, 373)
-MainEventLoop: Mouse button up (635, 373)
+MainEventLoop: Mouse button down (675, 353)
+MainEventLoop: Mouse button up (675, 353)
 MainEventLoop: Game start by start button
 
 ChessInit: Chess 0 	pos = 52	state = 0	color = 1	dir = 0
@@ -29,6 +29,7 @@ AI number = 4
 
 Round1 AI Red:
 DiceRoll: dice 4(random)
+GameRound: AI Red airport 4, can't departure with dice 4
 Current Situation:
 Chess0	pos = 52	state = 0	dir = 0
 Chess1	pos = 53	state = 0	dir = 0
@@ -49,676 +50,14 @@ Chess15	pos = 70	state = 0	dir = 270
 Round1 ends;
 
 Round2 AI Green:
-DiceRoll: dice 6(random)
-ChessDeparture: Chess 4 (pos = 57) moves to take-off point 61
-ChessMoveRect: (0)	Chess 4	x = 334(474)	y = 578(677)
-ChessMoveRect: (1)	Chess 4	x = 336(474)	y = 579(677)
-ChessMoveRect: (2)	Chess 4	x = 338(474)	y = 580(677)
-ChessMoveRect: (3)	Chess 4	x = 341(474)	y = 583(677)
-ChessMoveRect: (4)	Chess 4	x = 343(474)	y = 584(677)
-ChessMoveRect: (5)	Chess 4	x = 345(474)	y = 585(677)
-ChessMoveRect: (6)	Chess 4	x = 348(474)	y = 588(677)
-ChessMoveRect: (7)	Chess 4	x = 350(474)	y = 589(677)
-ChessMoveRect: (8)	Chess 4	x = 352(474)	y = 590(677)
-ChessMoveRect: (9)	Chess 4	x = 355(474)	y = 593(677)
-ChessMoveRect: (10)	Chess 4	x = 357(474)	y = 594(677)
-ChessMoveRect: (11)	Chess 4	x = 359(474)	y = 595(677)
-ChessMoveRect: (12)	Chess 4	x = 362(474)	y = 598(677)
-ChessMoveRect: (13)	Chess 4	x = 364(474)	y = 599(677)
-ChessMoveRect: (14)	Chess 4	x = 366(474)	y = 600(677)
-ChessMoveRect: (15)	Chess 4	x = 369(474)	y = 603(677)
-ChessMoveRect: (16)	Chess 4	x = 371(474)	y = 604(677)
-ChessMoveRect: (17)	Chess 4	x = 373(474)	y = 605(677)
-ChessMoveRect: (18)	Chess 4	x = 376(474)	y = 608(677)
-ChessMoveRect: (19)	Chess 4	x = 378(474)	y = 609(677)
-ChessMoveRect: (20)	Chess 4	x = 380(474)	y = 610(677)
-ChessMoveRect: (21)	Chess 4	x = 383(474)	y = 613(677)
-ChessMoveRect: (22)	Chess 4	x = 385(474)	y = 614(677)
-ChessMoveRect: (23)	Chess 4	x = 387(474)	y = 615(677)
-ChessMoveRect: (24)	Chess 4	x = 390(474)	y = 618(677)
-ChessMoveRect: (25)	Chess 4	x = 392(474)	y = 619(677)
-ChessMoveRect: (26)	Chess 4	x = 394(474)	y = 620(677)
-ChessMoveRect: (27)	Chess 4	x = 397(474)	y = 623(677)
-ChessMoveRect: (28)	Chess 4	x = 399(474)	y = 624(677)
-ChessMoveRect: (29)	Chess 4	x = 401(474)	y = 625(677)
-ChessMoveRect: (30)	Chess 4	x = 404(474)	y = 628(677)
-ChessMoveRect: (31)	Chess 4	x = 406(474)	y = 629(677)
-ChessMoveRect: (32)	Chess 4	x = 408(474)	y = 630(677)
-ChessMoveRect: (33)	Chess 4	x = 411(474)	y = 633(677)
-ChessMoveRect: (34)	Chess 4	x = 413(474)	y = 634(677)
-ChessMoveRect: (35)	Chess 4	x = 415(474)	y = 635(677)
-ChessMoveRect: (36)	Chess 4	x = 418(474)	y = 638(677)
-ChessMoveRect: (37)	Chess 4	x = 420(474)	y = 639(677)
-ChessMoveRect: (38)	Chess 4	x = 422(474)	y = 640(677)
-ChessMoveRect: (39)	Chess 4	x = 425(474)	y = 643(677)
-ChessMoveRect: (40)	Chess 4	x = 427(474)	y = 644(677)
-ChessMoveRect: (41)	Chess 4	x = 429(474)	y = 645(677)
-ChessMoveRect: (42)	Chess 4	x = 432(474)	y = 648(677)
-ChessMoveRect: (43)	Chess 4	x = 434(474)	y = 649(677)
-ChessMoveRect: (44)	Chess 4	x = 436(474)	y = 650(677)
-ChessMoveRect: (45)	Chess 4	x = 439(474)	y = 653(677)
-ChessMoveRect: (46)	Chess 4	x = 441(474)	y = 654(677)
-ChessMoveRect: (47)	Chess 4	x = 443(474)	y = 655(677)
-ChessMoveRect: (48)	Chess 4	x = 446(474)	y = 658(677)
-ChessMoveRect: (49)	Chess 4	x = 448(474)	y = 659(677)
-ChessMoveRect: (50)	Chess 4	x = 450(474)	y = 660(677)
-ChessMoveRect: (51)	Chess 4	x = 453(474)	y = 663(677)
-ChessMoveRect: (52)	Chess 4	x = 455(474)	y = 664(677)
-ChessMoveRect: (53)	Chess 4	x = 457(474)	y = 665(677)
-ChessMoveRect: (54)	Chess 4	x = 460(474)	y = 668(677)
-ChessMoveRect: (55)	Chess 4	x = 462(474)	y = 669(677)
-ChessMoveRect: (56)	Chess 4	x = 464(474)	y = 670(677)
-ChessMoveRect: (57)	Chess 4	x = 467(474)	y = 673(677)
-ChessMoveRect: (58)	Chess 4	x = 469(474)	y = 674(677)
-ChessMoveRect: (59)	Chess 4	x = 471(474)	y = 675(677)
-ChessMoveRect: Ex	Chess 4	x = 473(474)	y = 677(677)
-ChessRotate: da = 2.000000
-ChessRotate: (1)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (2)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (3)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (4)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (5)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (6)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (7)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (8)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (9)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (10)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (11)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (12)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (13)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (14)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (15)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (16)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (17)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (18)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (19)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (20)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (21)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (22)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (23)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (24)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (25)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (26)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (27)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (28)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (29)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (30)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (31)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (32)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (33)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (34)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (35)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (36)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (37)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (38)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (39)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (40)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (41)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (42)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (43)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (44)	Chess 4	angle = 0.000000(0.000000)
-ChessRotate: (45)	Chess 4	angle = 0.000000(0.000000)
-DiceRoll: dice 5(random)
-ChessDeparture: Chess 4	pos 61 -> 14	dir 0 -> 0
-ChessMoveRect: (0)	Chess 4	x = 474(485)	y = 675(580)
-ChessMoveRect: (1)	Chess 4	x = 474(485)	y = 674(580)
-ChessMoveRect: (2)	Chess 4	x = 474(485)	y = 673(580)
-ChessMoveRect: (3)	Chess 4	x = 474(485)	y = 671(580)
-ChessMoveRect: (4)	Chess 4	x = 474(485)	y = 670(580)
-ChessMoveRect: (5)	Chess 4	x = 474(485)	y = 669(580)
-ChessMoveRect: (6)	Chess 4	x = 474(485)	y = 667(580)
-ChessMoveRect: (7)	Chess 4	x = 474(485)	y = 666(580)
-ChessMoveRect: (8)	Chess 4	x = 474(485)	y = 665(580)
-ChessMoveRect: (9)	Chess 4	x = 474(485)	y = 663(580)
-ChessMoveRect: (10)	Chess 4	x = 474(485)	y = 662(580)
-ChessMoveRect: (11)	Chess 4	x = 474(485)	y = 661(580)
-ChessMoveRect: (12)	Chess 4	x = 474(485)	y = 659(580)
-ChessMoveRect: (13)	Chess 4	x = 474(485)	y = 658(580)
-ChessMoveRect: (14)	Chess 4	x = 474(485)	y = 657(580)
-ChessMoveRect: (15)	Chess 4	x = 474(485)	y = 655(580)
-ChessMoveRect: (16)	Chess 4	x = 474(485)	y = 654(580)
-ChessMoveRect: (17)	Chess 4	x = 474(485)	y = 653(580)
-ChessMoveRect: (18)	Chess 4	x = 474(485)	y = 651(580)
-ChessMoveRect: (19)	Chess 4	x = 474(485)	y = 650(580)
-ChessMoveRect: (20)	Chess 4	x = 474(485)	y = 649(580)
-ChessMoveRect: (21)	Chess 4	x = 474(485)	y = 647(580)
-ChessMoveRect: (22)	Chess 4	x = 474(485)	y = 646(580)
-ChessMoveRect: (23)	Chess 4	x = 474(485)	y = 645(580)
-ChessMoveRect: (24)	Chess 4	x = 474(485)	y = 643(580)
-ChessMoveRect: (25)	Chess 4	x = 474(485)	y = 642(580)
-ChessMoveRect: (26)	Chess 4	x = 474(485)	y = 641(580)
-ChessMoveRect: (27)	Chess 4	x = 474(485)	y = 639(580)
-ChessMoveRect: (28)	Chess 4	x = 474(485)	y = 638(580)
-ChessMoveRect: (29)	Chess 4	x = 474(485)	y = 637(580)
-ChessMoveRect: (30)	Chess 4	x = 474(485)	y = 635(580)
-ChessMoveRect: (31)	Chess 4	x = 474(485)	y = 634(580)
-ChessMoveRect: (32)	Chess 4	x = 474(485)	y = 633(580)
-ChessMoveRect: (33)	Chess 4	x = 474(485)	y = 631(580)
-ChessMoveRect: (34)	Chess 4	x = 474(485)	y = 630(580)
-ChessMoveRect: (35)	Chess 4	x = 474(485)	y = 629(580)
-ChessMoveRect: (36)	Chess 4	x = 474(485)	y = 627(580)
-ChessMoveRect: (37)	Chess 4	x = 474(485)	y = 626(580)
-ChessMoveRect: (38)	Chess 4	x = 474(485)	y = 625(580)
-ChessMoveRect: (39)	Chess 4	x = 474(485)	y = 623(580)
-ChessMoveRect: (40)	Chess 4	x = 474(485)	y = 622(580)
-ChessMoveRect: (41)	Chess 4	x = 474(485)	y = 621(580)
-ChessMoveRect: (42)	Chess 4	x = 474(485)	y = 619(580)
-ChessMoveRect: (43)	Chess 4	x = 474(485)	y = 618(580)
-ChessMoveRect: (44)	Chess 4	x = 474(485)	y = 617(580)
-ChessMoveRect: (45)	Chess 4	x = 474(485)	y = 615(580)
-ChessMoveRect: (46)	Chess 4	x = 474(485)	y = 614(580)
-ChessMoveRect: (47)	Chess 4	x = 474(485)	y = 613(580)
-ChessMoveRect: (48)	Chess 4	x = 474(485)	y = 611(580)
-ChessMoveRect: (49)	Chess 4	x = 474(485)	y = 610(580)
-ChessMoveRect: (50)	Chess 4	x = 474(485)	y = 609(580)
-ChessMoveRect: (51)	Chess 4	x = 474(485)	y = 607(580)
-ChessMoveRect: (52)	Chess 4	x = 474(485)	y = 606(580)
-ChessMoveRect: (53)	Chess 4	x = 474(485)	y = 605(580)
-ChessMoveRect: (54)	Chess 4	x = 474(485)	y = 603(580)
-ChessMoveRect: (55)	Chess 4	x = 474(485)	y = 602(580)
-ChessMoveRect: (56)	Chess 4	x = 474(485)	y = 601(580)
-ChessMoveRect: (57)	Chess 4	x = 474(485)	y = 599(580)
-ChessMoveRect: (58)	Chess 4	x = 474(485)	y = 598(580)
-ChessMoveRect: (59)	Chess 4	x = 474(485)	y = 597(580)
-ChessMoveRect: Ex	Chess 4	x = 476(485)	y = 595(580)
-ChessMoveRect: Ex	Chess 4	x = 478(485)	y = 593(580)
-ChessMoveRect: Ex	Chess 4	x = 480(485)	y = 591(580)
-ChessMoveRect: Ex	Chess 4	x = 482(485)	y = 589(580)
-ChessMoveRect: Ex	Chess 4	x = 484(485)	y = 587(580)
-ChessMoveRect: Ex	Chess 4	x = 484(485)	y = 585(580)
-ChessMoveRect: Ex	Chess 4	x = 484(485)	y = 583(580)
-ChessMoveRect: Ex	Chess 4	x = 484(485)	y = 581(580)
-ChessMove: Chess 4(Green), pos 14 -> 18, dir 0 -> 270
-ChessMoveRect: (0)	Chess 4	x = 485(485)	y = 578(540)
-ChessMoveRect: (1)	Chess 4	x = 485(485)	y = 578(540)
-ChessMoveRect: (2)	Chess 4	x = 485(485)	y = 578(540)
-ChessMoveRect: (3)	Chess 4	x = 485(485)	y = 576(540)
-ChessMoveRect: (4)	Chess 4	x = 485(485)	y = 576(540)
-ChessMoveRect: (5)	Chess 4	x = 485(485)	y = 576(540)
-ChessMoveRect: (6)	Chess 4	x = 485(485)	y = 574(540)
-ChessMoveRect: (7)	Chess 4	x = 485(485)	y = 574(540)
-ChessMoveRect: (8)	Chess 4	x = 485(485)	y = 574(540)
-ChessMoveRect: (9)	Chess 4	x = 485(485)	y = 572(540)
-ChessMoveRect: (10)	Chess 4	x = 485(485)	y = 572(540)
-ChessMoveRect: (11)	Chess 4	x = 485(485)	y = 572(540)
-ChessMoveRect: (12)	Chess 4	x = 485(485)	y = 570(540)
-ChessMoveRect: (13)	Chess 4	x = 485(485)	y = 570(540)
-ChessMoveRect: (14)	Chess 4	x = 485(485)	y = 570(540)
-ChessMoveRect: (15)	Chess 4	x = 485(485)	y = 568(540)
-ChessMoveRect: (16)	Chess 4	x = 485(485)	y = 568(540)
-ChessMoveRect: (17)	Chess 4	x = 485(485)	y = 568(540)
-ChessMoveRect: (18)	Chess 4	x = 485(485)	y = 566(540)
-ChessMoveRect: (19)	Chess 4	x = 485(485)	y = 566(540)
-ChessMoveRect: (20)	Chess 4	x = 485(485)	y = 566(540)
-ChessMoveRect: (21)	Chess 4	x = 485(485)	y = 564(540)
-ChessMoveRect: (22)	Chess 4	x = 485(485)	y = 564(540)
-ChessMoveRect: (23)	Chess 4	x = 485(485)	y = 564(540)
-ChessMoveRect: (24)	Chess 4	x = 485(485)	y = 562(540)
-ChessMoveRect: (25)	Chess 4	x = 485(485)	y = 562(540)
-ChessMoveRect: (26)	Chess 4	x = 485(485)	y = 562(540)
-ChessMoveRect: (27)	Chess 4	x = 485(485)	y = 560(540)
-ChessMoveRect: (28)	Chess 4	x = 485(485)	y = 560(540)
-ChessMoveRect: (29)	Chess 4	x = 485(485)	y = 560(540)
-ChessMoveRect: (30)	Chess 4	x = 485(485)	y = 558(540)
-ChessMoveRect: (31)	Chess 4	x = 485(485)	y = 558(540)
-ChessMoveRect: (32)	Chess 4	x = 485(485)	y = 558(540)
-ChessMoveRect: (33)	Chess 4	x = 485(485)	y = 556(540)
-ChessMoveRect: (34)	Chess 4	x = 485(485)	y = 556(540)
-ChessMoveRect: (35)	Chess 4	x = 485(485)	y = 556(540)
-ChessMoveRect: (36)	Chess 4	x = 485(485)	y = 554(540)
-ChessMoveRect: (37)	Chess 4	x = 485(485)	y = 554(540)
-ChessMoveRect: (38)	Chess 4	x = 485(485)	y = 554(540)
-ChessMoveRect: (39)	Chess 4	x = 485(485)	y = 552(540)
-ChessMoveRect: (40)	Chess 4	x = 485(485)	y = 552(540)
-ChessMoveRect: (41)	Chess 4	x = 485(485)	y = 552(540)
-ChessMoveRect: (42)	Chess 4	x = 485(485)	y = 550(540)
-ChessMoveRect: (43)	Chess 4	x = 485(485)	y = 550(540)
-ChessMoveRect: (44)	Chess 4	x = 485(485)	y = 550(540)
-ChessMoveRect: (45)	Chess 4	x = 485(485)	y = 548(540)
-ChessMoveRect: (46)	Chess 4	x = 485(485)	y = 548(540)
-ChessMoveRect: (47)	Chess 4	x = 485(485)	y = 548(540)
-ChessMoveRect: (48)	Chess 4	x = 485(485)	y = 546(540)
-ChessMoveRect: (49)	Chess 4	x = 485(485)	y = 546(540)
-ChessMoveRect: (50)	Chess 4	x = 485(485)	y = 546(540)
-ChessMoveRect: (51)	Chess 4	x = 485(485)	y = 544(540)
-ChessMoveRect: (52)	Chess 4	x = 485(485)	y = 544(540)
-ChessMoveRect: (53)	Chess 4	x = 485(485)	y = 544(540)
-ChessMoveRect: (54)	Chess 4	x = 485(485)	y = 542(540)
-ChessMoveRect: (55)	Chess 4	x = 485(485)	y = 542(540)
-ChessMoveRect: (56)	Chess 4	x = 485(485)	y = 542(540)
-ChessMoveRect: (57)	Chess 4	x = 485(485)	y = 540(540)
-ChessMoveRect: (58)	Chess 4	x = 485(485)	y = 540(540)
-ChessMoveRect: (59)	Chess 4	x = 485(485)	y = 540(540)
-ChessMoveRect: (0)	Chess 4	x = 485(502)	y = 538(500)
-ChessMoveRect: (1)	Chess 4	x = 485(502)	y = 538(500)
-ChessMoveRect: (2)	Chess 4	x = 485(502)	y = 538(500)
-ChessMoveRect: (3)	Chess 4	x = 485(502)	y = 536(500)
-ChessMoveRect: (4)	Chess 4	x = 485(502)	y = 536(500)
-ChessMoveRect: (5)	Chess 4	x = 485(502)	y = 536(500)
-ChessMoveRect: (6)	Chess 4	x = 485(502)	y = 534(500)
-ChessMoveRect: (7)	Chess 4	x = 485(502)	y = 534(500)
-ChessMoveRect: (8)	Chess 4	x = 485(502)	y = 534(500)
-ChessMoveRect: (9)	Chess 4	x = 485(502)	y = 532(500)
-ChessMoveRect: (10)	Chess 4	x = 485(502)	y = 532(500)
-ChessMoveRect: (11)	Chess 4	x = 485(502)	y = 532(500)
-ChessMoveRect: (12)	Chess 4	x = 485(502)	y = 530(500)
-ChessMoveRect: (13)	Chess 4	x = 485(502)	y = 530(500)
-ChessMoveRect: (14)	Chess 4	x = 485(502)	y = 530(500)
-ChessMoveRect: (15)	Chess 4	x = 485(502)	y = 528(500)
-ChessMoveRect: (16)	Chess 4	x = 485(502)	y = 528(500)
-ChessMoveRect: (17)	Chess 4	x = 485(502)	y = 528(500)
-ChessMoveRect: (18)	Chess 4	x = 485(502)	y = 526(500)
-ChessMoveRect: (19)	Chess 4	x = 485(502)	y = 526(500)
-ChessMoveRect: (20)	Chess 4	x = 485(502)	y = 526(500)
-ChessMoveRect: (21)	Chess 4	x = 485(502)	y = 524(500)
-ChessMoveRect: (22)	Chess 4	x = 485(502)	y = 524(500)
-ChessMoveRect: (23)	Chess 4	x = 485(502)	y = 524(500)
-ChessMoveRect: (24)	Chess 4	x = 485(502)	y = 522(500)
-ChessMoveRect: (25)	Chess 4	x = 485(502)	y = 522(500)
-ChessMoveRect: (26)	Chess 4	x = 485(502)	y = 522(500)
-ChessMoveRect: (27)	Chess 4	x = 485(502)	y = 520(500)
-ChessMoveRect: (28)	Chess 4	x = 485(502)	y = 520(500)
-ChessMoveRect: (29)	Chess 4	x = 485(502)	y = 520(500)
-ChessMoveRect: (30)	Chess 4	x = 485(502)	y = 518(500)
-ChessMoveRect: (31)	Chess 4	x = 485(502)	y = 518(500)
-ChessMoveRect: (32)	Chess 4	x = 485(502)	y = 518(500)
-ChessMoveRect: (33)	Chess 4	x = 485(502)	y = 516(500)
-ChessMoveRect: (34)	Chess 4	x = 485(502)	y = 516(500)
-ChessMoveRect: (35)	Chess 4	x = 485(502)	y = 516(500)
-ChessMoveRect: (36)	Chess 4	x = 485(502)	y = 514(500)
-ChessMoveRect: (37)	Chess 4	x = 485(502)	y = 514(500)
-ChessMoveRect: (38)	Chess 4	x = 485(502)	y = 514(500)
-ChessMoveRect: (39)	Chess 4	x = 485(502)	y = 512(500)
-ChessMoveRect: (40)	Chess 4	x = 485(502)	y = 512(500)
-ChessMoveRect: (41)	Chess 4	x = 485(502)	y = 512(500)
-ChessMoveRect: (42)	Chess 4	x = 485(502)	y = 510(500)
-ChessMoveRect: (43)	Chess 4	x = 485(502)	y = 510(500)
-ChessMoveRect: (44)	Chess 4	x = 485(502)	y = 510(500)
-ChessMoveRect: (45)	Chess 4	x = 485(502)	y = 508(500)
-ChessMoveRect: (46)	Chess 4	x = 485(502)	y = 508(500)
-ChessMoveRect: (47)	Chess 4	x = 485(502)	y = 508(500)
-ChessMoveRect: (48)	Chess 4	x = 485(502)	y = 506(500)
-ChessMoveRect: (49)	Chess 4	x = 485(502)	y = 506(500)
-ChessMoveRect: (50)	Chess 4	x = 485(502)	y = 506(500)
-ChessMoveRect: (51)	Chess 4	x = 485(502)	y = 504(500)
-ChessMoveRect: (52)	Chess 4	x = 485(502)	y = 504(500)
-ChessMoveRect: (53)	Chess 4	x = 485(502)	y = 504(500)
-ChessMoveRect: (54)	Chess 4	x = 485(502)	y = 502(500)
-ChessMoveRect: (55)	Chess 4	x = 485(502)	y = 502(500)
-ChessMoveRect: (56)	Chess 4	x = 485(502)	y = 502(500)
-ChessMoveRect: (57)	Chess 4	x = 485(502)	y = 500(500)
-ChessMoveRect: (58)	Chess 4	x = 485(502)	y = 500(500)
-ChessMoveRect: (59)	Chess 4	x = 485(502)	y = 500(500)
-ChessMoveRect: Ex	Chess 4	x = 487(502)	y = 500(500)
-ChessMoveRect: Ex	Chess 4	x = 489(502)	y = 500(500)
-ChessMoveRect: Ex	Chess 4	x = 491(502)	y = 500(500)
-ChessMoveRect: Ex	Chess 4	x = 493(502)	y = 500(500)
-ChessMoveRect: Ex	Chess 4	x = 495(502)	y = 500(500)
-ChessMoveRect: Ex	Chess 4	x = 497(502)	y = 500(500)
-ChessMoveRect: Ex	Chess 4	x = 499(502)	y = 500(500)
-ChessMoveRect: Ex	Chess 4	x = 501(502)	y = 500(500)
-ChessRotate: da = 2.000000
-ChessRotate: (1)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (2)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (3)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (4)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (5)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (6)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (7)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (8)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (9)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (10)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (11)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (12)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (13)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (14)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (15)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (16)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (17)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (18)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (19)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (20)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (21)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (22)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (23)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (24)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (25)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (26)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (27)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (28)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (29)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (30)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (31)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (32)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (33)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (34)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (35)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (36)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (37)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (38)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (39)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (40)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (41)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (42)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (43)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (44)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (45)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (46)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (47)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (48)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (49)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (50)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (51)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (52)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (53)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (54)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (55)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (56)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (57)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (58)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (59)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (60)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (61)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (62)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (63)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (64)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (65)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (66)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (67)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (68)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (69)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (70)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (71)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (72)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (73)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (74)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (75)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (76)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (77)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (78)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (79)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (80)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (81)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (82)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (83)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (84)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (85)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (86)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (87)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (88)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (89)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (90)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (91)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (92)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (93)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (94)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (95)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (96)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (97)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (98)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (99)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (100)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (101)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (102)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (103)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (104)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (105)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (106)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (107)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (108)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (109)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (110)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (111)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (112)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (113)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (114)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (115)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (116)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (117)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (118)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (119)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (120)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (121)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (122)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (123)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (124)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (125)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (126)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (127)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (128)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (129)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (130)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (131)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (132)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (133)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (134)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (135)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (136)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (137)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (138)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (139)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (140)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (141)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (142)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (143)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (144)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (145)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (146)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (147)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (148)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (149)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (150)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (151)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (152)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (153)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (154)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (155)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (156)	Chess 4	angle = 0.000000(315.000000)
-ChessRotate: (157)	Chess 4	angle = 0.000000(315.000000)
-ChessMoveRect: (0)	Chess 4	x = 501(465)	y = 498(460)
-ChessMoveRect: (1)	Chess 4	x = 501(465)	y = 498(460)
-ChessMoveRect: (2)	Chess 4	x = 501(465)	y = 498(460)
-ChessMoveRect: (3)	Chess 4	x = 500(465)	y = 496(460)
-ChessMoveRect: (4)	Chess 4	x = 500(465)	y = 496(460)
-ChessMoveRect: (5)	Chess 4	x = 500(465)	y = 496(460)
-ChessMoveRect: (6)	Chess 4	x = 499(465)	y = 494(460)
-ChessMoveRect: (7)	Chess 4	x = 499(465)	y = 494(460)
-ChessMoveRect: (8)	Chess 4	x = 499(465)	y = 494(460)
-ChessMoveRect: (9)	Chess 4	x = 498(465)	y = 492(460)
-ChessMoveRect: (10)	Chess 4	x = 498(465)	y = 492(460)
-ChessMoveRect: (11)	Chess 4	x = 498(465)	y = 492(460)
-ChessMoveRect: (12)	Chess 4	x = 497(465)	y = 490(460)
-ChessMoveRect: (13)	Chess 4	x = 497(465)	y = 490(460)
-ChessMoveRect: (14)	Chess 4	x = 497(465)	y = 490(460)
-ChessMoveRect: (15)	Chess 4	x = 496(465)	y = 488(460)
-ChessMoveRect: (16)	Chess 4	x = 496(465)	y = 488(460)
-ChessMoveRect: (17)	Chess 4	x = 496(465)	y = 488(460)
-ChessMoveRect: (18)	Chess 4	x = 495(465)	y = 486(460)
-ChessMoveRect: (19)	Chess 4	x = 495(465)	y = 486(460)
-ChessMoveRect: (20)	Chess 4	x = 495(465)	y = 486(460)
-ChessMoveRect: (21)	Chess 4	x = 494(465)	y = 484(460)
-ChessMoveRect: (22)	Chess 4	x = 494(465)	y = 484(460)
-ChessMoveRect: (23)	Chess 4	x = 494(465)	y = 484(460)
-ChessMoveRect: (24)	Chess 4	x = 493(465)	y = 482(460)
-ChessMoveRect: (25)	Chess 4	x = 493(465)	y = 482(460)
-ChessMoveRect: (26)	Chess 4	x = 493(465)	y = 482(460)
-ChessMoveRect: (27)	Chess 4	x = 492(465)	y = 480(460)
-ChessMoveRect: (28)	Chess 4	x = 492(465)	y = 480(460)
-ChessMoveRect: (29)	Chess 4	x = 492(465)	y = 480(460)
-ChessMoveRect: (30)	Chess 4	x = 491(465)	y = 478(460)
-ChessMoveRect: (31)	Chess 4	x = 491(465)	y = 478(460)
-ChessMoveRect: (32)	Chess 4	x = 491(465)	y = 478(460)
-ChessMoveRect: (33)	Chess 4	x = 490(465)	y = 476(460)
-ChessMoveRect: (34)	Chess 4	x = 490(465)	y = 476(460)
-ChessMoveRect: (35)	Chess 4	x = 490(465)	y = 476(460)
-ChessMoveRect: (36)	Chess 4	x = 489(465)	y = 474(460)
-ChessMoveRect: (37)	Chess 4	x = 489(465)	y = 474(460)
-ChessMoveRect: (38)	Chess 4	x = 489(465)	y = 474(460)
-ChessMoveRect: (39)	Chess 4	x = 488(465)	y = 472(460)
-ChessMoveRect: (40)	Chess 4	x = 488(465)	y = 472(460)
-ChessMoveRect: (41)	Chess 4	x = 488(465)	y = 472(460)
-ChessMoveRect: (42)	Chess 4	x = 487(465)	y = 470(460)
-ChessMoveRect: (43)	Chess 4	x = 487(465)	y = 470(460)
-ChessMoveRect: (44)	Chess 4	x = 487(465)	y = 470(460)
-ChessMoveRect: (45)	Chess 4	x = 486(465)	y = 468(460)
-ChessMoveRect: (46)	Chess 4	x = 486(465)	y = 468(460)
-ChessMoveRect: (47)	Chess 4	x = 486(465)	y = 468(460)
-ChessMoveRect: (48)	Chess 4	x = 485(465)	y = 466(460)
-ChessMoveRect: (49)	Chess 4	x = 485(465)	y = 466(460)
-ChessMoveRect: (50)	Chess 4	x = 485(465)	y = 466(460)
-ChessMoveRect: (51)	Chess 4	x = 484(465)	y = 464(460)
-ChessMoveRect: (52)	Chess 4	x = 484(465)	y = 464(460)
-ChessMoveRect: (53)	Chess 4	x = 484(465)	y = 464(460)
-ChessMoveRect: (54)	Chess 4	x = 483(465)	y = 462(460)
-ChessMoveRect: (55)	Chess 4	x = 483(465)	y = 462(460)
-ChessMoveRect: (56)	Chess 4	x = 483(465)	y = 462(460)
-ChessMoveRect: (57)	Chess 4	x = 482(465)	y = 460(460)
-ChessMoveRect: (58)	Chess 4	x = 482(465)	y = 460(460)
-ChessMoveRect: (59)	Chess 4	x = 482(465)	y = 460(460)
-ChessMoveRect: Ex	Chess 4	x = 480(465)	y = 460(460)
-ChessMoveRect: Ex	Chess 4	x = 478(465)	y = 460(460)
-ChessMoveRect: Ex	Chess 4	x = 476(465)	y = 460(460)
-ChessMoveRect: Ex	Chess 4	x = 474(465)	y = 460(460)
-ChessMoveRect: Ex	Chess 4	x = 472(465)	y = 460(460)
-ChessMoveRect: Ex	Chess 4	x = 470(465)	y = 460(460)
-ChessMoveRect: Ex	Chess 4	x = 468(465)	y = 460(460)
-ChessMoveRect: Ex	Chess 4	x = 466(465)	y = 460(460)
-ChessRotate: da = 2.000000
-ChessRotate: (1)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (2)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (3)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (4)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (5)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (6)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (7)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (8)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (9)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (10)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (11)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (12)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (13)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (14)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (15)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (16)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (17)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (18)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (19)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (20)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (21)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (22)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (23)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (24)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (25)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (26)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (27)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (28)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (29)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (30)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (31)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (32)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (33)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (34)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (35)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (36)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (37)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (38)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (39)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (40)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (41)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (42)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (43)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (44)	Chess 4	angle = 0.000000(225.000000)
-ChessRotate: (45)	Chess 4	angle = 0.000000(225.000000)
-ChessMoveRect: (0)	Chess 4	x = 463(425)	y = 461(480)
-ChessMoveRect: (1)	Chess 4	x = 463(425)	y = 461(480)
-ChessMoveRect: (2)	Chess 4	x = 463(425)	y = 461(480)
-ChessMoveRect: (3)	Chess 4	x = 461(425)	y = 462(480)
-ChessMoveRect: (4)	Chess 4	x = 461(425)	y = 462(480)
-ChessMoveRect: (5)	Chess 4	x = 461(425)	y = 462(480)
-ChessMoveRect: (6)	Chess 4	x = 459(425)	y = 463(480)
-ChessMoveRect: (7)	Chess 4	x = 459(425)	y = 463(480)
-ChessMoveRect: (8)	Chess 4	x = 459(425)	y = 463(480)
-ChessMoveRect: (9)	Chess 4	x = 457(425)	y = 464(480)
-ChessMoveRect: (10)	Chess 4	x = 457(425)	y = 464(480)
-ChessMoveRect: (11)	Chess 4	x = 457(425)	y = 464(480)
-ChessMoveRect: (12)	Chess 4	x = 455(425)	y = 465(480)
-ChessMoveRect: (13)	Chess 4	x = 455(425)	y = 465(480)
-ChessMoveRect: (14)	Chess 4	x = 455(425)	y = 465(480)
-ChessMoveRect: (15)	Chess 4	x = 453(425)	y = 466(480)
-ChessMoveRect: (16)	Chess 4	x = 453(425)	y = 466(480)
-ChessMoveRect: (17)	Chess 4	x = 453(425)	y = 466(480)
-ChessMoveRect: (18)	Chess 4	x = 451(425)	y = 467(480)
-ChessMoveRect: (19)	Chess 4	x = 451(425)	y = 467(480)
-ChessMoveRect: (20)	Chess 4	x = 451(425)	y = 467(480)
-ChessMoveRect: (21)	Chess 4	x = 449(425)	y = 468(480)
-ChessMoveRect: (22)	Chess 4	x = 449(425)	y = 468(480)
-ChessMoveRect: (23)	Chess 4	x = 449(425)	y = 468(480)
-ChessMoveRect: (24)	Chess 4	x = 447(425)	y = 469(480)
-ChessMoveRect: (25)	Chess 4	x = 447(425)	y = 469(480)
-ChessMoveRect: (26)	Chess 4	x = 447(425)	y = 469(480)
-ChessMoveRect: (27)	Chess 4	x = 445(425)	y = 470(480)
-ChessMoveRect: (28)	Chess 4	x = 445(425)	y = 470(480)
-ChessMoveRect: (29)	Chess 4	x = 445(425)	y = 470(480)
-ChessMoveRect: (30)	Chess 4	x = 443(425)	y = 471(480)
-ChessMoveRect: (31)	Chess 4	x = 443(425)	y = 471(480)
-ChessMoveRect: (32)	Chess 4	x = 443(425)	y = 471(480)
-ChessMoveRect: (33)	Chess 4	x = 441(425)	y = 472(480)
-ChessMoveRect: (34)	Chess 4	x = 441(425)	y = 472(480)
-ChessMoveRect: (35)	Chess 4	x = 441(425)	y = 472(480)
-ChessMoveRect: (36)	Chess 4	x = 439(425)	y = 473(480)
-ChessMoveRect: (37)	Chess 4	x = 439(425)	y = 473(480)
-ChessMoveRect: (38)	Chess 4	x = 439(425)	y = 473(480)
-ChessMoveRect: (39)	Chess 4	x = 437(425)	y = 474(480)
-ChessMoveRect: (40)	Chess 4	x = 437(425)	y = 474(480)
-ChessMoveRect: (41)	Chess 4	x = 437(425)	y = 474(480)
-ChessMoveRect: (42)	Chess 4	x = 435(425)	y = 475(480)
-ChessMoveRect: (43)	Chess 4	x = 435(425)	y = 475(480)
-ChessMoveRect: (44)	Chess 4	x = 435(425)	y = 475(480)
-ChessMoveRect: (45)	Chess 4	x = 433(425)	y = 476(480)
-ChessMoveRect: (46)	Chess 4	x = 433(425)	y = 476(480)
-ChessMoveRect: (47)	Chess 4	x = 433(425)	y = 476(480)
-ChessMoveRect: (48)	Chess 4	x = 431(425)	y = 477(480)
-ChessMoveRect: (49)	Chess 4	x = 431(425)	y = 477(480)
-ChessMoveRect: (50)	Chess 4	x = 431(425)	y = 477(480)
-ChessMoveRect: (51)	Chess 4	x = 429(425)	y = 478(480)
-ChessMoveRect: (52)	Chess 4	x = 429(425)	y = 478(480)
-ChessMoveRect: (53)	Chess 4	x = 429(425)	y = 478(480)
-ChessMoveRect: (54)	Chess 4	x = 427(425)	y = 479(480)
-ChessMoveRect: (55)	Chess 4	x = 427(425)	y = 479(480)
-ChessMoveRect: (56)	Chess 4	x = 427(425)	y = 479(480)
-ChessMoveRect: (57)	Chess 4	x = 425(425)	y = 480(480)
-ChessMoveRect: (58)	Chess 4	x = 425(425)	y = 480(480)
-ChessMoveRect: (59)	Chess 4	x = 425(425)	y = 480(480)
-ChessRotate: da = 2.000000
-ChessRotate: (1)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (2)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (3)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (4)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (5)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (6)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (7)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (8)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (9)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (10)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (11)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (12)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (13)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (14)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (15)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (16)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (17)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (18)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (19)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (20)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (21)	Chess 4	angle = 0.000000(270.000000)
-ChessRotate: (22)	Chess 4	angle = 0.000000(270.000000)
-ChessCrash: No crash
+DiceRoll: dice 4(random)
+GameRound: AI Green airport 4, can't departure with dice 4
 Current Situation:
 Chess0	pos = 52	state = 0	dir = 0
 Chess1	pos = 53	state = 0	dir = 0
 Chess2	pos = 54	state = 0	dir = 0
 Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
+Chess4	pos = 57	state = 0	dir = 90
 Chess5	pos = 58	state = 0	dir = 90
 Chess6	pos = 59	state = 0	dir = 90
 Chess7	pos = 60	state = 0	dir = 90
@@ -734,12 +73,13 @@ Round2 ends;
 
 Round3 AI Yellow:
 DiceRoll: dice 3(random)
+GameRound: AI Yellow airport 4, can't departure with dice 3
 Current Situation:
 Chess0	pos = 52	state = 0	dir = 0
 Chess1	pos = 53	state = 0	dir = 0
 Chess2	pos = 54	state = 0	dir = 0
 Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
+Chess4	pos = 57	state = 0	dir = 90
 Chess5	pos = 58	state = 0	dir = 90
 Chess6	pos = 59	state = 0	dir = 90
 Chess7	pos = 60	state = 0	dir = 90
@@ -754,617 +94,122 @@ Chess15	pos = 70	state = 0	dir = 270
 Round3 ends;
 
 Round4 AI Blue:
-DiceRoll: dice 5(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round4 ends;
-
-Round5 AI Red:
-DiceRoll: dice 1(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round5 ends;
-
-Round6 AI Green:
-DiceRoll: dice 4(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round6 ends;
-
-Round7 AI Yellow:
-DiceRoll: dice 5(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round7 ends;
-
-Round8 AI Blue:
-DiceRoll: dice 3(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round8 ends;
-
-Round9 AI Red:
-DiceRoll: dice 5(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round9 ends;
-
-Round10 AI Green:
-DiceRoll: dice 1(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round10 ends;
-
-Round11 AI Yellow:
-DiceRoll: dice 4(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round11 ends;
-
-Round12 AI Blue:
-DiceRoll: dice 2(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round12 ends;
-
-Round13 AI Red:
-DiceRoll: dice 3(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round13 ends;
-
-Round14 AI Green:
-DiceRoll: dice 5(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round14 ends;
-
-Round15 AI Yellow:
-DiceRoll: dice 1(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round15 ends;
-
-Round16 AI Blue:
-DiceRoll: dice 4(random)
-Current Situation:
-Chess0	pos = 52	state = 0	dir = 0
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state = 0	dir = 90
-Chess8	pos = 62	state = 0	dir = 180
-Chess9	pos = 63	state = 0	dir = 180
-Chess10	pos = 64	state = 0	dir = 180
-Chess11	pos = 65	state = 0	dir = 180
-Chess12	pos = 67	state = 0	dir = 270
-Chess13	pos = 68	state = 0	dir = 270
-Chess14	pos = 69	state = 0	dir = 270
-Chess15	pos = 70	state = 0	dir = 270
-Round16 ends;
-
-Round17 AI Red:
 DiceRoll: dice 6(random)
-ChessDeparture: Chess 0 (pos = 52) moves to take-off point 56
-ChessMoveRect: (0)	Chess 0	x = 857(957)	y = 574(492)
-ChessMoveRect: (1)	Chess 0	x = 858(957)	y = 573(492)
-ChessMoveRect: (2)	Chess 0	x = 859(957)	y = 572(492)
-ChessMoveRect: (3)	Chess 0	x = 862(957)	y = 570(492)
-ChessMoveRect: (4)	Chess 0	x = 863(957)	y = 569(492)
-ChessMoveRect: (5)	Chess 0	x = 864(957)	y = 568(492)
-ChessMoveRect: (6)	Chess 0	x = 867(957)	y = 566(492)
-ChessMoveRect: (7)	Chess 0	x = 868(957)	y = 565(492)
-ChessMoveRect: (8)	Chess 0	x = 869(957)	y = 564(492)
-ChessMoveRect: (9)	Chess 0	x = 872(957)	y = 562(492)
-ChessMoveRect: (10)	Chess 0	x = 873(957)	y = 561(492)
-ChessMoveRect: (11)	Chess 0	x = 874(957)	y = 560(492)
-ChessMoveRect: (12)	Chess 0	x = 877(957)	y = 558(492)
-ChessMoveRect: (13)	Chess 0	x = 878(957)	y = 557(492)
-ChessMoveRect: (14)	Chess 0	x = 879(957)	y = 556(492)
-ChessMoveRect: (15)	Chess 0	x = 882(957)	y = 554(492)
-ChessMoveRect: (16)	Chess 0	x = 883(957)	y = 553(492)
-ChessMoveRect: (17)	Chess 0	x = 884(957)	y = 552(492)
-ChessMoveRect: (18)	Chess 0	x = 887(957)	y = 550(492)
-ChessMoveRect: (19)	Chess 0	x = 888(957)	y = 549(492)
-ChessMoveRect: (20)	Chess 0	x = 889(957)	y = 548(492)
-ChessMoveRect: (21)	Chess 0	x = 892(957)	y = 546(492)
-ChessMoveRect: (22)	Chess 0	x = 893(957)	y = 545(492)
-ChessMoveRect: (23)	Chess 0	x = 894(957)	y = 544(492)
-ChessMoveRect: (24)	Chess 0	x = 897(957)	y = 542(492)
-ChessMoveRect: (25)	Chess 0	x = 898(957)	y = 541(492)
-ChessMoveRect: (26)	Chess 0	x = 899(957)	y = 540(492)
-ChessMoveRect: (27)	Chess 0	x = 902(957)	y = 538(492)
-ChessMoveRect: (28)	Chess 0	x = 903(957)	y = 537(492)
-ChessMoveRect: (29)	Chess 0	x = 904(957)	y = 536(492)
-ChessMoveRect: (30)	Chess 0	x = 907(957)	y = 534(492)
-ChessMoveRect: (31)	Chess 0	x = 908(957)	y = 533(492)
-ChessMoveRect: (32)	Chess 0	x = 909(957)	y = 532(492)
-ChessMoveRect: (33)	Chess 0	x = 912(957)	y = 530(492)
-ChessMoveRect: (34)	Chess 0	x = 913(957)	y = 529(492)
-ChessMoveRect: (35)	Chess 0	x = 914(957)	y = 528(492)
-ChessMoveRect: (36)	Chess 0	x = 917(957)	y = 526(492)
-ChessMoveRect: (37)	Chess 0	x = 918(957)	y = 525(492)
-ChessMoveRect: (38)	Chess 0	x = 919(957)	y = 524(492)
-ChessMoveRect: (39)	Chess 0	x = 922(957)	y = 522(492)
-ChessMoveRect: (40)	Chess 0	x = 923(957)	y = 521(492)
-ChessMoveRect: (41)	Chess 0	x = 924(957)	y = 520(492)
-ChessMoveRect: (42)	Chess 0	x = 927(957)	y = 518(492)
-ChessMoveRect: (43)	Chess 0	x = 928(957)	y = 517(492)
-ChessMoveRect: (44)	Chess 0	x = 929(957)	y = 516(492)
-ChessMoveRect: (45)	Chess 0	x = 932(957)	y = 514(492)
-ChessMoveRect: (46)	Chess 0	x = 933(957)	y = 513(492)
-ChessMoveRect: (47)	Chess 0	x = 934(957)	y = 512(492)
-ChessMoveRect: (48)	Chess 0	x = 937(957)	y = 510(492)
-ChessMoveRect: (49)	Chess 0	x = 938(957)	y = 509(492)
-ChessMoveRect: (50)	Chess 0	x = 939(957)	y = 508(492)
-ChessMoveRect: (51)	Chess 0	x = 942(957)	y = 506(492)
-ChessMoveRect: (52)	Chess 0	x = 943(957)	y = 505(492)
-ChessMoveRect: (53)	Chess 0	x = 944(957)	y = 504(492)
-ChessMoveRect: (54)	Chess 0	x = 947(957)	y = 502(492)
-ChessMoveRect: (55)	Chess 0	x = 948(957)	y = 501(492)
-ChessMoveRect: (56)	Chess 0	x = 949(957)	y = 500(492)
-ChessMoveRect: (57)	Chess 0	x = 952(957)	y = 498(492)
-ChessMoveRect: (58)	Chess 0	x = 953(957)	y = 497(492)
-ChessMoveRect: (59)	Chess 0	x = 954(957)	y = 496(492)
-ChessMoveRect: Ex	Chess 0	x = 956(957)	y = 494(492)
-ChessMoveRect: Ex	Chess 0	x = 956(957)	y = 492(492)
-ChessRotate: da = 2.000000
-ChessRotate: (1)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (2)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (3)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (4)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (5)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (6)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (7)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (8)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (9)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (10)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (11)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (12)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (13)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (14)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (15)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (16)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (17)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (18)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (19)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (20)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (21)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (22)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (23)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (24)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (25)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (26)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (27)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (28)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (29)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (30)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (31)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (32)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (33)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (34)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (35)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (36)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (37)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (38)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (39)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (40)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (41)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (42)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (43)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (44)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (45)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (46)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (47)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (48)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (49)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (50)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (51)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (52)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (53)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (54)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (55)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (56)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (57)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (58)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (59)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (60)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (61)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (62)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (63)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (64)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (65)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (66)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (67)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (68)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (69)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (70)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (71)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (72)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (73)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (74)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (75)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (76)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (77)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (78)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (79)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (80)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (81)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (82)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (83)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (84)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (85)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (86)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (87)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (88)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (89)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (90)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (91)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (92)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (93)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (94)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (95)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (96)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (97)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (98)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (99)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (100)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (101)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (102)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (103)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (104)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (105)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (106)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (107)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (108)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (109)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (110)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (111)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (112)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (113)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (114)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (115)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (116)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (117)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (118)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (119)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (120)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (121)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (122)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (123)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (124)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (125)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (126)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (127)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (128)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (129)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (130)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (131)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (132)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (133)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (134)	Chess 0	angle = 0.000000(270.000000)
-ChessRotate: (135)	Chess 0	angle = 0.000000(270.000000)
-DiceRoll: dice 2(random)
-ChessDeparture: Chess 0	pos 56 -> 1	dir 270 -> 270
-ChessMoveRect: (0)	Chess 0	x = 955(860)	y = 492(478)
-ChessMoveRect: (1)	Chess 0	x = 954(860)	y = 492(478)
-ChessMoveRect: (2)	Chess 0	x = 953(860)	y = 492(478)
-ChessMoveRect: (3)	Chess 0	x = 951(860)	y = 492(478)
-ChessMoveRect: (4)	Chess 0	x = 950(860)	y = 492(478)
-ChessMoveRect: (5)	Chess 0	x = 949(860)	y = 492(478)
-ChessMoveRect: (6)	Chess 0	x = 947(860)	y = 492(478)
-ChessMoveRect: (7)	Chess 0	x = 946(860)	y = 492(478)
-ChessMoveRect: (8)	Chess 0	x = 945(860)	y = 492(478)
-ChessMoveRect: (9)	Chess 0	x = 943(860)	y = 492(478)
-ChessMoveRect: (10)	Chess 0	x = 942(860)	y = 492(478)
-ChessMoveRect: (11)	Chess 0	x = 941(860)	y = 492(478)
-ChessMoveRect: (12)	Chess 0	x = 939(860)	y = 492(478)
-ChessMoveRect: (13)	Chess 0	x = 938(860)	y = 492(478)
-ChessMoveRect: (14)	Chess 0	x = 937(860)	y = 492(478)
-ChessMoveRect: (15)	Chess 0	x = 935(860)	y = 492(478)
-ChessMoveRect: (16)	Chess 0	x = 934(860)	y = 492(478)
-ChessMoveRect: (17)	Chess 0	x = 933(860)	y = 492(478)
-ChessMoveRect: (18)	Chess 0	x = 931(860)	y = 492(478)
-ChessMoveRect: (19)	Chess 0	x = 930(860)	y = 492(478)
-ChessMoveRect: (20)	Chess 0	x = 929(860)	y = 492(478)
-ChessMoveRect: (21)	Chess 0	x = 927(860)	y = 492(478)
-ChessMoveRect: (22)	Chess 0	x = 926(860)	y = 492(478)
-ChessMoveRect: (23)	Chess 0	x = 925(860)	y = 492(478)
-ChessMoveRect: (24)	Chess 0	x = 923(860)	y = 492(478)
-ChessMoveRect: (25)	Chess 0	x = 922(860)	y = 492(478)
-ChessMoveRect: (26)	Chess 0	x = 921(860)	y = 492(478)
-ChessMoveRect: (27)	Chess 0	x = 919(860)	y = 492(478)
-ChessMoveRect: (28)	Chess 0	x = 918(860)	y = 492(478)
-ChessMoveRect: (29)	Chess 0	x = 917(860)	y = 492(478)
-ChessMoveRect: (30)	Chess 0	x = 915(860)	y = 492(478)
-ChessMoveRect: (31)	Chess 0	x = 914(860)	y = 492(478)
-ChessMoveRect: (32)	Chess 0	x = 913(860)	y = 492(478)
-ChessMoveRect: (33)	Chess 0	x = 911(860)	y = 492(478)
-ChessMoveRect: (34)	Chess 0	x = 910(860)	y = 492(478)
-ChessMoveRect: (35)	Chess 0	x = 909(860)	y = 492(478)
-ChessMoveRect: (36)	Chess 0	x = 907(860)	y = 492(478)
-ChessMoveRect: (37)	Chess 0	x = 906(860)	y = 492(478)
-ChessMoveRect: (38)	Chess 0	x = 905(860)	y = 492(478)
-ChessMoveRect: (39)	Chess 0	x = 903(860)	y = 492(478)
-ChessMoveRect: (40)	Chess 0	x = 902(860)	y = 492(478)
-ChessMoveRect: (41)	Chess 0	x = 901(860)	y = 492(478)
-ChessMoveRect: (42)	Chess 0	x = 899(860)	y = 492(478)
-ChessMoveRect: (43)	Chess 0	x = 898(860)	y = 492(478)
-ChessMoveRect: (44)	Chess 0	x = 897(860)	y = 492(478)
-ChessMoveRect: (45)	Chess 0	x = 895(860)	y = 492(478)
-ChessMoveRect: (46)	Chess 0	x = 894(860)	y = 492(478)
-ChessMoveRect: (47)	Chess 0	x = 893(860)	y = 492(478)
-ChessMoveRect: (48)	Chess 0	x = 891(860)	y = 492(478)
-ChessMoveRect: (49)	Chess 0	x = 890(860)	y = 492(478)
-ChessMoveRect: (50)	Chess 0	x = 889(860)	y = 492(478)
-ChessMoveRect: (51)	Chess 0	x = 887(860)	y = 492(478)
-ChessMoveRect: (52)	Chess 0	x = 886(860)	y = 492(478)
-ChessMoveRect: (53)	Chess 0	x = 885(860)	y = 492(478)
-ChessMoveRect: (54)	Chess 0	x = 883(860)	y = 492(478)
-ChessMoveRect: (55)	Chess 0	x = 882(860)	y = 492(478)
-ChessMoveRect: (56)	Chess 0	x = 881(860)	y = 492(478)
-ChessMoveRect: (57)	Chess 0	x = 879(860)	y = 492(478)
-ChessMoveRect: (58)	Chess 0	x = 878(860)	y = 492(478)
-ChessMoveRect: (59)	Chess 0	x = 877(860)	y = 492(478)
-ChessMoveRect: Ex	Chess 0	x = 875(860)	y = 490(478)
-ChessMoveRect: Ex	Chess 0	x = 873(860)	y = 488(478)
-ChessMoveRect: Ex	Chess 0	x = 871(860)	y = 486(478)
-ChessMoveRect: Ex	Chess 0	x = 869(860)	y = 484(478)
-ChessMoveRect: Ex	Chess 0	x = 867(860)	y = 482(478)
-ChessMoveRect: Ex	Chess 0	x = 865(860)	y = 480(478)
-ChessMoveRect: Ex	Chess 0	x = 863(860)	y = 478(478)
-ChessMoveRect: Ex	Chess 0	x = 861(860)	y = 478(478)
-ChessMove: Chess 0(Red), pos 1 -> 2, dir 270 -> 270
-ChessMoveRect: (0)	Chess 0	x = 858(820)	y = 478(478)
-ChessMoveRect: (1)	Chess 0	x = 858(820)	y = 478(478)
-ChessMoveRect: (2)	Chess 0	x = 858(820)	y = 478(478)
-ChessMoveRect: (3)	Chess 0	x = 856(820)	y = 478(478)
-ChessMoveRect: (4)	Chess 0	x = 856(820)	y = 478(478)
-ChessMoveRect: (5)	Chess 0	x = 856(820)	y = 478(478)
-ChessMoveRect: (6)	Chess 0	x = 854(820)	y = 478(478)
-ChessMoveRect: (7)	Chess 0	x = 854(820)	y = 478(478)
-ChessMoveRect: (8)	Chess 0	x = 854(820)	y = 478(478)
-ChessMoveRect: (9)	Chess 0	x = 852(820)	y = 478(478)
-ChessMoveRect: (10)	Chess 0	x = 852(820)	y = 478(478)
-ChessMoveRect: (11)	Chess 0	x = 852(820)	y = 478(478)
-ChessMoveRect: (12)	Chess 0	x = 850(820)	y = 478(478)
-ChessMoveRect: (13)	Chess 0	x = 850(820)	y = 478(478)
-ChessMoveRect: (14)	Chess 0	x = 850(820)	y = 478(478)
-ChessMoveRect: (15)	Chess 0	x = 848(820)	y = 478(478)
-ChessMoveRect: (16)	Chess 0	x = 848(820)	y = 478(478)
-ChessMoveRect: (17)	Chess 0	x = 848(820)	y = 478(478)
-ChessMoveRect: (18)	Chess 0	x = 846(820)	y = 478(478)
-ChessMoveRect: (19)	Chess 0	x = 846(820)	y = 478(478)
-ChessMoveRect: (20)	Chess 0	x = 846(820)	y = 478(478)
-ChessMoveRect: (21)	Chess 0	x = 844(820)	y = 478(478)
-ChessMoveRect: (22)	Chess 0	x = 844(820)	y = 478(478)
-ChessMoveRect: (23)	Chess 0	x = 844(820)	y = 478(478)
-ChessMoveRect: (24)	Chess 0	x = 842(820)	y = 478(478)
-ChessMoveRect: (25)	Chess 0	x = 842(820)	y = 478(478)
-ChessMoveRect: (26)	Chess 0	x = 842(820)	y = 478(478)
-ChessMoveRect: (27)	Chess 0	x = 840(820)	y = 478(478)
-ChessMoveRect: (28)	Chess 0	x = 840(820)	y = 478(478)
-ChessMoveRect: (29)	Chess 0	x = 840(820)	y = 478(478)
-ChessMoveRect: (30)	Chess 0	x = 838(820)	y = 478(478)
-ChessMoveRect: (31)	Chess 0	x = 838(820)	y = 478(478)
-ChessMoveRect: (32)	Chess 0	x = 838(820)	y = 478(478)
-ChessMoveRect: (33)	Chess 0	x = 836(820)	y = 478(478)
-ChessMoveRect: (34)	Chess 0	x = 836(820)	y = 478(478)
-ChessMoveRect: (35)	Chess 0	x = 836(820)	y = 478(478)
-ChessMoveRect: (36)	Chess 0	x = 834(820)	y = 478(478)
-ChessMoveRect: (37)	Chess 0	x = 834(820)	y = 478(478)
-ChessMoveRect: (38)	Chess 0	x = 834(820)	y = 478(478)
-ChessMoveRect: (39)	Chess 0	x = 832(820)	y = 478(478)
-ChessMoveRect: (40)	Chess 0	x = 832(820)	y = 478(478)
-ChessMoveRect: (41)	Chess 0	x = 832(820)	y = 478(478)
-ChessMoveRect: (42)	Chess 0	x = 830(820)	y = 478(478)
-ChessMoveRect: (43)	Chess 0	x = 830(820)	y = 478(478)
-ChessMoveRect: (44)	Chess 0	x = 830(820)	y = 478(478)
-ChessMoveRect: (45)	Chess 0	x = 828(820)	y = 478(478)
-ChessMoveRect: (46)	Chess 0	x = 828(820)	y = 478(478)
-ChessMoveRect: (47)	Chess 0	x = 828(820)	y = 478(478)
-ChessMoveRect: (48)	Chess 0	x = 826(820)	y = 478(478)
-ChessMoveRect: (49)	Chess 0	x = 826(820)	y = 478(478)
-ChessMoveRect: (50)	Chess 0	x = 826(820)	y = 478(478)
-ChessMoveRect: (51)	Chess 0	x = 824(820)	y = 478(478)
-ChessMoveRect: (52)	Chess 0	x = 824(820)	y = 478(478)
-ChessMoveRect: (53)	Chess 0	x = 824(820)	y = 478(478)
-ChessMoveRect: (54)	Chess 0	x = 822(820)	y = 478(478)
-ChessMoveRect: (55)	Chess 0	x = 822(820)	y = 478(478)
-ChessMoveRect: (56)	Chess 0	x = 822(820)	y = 478(478)
-ChessMoveRect: (57)	Chess 0	x = 820(820)	y = 478(478)
-ChessMoveRect: (58)	Chess 0	x = 820(820)	y = 478(478)
-ChessMoveRect: (59)	Chess 0	x = 820(820)	y = 478(478)
-ChessCrash: No crash
-Current Situation:
-Chess0	pos = 2	state = 1	dir = 270
-Chess1	pos = 53	state = 0	dir = 0
-Chess2	pos = 54	state = 0	dir = 0
-Chess3	pos = 55	state = 0	dir = 0
-Chess4	pos = 18	state = 1	dir = 270
-Chess5	pos = 58	state = 0	dir = 90
-Chess6	pos = 59	state = 0	dir = 90
-Chess7	pos = 60	state
+GameRound: AI Blue airport 4, departure Chess 12 with dice 6
+ChessDeparture: Chess 12 (pos = 67) moves to take-off point 71
+ChessRotate: Chess 12	dx = -1	dy = 0	ex = -1	ey = -2
+ChessMoveRect: (0)	Chess 12	x = 852(771)	y = 49(11)	delay 0 ms
+ChessMoveRect: (1)	Chess 12	x = 851(771)	y = 49(11)	delay 11 ms
+ChessMoveRect: (2)	Chess 12	x = 850(771)	y = 49(11)	delay 13 ms
+ChessMoveRect: (3)	Chess 12	x = 848(771)	y = 47(11)	delay 12 ms
+ChessMoveRect: (4)	Chess 12	x = 847(771)	y = 47(11)	delay 14 ms
+ChessMoveRect: (5)	Chess 12	x = 846(771)	y = 47(11)	delay 13 ms
+ChessMoveRect: (6)	Chess 12	x = 844(771)	y = 45(11)	delay 13 ms
+ChessMoveRect: (7)	Chess 12	x = 843(771)	y = 45(11)	delay 14 ms
+ChessMoveRect: (8)	Chess 12	x = 842(771)	y = 45(11)	delay 13 ms
+ChessMoveRect: (9)	Chess 12	x = 840(771)	y = 43(11)	delay 13 ms
+ChessMoveRect: (10)	Chess 12	x = 839(771)	y = 43(11)	delay 14 ms
+ChessMoveRect: (11)	Chess 12	x = 838(771)	y = 43(11)	delay 14 ms
+ChessMoveRect: (12)	Chess 12	x = 836(771)	y = 41(11)	delay 13 ms
+ChessMoveRect: (13)	Chess 12	x = 835(771)	y = 41(11)	delay 14 ms
+ChessMoveRect: (14)	Chess 12	x = 834(771)	y = 41(11)	delay 11 ms
+ChessMoveRect: (15)	Chess 12	x = 832(771)	y = 39(11)	delay 13 ms
+ChessMoveRect: (16)	Chess 12	x = 831(771)	y = 39(11)	delay 13 ms
+ChessMoveRect: (17)	Chess 12	x = 830(771)	y = 39(11)	delay 13 ms
+ChessMoveRect: (18)	Chess 12	x = 828(771)	y = 37(11)	delay 13 ms
+ChessMoveRect: (19)	Chess 12	x = 827(771)	y = 37(11)	delay 14 ms
+ChessMoveRect: (20)	Chess 12	x = 826(771)	y = 37(11)	delay 14 ms
+ChessMoveRect: (21)	Chess 12	x = 824(771)	y = 35(11)	delay 13 ms
+ChessMoveRect: (22)	Chess 12	x = 823(771)	y = 35(11)	delay 12 ms
+ChessMoveRect: (23)	Chess 12	x = 822(771)	y = 35(11)	delay 13 ms
+ChessMoveRect: (24)	Chess 12	x = 820(771)	y = 33(11)	delay 14 ms
+ChessMoveRect: (25)	Chess 12	x = 819(771)	y = 33(11)	delay 14 ms
+ChessMoveRect: (26)	Chess 12	x = 818(771)	y = 33(11)	delay 13 ms
+ChessMoveRect: (27)	Chess 12	x = 816(771)	y = 31(11)	delay 12 ms
+ChessMoveRect: (28)	Chess 12	x = 815(771)	y = 31(11)	delay 14 ms
+ChessMoveRect: (29)	Chess 12	x = 814(771)	y = 31(11)	delay 12 ms
+ChessMoveRect: (30)	Chess 12	x = 812(771)	y = 29(11)	delay 15 ms
+ChessMoveRect: (31)	Chess 12	x = 811(771)	y = 29(11)	delay 14 ms
+ChessMoveRect: (32)	Chess 12	x = 810(771)	y = 29(11)	delay 13 ms
+ChessMoveRect: (33)	Chess 12	x = 808(771)	y = 27(11)	delay 12 ms
+ChessMoveRect: (34)	Chess 12	x = 807(771)	y = 27(11)	delay 14 ms
+ChessMoveRect: (35)	Chess 12	x = 806(771)	y = 27(11)	delay 13 ms
+ChessMoveRect: (36)	Chess 12	x = 804(771)	y = 25(11)	delay 14 ms
+ChessMoveRect: (37)	Chess 12	x = 803(771)	y = 25(11)	delay 14 ms
+ChessMoveRect: (38)	Chess 12	x = 802(771)	y = 25(11)	delay 14 ms
+ChessMoveRect: (39)	Chess 12	x = 800(771)	y = 23(11)	delay 13 ms
+ChessMoveRect: (40)	Chess 12	x = 799(771)	y = 23(11)	delay 15 ms
+ChessMoveRect: (41)	Chess 12	x = 798(771)	y = 23(11)	delay 13 ms
+ChessMoveRect: (42)	Chess 12	x = 796(771)	y = 21(11)	delay 14 ms
+ChessMoveRect: (43)	Chess 12	x = 795(771)	y = 21(11)	delay 13 ms
+ChessMoveRect: (44)	Chess 12	x = 794(771)	y = 21(11)	delay 13 ms
+ChessMoveRect: (45)	Chess 12	x = 792(771)	y = 19(11)	delay 13 ms
+ChessMoveRect: (46)	Chess 12	x = 791(771)	y = 19(11)	delay 15 ms
+ChessMoveRect: (47)	Chess 12	x = 790(771)	y = 19(11)	delay 14 ms
+ChessMoveRect: (48)	Chess 12	x = 788(771)	y = 17(11)	delay 14 ms
+ChessMoveRect: (49)	Chess 12	x = 787(771)	y = 17(11)	delay 13 ms
+ChessMoveRect: (50)	Chess 12	x = 786(771)	y = 17(11)	delay 14 ms
+ChessMoveRect: (51)	Chess 12	x = 784(771)	y = 15(11)	delay 13 ms
+ChessMoveRect: (52)	Chess 12	x = 783(771)	y = 15(11)	delay 14 ms
+ChessMoveRect: (53)	Chess 12	x = 782(771)	y = 15(11)	delay 14 ms
+ChessMoveRect: (54)	Chess 12	x = 780(771)	y = 13(11)	delay 13 ms
+ChessMoveRect: (55)	Chess 12	x = 779(771)	y = 13(11)	delay 14 ms
+ChessMoveRect: (56)	Chess 12	x = 778(771)	y = 13(11)	delay 14 ms
+ChessMoveRect: (57)	Chess 12	x = 776(771)	y = 11(11)	delay 13 ms
+ChessMoveRect: (58)	Chess 12	x = 775(771)	y = 11(11)	delay 14 ms
+ChessMoveRect: (59)	Chess 12	x = 774(771)	y = 11(11)	delay 13 ms
+ChessMoveRect: Ex	Chess 12	x = 772(771)	y = 11(11)	delay 14 ms
+ChessMoveRect: Locate Chess 12 from (772,11) to (771,11)
+ChessRotate: Chess 12	da = 2.000000	a0 = 270	at = 180.000000
+ChessRotate: (1)	Chess 12	angle = 268(180.000000)	delay 14 ms
+ChessRotate: (2)	Chess 12	angle = 266(180.000000)	delay 14 ms
+ChessRotate: (3)	Chess 12	angle = 264(180.000000)	delay 14 ms
+ChessRotate: (4)	Chess 12	angle = 262(180.000000)	delay 14 ms
+ChessRotate: (5)	Chess 12	angle = 260(180.000000)	delay 13 ms
+ChessRotate: (6)	Chess 12	angle = 258(180.000000)	delay 15 ms
+ChessRotate: (7)	Chess 12	angle = 256(180.000000)	delay 14 ms
+ChessRotate: (8)	Chess 12	angle = 254(180.000000)	delay 14 ms
+ChessRotate: (9)	Chess 12	angle = 252(180.000000)	delay 14 ms
+ChessRotate: (10)	Chess 12	angle = 250(180.000000)	delay 15 ms
+ChessRotate: (11)	Chess 12	angle = 248(180.000000)	delay 13 ms
+ChessRotate: (12)	Chess 12	angle = 246(180.000000)	delay 14 ms
+ChessRotate: (13)	Chess 12	angle = 244(180.000000)	delay 13 ms
+ChessRotate: (14)	Chess 12	angle = 242(180.000000)	delay 14 ms
+ChessRotate: (15)	Chess 12	angle = 240(180.000000)	delay 14 ms
+ChessRotate: (16)	Chess 12	angle = 238(180.000000)	delay 14 ms
+ChessRotate: (17)	Chess 12	angle = 236(180.000000)	delay 14 ms
+ChessRotate: (18)	Chess 12	angle = 234(180.000000)	delay 14 ms
+ChessRotate: (19)	Chess 12	angle = 232(180.000000)	delay 13 ms
+ChessRotate: (20)	Chess 12	angle = 230(180.000000)	delay 14 ms
+ChessRotate: (21)	Chess 12	angle = 228(180.000000)	delay 13 ms
+ChessRotate: (22)	Chess 12	angle = 226(180.000000)	delay 14 ms
+ChessRotate: (23)	Chess 12	angle = 224(180.000000)	delay 14 ms
+ChessRotate: (24)	Chess 12	angle = 222(180.000000)	delay 14 ms
+ChessRotate: (25)	Chess 12	angle = 220(180.000000)	delay 14 ms
+ChessRotate: (26)	Chess 12	angle = 218(180.000000)	delay 14 ms
+ChessRotate: (27)	Chess 12	angle = 216(180.000000)	delay 14 ms
+ChessRotate: (28)	Chess 12	angle = 214(180.000000)	delay 14 ms
+ChessRotate: (29)	Chess 12	angle = 212(180.000000)	delay 13 ms
+ChessRotate: (30)	Chess 12	angle = 210(180.000000)	delay 13 ms
+ChessRotate: (31)	Chess 12	angle = 208(180.000000)	delay 14 ms
+ChessRotate: (32)	Chess 12	angle = 206(180.000000)	delay 14 ms
+ChessRotate: (33)	Chess 12	angle = 204(180.000000)	delay 14 ms
+ChessRotate: (34)	Chess 12	angle = 202(180.000000)	delay 14 ms
+ChessRotate: (35)	Chess 12	angle = 200(180.000000)	delay 13 ms
+ChessRotate: (36)	Chess 12	angle = 198(180.000000)	delay 14 ms
+ChessRotate: (37)	Chess 12	angle = 196(180.000000)	delay 13 ms
+ChessRotate: (38)	Chess 12	angle = 194(180.000000)	delay 14 ms
+ChessRotate: (39)	Chess 12	angle = 192(180.000000)	delay 13 ms
+ChessRotate: (40)	Chess 12	angle = 190(180.000000)	delay 13 ms
+ChessRotate: (41)	Chess 12	angle = 188(180.000000)	delay 14 ms
+ChessRotate: (42)	Chess 12	angle = 186(180.000000)	delay 12 ms
+ChessRotate: (43)	Chess 12	angle = 184(180.000000)	delay 14 ms
+ChessRotate: (44)	Chess 12	angle = 182(180.000000)	delay 14 ms
+ChessRotate: (45)	Chess 12	angle = 180(180.000000)	delay 14 ms
+ChessRotate: Locate Chess 12 from 180 to 180.000000
+DiceRoll: dice 1(random)
+ChessDeparture: Chess 12	pos 71 -> 40	dir 180 -> 180
+ChessRotate: Chess 12	dx = 0	dy = 1	ex = 0	ey = 1
+ChessMoveRect: (0)	Chess 12	x = 771(762)	y = 13(106)	delay 12 ms
+ChessMoveRect: (1)	Chess 12	x = 771(762)	y = 14(106)	delay 11 ms
+ChessMoveRect: (2)	Chess 12	x = 771(762)	y = 15(106)	delay 13 ms

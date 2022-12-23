@@ -75,12 +75,14 @@ void chess_move(int num, int step){       //棋子移动
   }
   //是否到达终点
   if (Chess[num].pos == 77 || Chess[num].pos == 83 || Chess[num].pos == 89 || Chess[num].pos == 95){
-    recordf("ChessMove: Chess %d finish", num);
+    recordf("ChessMove: Chess %d finish\n", num);
     draw_text("Congratulations!", 0, 210);
     Chess[num].state = FINISH;
     SDL_Delay(500);
     return;
   }
+  //跳跃处理
+  chess_jump(num);
   //碰撞处理
   chess_crash(num);
   //滑行道处理
@@ -106,6 +108,7 @@ void chess_move_rect(int num, int xt, int yt){    //棋子rect移动
   dy = (int)((yt - vec[Chess[num].pos].y) / FRAME_RATE),
   ex = (int)((xt - vec[Chess[num].pos].x - FRAME_RATE * dx) / ERROR_STEP),
   ey = (int)((yt - vec[Chess[num].pos].y - FRAME_RATE * dy) / ERROR_STEP);
+  recordf("ChessRotate: Chess %d\tdx = %d\tdy = %d\tex = %d\tey = %d\n", num, dx, dy, ex, ey);
   for (int i = 0; i < FRAME_RATE; i++) {
     uint32_t begin_time = SDL_GetTicks();
     Chess[num].rect.x += dx;
@@ -114,13 +117,13 @@ void chess_move_rect(int num, int xt, int yt){    //棋子rect移动
       Chess[num].rect.x += ex;
       Chess[num].rect.y += ey;
     }
-#ifdef DEBUG
-    recordf("ChessMoveRect: (%d)\tChess %d\tx = %d(%d)\ty = %d(%d)\n", i, num, Chess[num].rect.x, xt, Chess[num].rect.y, yt);
-#endif
     game_render();
     uint32_t current_time = SDL_GetTicks();
     long long delay_time = (int)(ANIMATION_TIME / FRAME_RATE) - (current_time - begin_time);
     if (delay_time > 0) SDL_Delay(delay_time);
+#ifdef DEBUG
+    recordf("ChessMoveRect: (%d)\tChess %d\tx = %d(%d)\ty = %d(%d)\tdelay %lld ms\n", i, num, Chess[num].rect.x, xt, Chess[num].rect.y, yt, delay_time);
+#endif
   }
   //末误差补偿
   while (abs(Chess[num].rect.x - xt) > 1 || abs(Chess[num].rect.y - yt) > 1) {
@@ -141,7 +144,7 @@ void chess_move_rect(int num, int xt, int yt){    //棋子rect移动
   }
   //定位rect
 #ifdef DEBUG
-  recordf("ChessMoveRect: Locate Chess %d from (%d,%d) to (%d,%d)", num, Chess[num].rect.x, Chess[num].rect.y, xt, yt);
+  recordf("ChessMoveRect: Locate Chess %d from (%d,%d) to (%d,%d)\n", num, Chess[num].rect.x, Chess[num].rect.y, xt, yt);
 #endif
   Chess[num].rect.x = xt;
   Chess[num].rect.y = yt;
@@ -149,7 +152,7 @@ void chess_move_rect(int num, int xt, int yt){    //棋子rect移动
 
 void chess_rotate(int num, double angle_t){   //棋子旋转
   int i = 1;
-  recordf("ChessRotate: da = %lf\ta0 = %d\tat = %lf\n", CHESS_ROTATE_SPEED, Chess[num].dir, angle_t);
+  recordf("ChessRotate: Chess %d\tda = %lf\ta0 = %d\tat = %lf\n", num, CHESS_ROTATE_SPEED, Chess[num].dir, angle_t);
   while (fabs(Chess[num].dir - angle_t) > 1) {
     uint32_t begin_time = SDL_GetTicks();
     Chess[num].dir < angle_t ? (Chess[num].dir += CHESS_ROTATE_SPEED) : (Chess[num].dir -= CHESS_ROTATE_SPEED);
@@ -163,7 +166,7 @@ void chess_rotate(int num, double angle_t){   //棋子旋转
   }
   //定位direction
 #ifdef DEBUG
-  recordf("ChessRotate: Locate Chess %d from %d to %lf", num, Chess[num].dir, angle_t);
+  recordf("ChessRotate: Locate Chess %d from %d to %lf\n", num, Chess[num].dir, angle_t);
 #endif
   Chess[num].dir = angle_t;
 }
@@ -179,6 +182,7 @@ void chess_departure(int num){   //棋子起飞
           num, Chess[num].pos, departure_pos, Chess[num].dir, vec[departure_pos].dir);
   chess_move_line(num, departure_pos);
   if (departure_value > 1) chess_move(num, departure_value - 1);
+  chess_crash(num);
 }
 
 int chess_click(void) {    //判定点击的是哪个棋子
@@ -337,4 +341,15 @@ void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos){
   Chess[num].pos = dest_pos;
   //末旋转
   chess_rotate(num, vec[dest_pos].dir);
+}
+
+void chess_jump(int num){   //跳跃处理
+  if (Chess[num].state == MAIN && vec[Chess[num].pos].color == Chess[num].color){
+    recordf("ChessJump: Chess %d jump from %d to %d\n",
+            num, Chess[num].pos, Chess[num].pos < 48 ? Chess[num].pos + 4 : Chess[num].pos - 48);
+    for (int i = 0; i < 4; i++){
+      if (Chess[num].pos < 51) chess_move_line(num, Chess[num].pos + 1);
+      else chess_move_line(num, 0);
+    }
+  }
 }

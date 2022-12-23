@@ -8,11 +8,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 #include <stdarg.h>
+#include <stdbool.h>
 #include "SDL2/SDL.h"
-#include "SDL2/SDL_image.h"
 #include "SDL2/SDL_ttf.h"
+#include "SDL2/SDL_image.h"
+#include "SDL2/SDL_mixer.h"
 
 //宏定义
 
@@ -31,6 +32,7 @@
 
 #define CFG_PATH "cfg/cfg.txt"//配置文件路径
 #define LOG_PATH "cfg/log.txt"//日志文件路径
+#define BGM_PATH "bgm/bgm.mp3"//背景音乐路径
 
 #define ANIMATION_TIME 1000                         //动画时间(ms)
 #define FRAME_RATE (60 * ANIMATION_TIME / 1000)     //动画帧率
@@ -141,12 +143,14 @@ extern SDL_Texture *YellowTexture;
 extern SDL_Surface *BlueSurface;            //蓝色
 extern SDL_Texture *BlueTexture;
 
+extern Mix_Music *bgm;                      //BGM
+
 //main.c中的函数声明
 
 int main_init(void);
 void main_render(void);
 void main_event_loop(void);
-void load_picture(void);
+void main_load(void);
 void recordf(const char* format, ...);
 void quit(int code);
 
@@ -178,6 +182,7 @@ int chess_click(void);
 void chess_crash(int num);
 void chess_fly(int num);
 void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos);
+void chess_jump(int num);
 
 //draw.c中的函数声明
 void draw_text(char *text, int x, int y);
