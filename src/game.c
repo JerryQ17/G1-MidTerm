@@ -29,6 +29,16 @@ void game(void){
       recordf("Chess%d\tpos = %d\tstate = %d\tdir = %d\n", i, Chess[i].pos, Chess[i].state, Chess[i].dir);
     }
     recordf("Round%d ends;\n\n", current_state.round);
+    //判断游戏是否结束
+    int flag_stop = 0;
+    for (int i = 0; i < current_state.total_number; i++){
+      if (current_state.win[i]) flag_stop++;
+    }
+    if (flag_stop >= 3){
+      draw_text("Game Over", 0, 265, true);
+      SDL_Delay(2000);
+      return;
+    }
     //跳转至下一玩家
     while (true) {
       if (current_state.player == current_state.total_number) current_state.player = RED;
@@ -57,8 +67,8 @@ int game_player(void){  //确定游戏人数
   SDL_Event GamePlayerEvent;
   for (int flag = 0; flag < 2; flag++) {
     main_render();
-    if (!flag) draw_text("Please Input Total Player", 360, 569);  //先输入总人数
-    else draw_text("Please Input AI Player", 400, 569);           //再输入电脑数
+    if (!flag) draw_text("Please Input Total Player", 360, 569, true);  //先输入总人数
+    else draw_text("Please Input AI Player", 400, 569, true);           //再输入电脑数
     GamePlayerLoop:
     SDL_WaitEvent(&GamePlayerEvent);
     switch (GamePlayerEvent.type) {
@@ -77,31 +87,31 @@ int game_player(void){  //确定游戏人数
           case SDLK_KP_0:
             if (flag) current_state.ai_number = 0;
             else return 1;
-            draw_text("0", 630, 620);
+            draw_text("0", 630, 620, true);
             break;
           case SDLK_1:
           case SDLK_KP_1:
             if (flag) current_state.ai_number = 1;
             else return 1;
-            draw_text("1", 630, 620);
+            draw_text("1", 630, 620, true);
             break;
           case SDLK_2:
           case SDLK_KP_2:
             if (!flag) current_state.total_number = 2;
             else current_state.ai_number = 2;
-            draw_text("2", 630, 620);
+            draw_text("2", 630, 620, true);
             break;
           case SDLK_3:
           case SDLK_KP_3:
             if (!flag) current_state.total_number = 3;
             else current_state.ai_number = 3;
-            draw_text("3", 630, 620);
+            draw_text("3", 630, 620, true);
             break;
           case SDLK_4:
           case SDLK_KP_4:
             if (!flag) current_state.total_number = 4;
             else current_state.ai_number = 4;
-            draw_text("4", 630, 620);
+            draw_text("4", 630, 620, true);
             break;
           default:break;
         }
@@ -116,7 +126,7 @@ int game_player(void){  //确定游戏人数
             && GamePlayerEvent.button.y < 547) {    //帮助
           recordf("GamePlayer: Press get help button\n");
           int open_readme = system("start README.md");
-          if (open_readme) draw_text("Failed to get help:(", 400, 569);
+          if (open_readme) draw_text("Failed to get help:(", 400, 569, true);
         }
         break;
       default:goto GamePlayerLoop;
@@ -128,7 +138,7 @@ int game_player(void){  //确定游戏人数
   if (current_state.player_number > current_state.total_number || current_state.ai_number > current_state.total_number
       || current_state.total_number < 2 || current_state.total_number > 4){
     main_render();
-    draw_text("Invalid Number", 500, 569);
+    draw_text("Invalid Number", 500, 569, true);
     recordf("SetPlayer: Invalid Number, total = %d, ai = %d\n", current_state.total_number, current_state.ai_number);
     SDL_Delay(1000);
     return 1;
@@ -140,16 +150,17 @@ void game_render(void){   //渲染gameUI，棋子，Information
   //渲染gameUI
   SDL_RenderClear(Renderer);
   SDL_RenderCopy(Renderer, GameTexture, NULL, &GameRect);
+  //渲染棋子
   for (int i = 0; i < 16; i++) {
     if (Chess[i].state != FINISH) {
       SDL_RenderCopyEx(Renderer,Chess[i].tex,NULL,&(Chess[i].rect),Chess[i].dir,NULL,SDL_FLIP_NONE);
     }
   }
   //渲染Information
-  draw_text("Round", 0, 50);
-  draw_number(current_state.round, 170, 65);
-  draw_text(current_state.player_type == Player ? "Player" : "AI", 0, 100);
-  draw_text(current_state.color_str, 0, 155);
+  draw_text("Round", 0, 50, false);
+  draw_number(current_state.round, 170, 65, false);
+  draw_text(current_state.player_type == Player ? "Player" : "AI", 0, 100, false);
+  draw_text(current_state.color_str, 0, 155, true);
 }
 
 void game_state_adjust(void){   //调整游戏状态
@@ -179,7 +190,7 @@ void game_event(void){   //游戏事件
         switch (GameEvent.key.keysym.sym) {
         case SDLK_RETURN:case SDLK_SPACE: //回车和空格都可以进入游戏回合
             game_round();
-            break;
+            return;
           case SDLK_ESCAPE: //Esc
             recordf("GameEvent: Quit by Esc in game\n");
             quit(EXIT_SUCCESS);
@@ -212,29 +223,29 @@ void game_round(void){    //游戏回合
   for (int i = (int) (current_state.player - 1) * 4; i < current_state.player * 4; i++) {
     if (Chess[i].state == AIRPORT) flag_airport++;
   }
-  recordf("GameRound: %s %s airport %d, ",
+  recordf("GameRound: %s %s airport %d\n",
           current_state.player_type == Player ? "Player" : "AI", current_state.color_str, flag_airport);
   if (flag_airport == 4){   //全在机场
     if (roll_value == 6){   //该玩家第一个棋子起飞
-      recordf("departure Chess %d with dice %d\n", (current_state.player - 1) * 4, roll_value);
+      recordf("GameRound: departure Chess %d with dice %d\n", (current_state.player - 1) * 4, roll_value);
       chess_departure((int)((current_state.player - 1) * 4));
       return;
     }
-    recordf("can't departure with dice %d\n", roll_value);
+    recordf("GameRound: can't departure with dice %d\n", roll_value);
     return;
   }else if(flag_airport){   //机场有
     chess_clicked = chess_click();
     if (roll_value == 6) {
       if (Chess[chess_clicked].state == AIRPORT) {
-        recordf("departure Chess %d with dice %d\n", chess_clicked, roll_value);
+        recordf("GameRound: departure Chess %d with dice %d\n", chess_clicked, roll_value);
         chess_departure(chess_clicked);
         return;
       }
     }else{
       while (Chess[chess_clicked].state == AIRPORT){
-        recordf("can't departure Chess %d with dice %d\n\t", chess_clicked, roll_value);
+        recordf("GameRound: can't departure Chess %d with dice %d\n", chess_clicked, roll_value);
         if (current_state.player_type == Player) {
-          draw_text("Invalid Choice", 0, 210);
+          draw_text("Invalid Choice", 0, 210, true);
           chess_clicked = chess_click();
         }else{
           for (int i = (int)current_state.player * 4 - 4; i < current_state.player; i++){
@@ -247,8 +258,8 @@ void game_round(void){    //游戏回合
         }
       }
     }
-  }
-  recordf("move Chess %d by %d step(s)\n", chess_clicked, roll_value);
+  }else chess_clicked = chess_click();  //机场没有
+  recordf("GameRound: move Chess %d by %d step(s)\n", chess_clicked, roll_value);
   chess_move(chess_clicked, roll_value);
 }
 

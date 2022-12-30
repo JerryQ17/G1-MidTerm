@@ -1,14 +1,14 @@
 #include "FlightChess.h"
 
-void draw_text(char *text, int x, int y){   //根据参数渲染文本
+void draw_text(char *text, int x, int y, bool pre){   //根据参数渲染文本
   FontSurface = TTF_RenderUTF8_Blended(Font, text, FontColor);
   FontTexture = SDL_CreateTextureFromSurface(Renderer, FontSurface);
   FontRect = (SDL_Rect){x, y, FontSurface->w, FontSurface->h};
   SDL_RenderCopy(Renderer, FontTexture, NULL, &FontRect);
-  SDL_RenderPresent(Renderer);
+  if (pre) SDL_RenderPresent(Renderer);
 }
 
-void draw_number(int num, int x, int y){   //根据参数渲染数字
+void draw_number(int num, int x, int y, bool pre){   //根据参数渲染数字
   //处理数字
   int flag = 1, text_num = 0, number[11] = {0};
   char text[11] = {0};
@@ -26,5 +26,5 @@ void draw_number(int num, int x, int y){   //根据参数渲染数字
   NumberFontTexture = SDL_CreateTextureFromSurface(Renderer, NumberFontSurface);
   NumberFontRect = (SDL_Rect){x, y, NumberFontSurface->w, NumberFontSurface->h};
   SDL_RenderCopy(Renderer, NumberFontTexture, NULL, &NumberFontRect);
-  SDL_RenderPresent(Renderer);
+  if (pre) SDL_RenderPresent(Renderer);
 }

@@ -1,8 +1,8 @@
-MainInit: Program start at Fri Dec 23 16:42:42 2022
+MainInit: Program start at Thu Dec 29 13:27:41 2022
 record = 1 debug = 0
 LoadPicture: Complete!
-MainEventLoop: Mouse button down (675, 353)
-MainEventLoop: Mouse button up (675, 353)
+MainEventLoop: Mouse button down (619, 359)
+MainEventLoop: Mouse button up (619, 359)
 MainEventLoop: Game start by start button
 
 ChessInit: Chess 0 	pos = 52	state = 0	color = 1	dir = 0
@@ -28,8 +28,8 @@ Player number = 0
 AI number = 4
 
 Round1 AI Red:
-DiceRoll: dice 4(random)
-GameRound: AI Red airport 4, can't departure with dice 4
+DiceRoll: dice 3(random)
+GameRound: AI Red airport 4, can't departure with dice 3
 Current Situation:
 Chess0	pos = 52	state = 0	dir = 0
 Chess1	pos = 53	state = 0	dir = 0
@@ -50,8 +50,349 @@ Chess15	pos = 70	state = 0	dir = 270
 Round1 ends;
 
 Round2 AI Green:
+DiceRoll: dice 3(random)
+GameRound: AI Green airport 4, can't departure with dice 3
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round2 ends;
+
+Round3 AI Yellow:
+DiceRoll: dice 6(random)
+GameRound: AI Yellow airport 4, departure Chess 8 with dice 6
+ChessDeparture: Chess 8 (pos = 62) moves to take-off point 66
+ChessRotate: Chess 8	dx = 0	dy = 2	ex = -2	ey = 1
+ChessRotate: Chess 8	da = 2.000000	a0 = 180	at = 90.000000
+DiceRoll: dice 2(random)
+ChessDeparture: Chess 8	pos 66 -> 27	dir 90 -> 90
+ChessRotate: Chess 8	dx = 1	dy = 0	ex = 1	ey = 0
+ChessMove: Chess 8(Yellow), pos 27 -> 28, dir 90 -> 90
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = 0
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 28	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round3 ends;
+
+Round4 AI Blue:
 DiceRoll: dice 4(random)
-GameRound: AI Green airport 4, can't departure with dice 4
+GameRound: AI Blue airport 4, can't departure with dice 4
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 28	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round4 ends;
+
+Round5 AI Red:
+DiceRoll: dice 3(random)
+GameRound: AI Red airport 4, can't departure with dice 3
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 28	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round5 ends;
+
+Round6 AI Green:
+DiceRoll: dice 6(random)
+GameRound: AI Green airport 4, departure Chess 4 with dice 6
+ChessDeparture: Chess 4 (pos = 57) moves to take-off point 61
+ChessRotate: Chess 4	dx = 2	dy = 1	ex = 1	ey = 2
+ChessRotate: Chess 4	da = 2.000000	a0 = 90	at = 0.000000
+DiceRoll: dice 5(random)
+ChessDeparture: Chess 4	pos 61 -> 14	dir 0 -> 0
+ChessRotate: Chess 4	dx = 0	dy = -1	ex = 0	ey = -1
+ChessMove: Chess 4(Green), pos 14 -> 18, dir 0 -> 270
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 0	at = 315.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = -1	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 315	at = 225.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = -2	ey = 1
+ChessRotate: Chess 4	da = 2.000000	a0 = 225	at = 270.000000
+ChessJump: Chess 4 jump from 18 to 22
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = -2	ey = -1
+ChessRotate: Chess 4	da = 2.000000	a0 = 270	at = 315.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 315	at = 0.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -1
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 28	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round6 ends;
+
+Round7 AI Yellow:
+DiceRoll: dice 5(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 5 step(s)
+ChessMove: Chess 8(Yellow), pos 28 -> 33, dir 90 -> 45
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 8	da = 2.000000	a0 = 90	at = 45.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 8	da = 2.000000	a0 = 45	at = 315.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 8	da = 2.000000	a0 = 315	at = 0.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 8	da = 2.000000	a0 = 0	at = 45.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 33	state = 1	dir = 45
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round7 ends;
+
+Round8 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 4, can't departure with dice 4
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 33	state = 1	dir = 45
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round8 ends;
+
+Round9 AI Red:
+DiceRoll: dice 1(random)
+GameRound: AI Red airport 4, can't departure with dice 1
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 33	state = 1	dir = 45
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round9 ends;
+
+Round10 AI Green:
+DiceRoll: dice 3(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess5
+can't departure Chess 5 with dice 3
+	move Chess 5 by 3 step(s)
+ChessMove: Chess 5(Green), pos 58 -> 61, dir 90 -> 0
+ChessRotate: Chess 5	dx = 0	dy = 1	ex = -2	ey = 0
+ChessRotate: Chess 5	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 5	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 5	da = 2.000000	a0 = 90	at = 0.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 33	state = 1	dir = 45
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round10 ends;
+
+Round11 AI Yellow:
+DiceRoll: dice 5(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 5 step(s)
+ChessMove: Chess 8(Yellow), pos 33 -> 38, dir 45 -> 90
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 8	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 38	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round11 ends;
+
+Round12 AI Blue:
+DiceRoll: dice 6(random)
+GameRound: AI Blue airport 4, departure Chess 12 with dice 6
+ChessDeparture: Chess 12 (pos = 67) moves to take-off point 71
+ChessRotate: Chess 12	dx = -1	dy = 0	ex = -1	ey = -2
+ChessRotate: Chess 12	da = 2.000000	a0 = 270	at = 180.000000
+DiceRoll: dice 5(random)
+ChessDeparture: Chess 12	pos 71 -> 40	dir 180 -> 180
+ChessRotate: Chess 12	dx = 0	dy = 1	exMainInit: Program start at Thu Dec 29 14:38:03 2022
+record = 1 debug = 0
+LoadPicture: Complete!
+MainEventLoop: Mouse button down (681, 357)
+MainEventLoop: Mouse button up (681, 359)
+MainEventLoop: Game start by start button
+
+ChessInit: Chess 0 	pos = 52	state = 0	color = 1	dir = 0
+ChessInit: Chess 1 	pos = 53	state = 0	color = 1	dir = 0
+ChessInit: Chess 2 	pos = 54	state = 0	color = 1	dir = 0
+ChessInit: Chess 3 	pos = 55	state = 0	color = 1	dir = 0
+ChessInit: Chess 4 	pos = 57	state = 0	color = 2	dir = 90
+ChessInit: Chess 5 	pos = 58	state = 0	color = 2	dir = 90
+ChessInit: Chess 6 	pos = 59	state = 0	color = 2	dir = 90
+ChessInit: Chess 7 	pos = 60	state = 0	color = 2	dir = 90
+ChessInit: Chess 8 	pos = 62	state = 0	color = 3	dir = 180
+ChessInit: Chess 9 	pos = 63	state = 0	color = 3	dir = 180
+ChessInit: Chess 10 	pos = 64	state = 0	color = 3	dir = 180
+ChessInit: Chess 11 	pos = 65	state = 0	color = 3	dir = 180
+ChessInit: Chess 12 	pos = 67	state = 0	color = 4	dir = 270
+ChessInit: Chess 13 	pos = 68	state = 0	color = 4	dir = 270
+ChessInit: Chess 14 	pos = 69	state = 0	color = 4	dir = 270
+ChessInit: Chess 15 	pos = 70	state = 0	color = 4	dir = 270
+ChessInit: Complete!
+Game Start:
+Total number = 4
+Player number = 0
+AI number = 4
+
+Round1 AI Red:
+DiceRoll: dice 5(random)
+GameRound: AI Red airport 4, can't departure with dice 5
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 67	state = 0	dir = 270
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round1 ends;
+
+Round2 AI Green:
+DiceRoll: dice 1(random)
+GameRound: AI Green airport 4, can't departure with dice 1
 Current Situation:
 Chess0	pos = 52	state = 0	dir = 0
 Chess1	pos = 53	state = 0	dir = 0
@@ -98,118 +439,3560 @@ DiceRoll: dice 6(random)
 GameRound: AI Blue airport 4, departure Chess 12 with dice 6
 ChessDeparture: Chess 12 (pos = 67) moves to take-off point 71
 ChessRotate: Chess 12	dx = -1	dy = 0	ex = -1	ey = -2
-ChessMoveRect: (0)	Chess 12	x = 852(771)	y = 49(11)	delay 0 ms
-ChessMoveRect: (1)	Chess 12	x = 851(771)	y = 49(11)	delay 11 ms
-ChessMoveRect: (2)	Chess 12	x = 850(771)	y = 49(11)	delay 13 ms
-ChessMoveRect: (3)	Chess 12	x = 848(771)	y = 47(11)	delay 12 ms
-ChessMoveRect: (4)	Chess 12	x = 847(771)	y = 47(11)	delay 14 ms
-ChessMoveRect: (5)	Chess 12	x = 846(771)	y = 47(11)	delay 13 ms
-ChessMoveRect: (6)	Chess 12	x = 844(771)	y = 45(11)	delay 13 ms
-ChessMoveRect: (7)	Chess 12	x = 843(771)	y = 45(11)	delay 14 ms
-ChessMoveRect: (8)	Chess 12	x = 842(771)	y = 45(11)	delay 13 ms
-ChessMoveRect: (9)	Chess 12	x = 840(771)	y = 43(11)	delay 13 ms
-ChessMoveRect: (10)	Chess 12	x = 839(771)	y = 43(11)	delay 14 ms
-ChessMoveRect: (11)	Chess 12	x = 838(771)	y = 43(11)	delay 14 ms
-ChessMoveRect: (12)	Chess 12	x = 836(771)	y = 41(11)	delay 13 ms
-ChessMoveRect: (13)	Chess 12	x = 835(771)	y = 41(11)	delay 14 ms
-ChessMoveRect: (14)	Chess 12	x = 834(771)	y = 41(11)	delay 11 ms
-ChessMoveRect: (15)	Chess 12	x = 832(771)	y = 39(11)	delay 13 ms
-ChessMoveRect: (16)	Chess 12	x = 831(771)	y = 39(11)	delay 13 ms
-ChessMoveRect: (17)	Chess 12	x = 830(771)	y = 39(11)	delay 13 ms
-ChessMoveRect: (18)	Chess 12	x = 828(771)	y = 37(11)	delay 13 ms
-ChessMoveRect: (19)	Chess 12	x = 827(771)	y = 37(11)	delay 14 ms
-ChessMoveRect: (20)	Chess 12	x = 826(771)	y = 37(11)	delay 14 ms
-ChessMoveRect: (21)	Chess 12	x = 824(771)	y = 35(11)	delay 13 ms
-ChessMoveRect: (22)	Chess 12	x = 823(771)	y = 35(11)	delay 12 ms
-ChessMoveRect: (23)	Chess 12	x = 822(771)	y = 35(11)	delay 13 ms
-ChessMoveRect: (24)	Chess 12	x = 820(771)	y = 33(11)	delay 14 ms
-ChessMoveRect: (25)	Chess 12	x = 819(771)	y = 33(11)	delay 14 ms
-ChessMoveRect: (26)	Chess 12	x = 818(771)	y = 33(11)	delay 13 ms
-ChessMoveRect: (27)	Chess 12	x = 816(771)	y = 31(11)	delay 12 ms
-ChessMoveRect: (28)	Chess 12	x = 815(771)	y = 31(11)	delay 14 ms
-ChessMoveRect: (29)	Chess 12	x = 814(771)	y = 31(11)	delay 12 ms
-ChessMoveRect: (30)	Chess 12	x = 812(771)	y = 29(11)	delay 15 ms
-ChessMoveRect: (31)	Chess 12	x = 811(771)	y = 29(11)	delay 14 ms
-ChessMoveRect: (32)	Chess 12	x = 810(771)	y = 29(11)	delay 13 ms
-ChessMoveRect: (33)	Chess 12	x = 808(771)	y = 27(11)	delay 12 ms
-ChessMoveRect: (34)	Chess 12	x = 807(771)	y = 27(11)	delay 14 ms
-ChessMoveRect: (35)	Chess 12	x = 806(771)	y = 27(11)	delay 13 ms
-ChessMoveRect: (36)	Chess 12	x = 804(771)	y = 25(11)	delay 14 ms
-ChessMoveRect: (37)	Chess 12	x = 803(771)	y = 25(11)	delay 14 ms
-ChessMoveRect: (38)	Chess 12	x = 802(771)	y = 25(11)	delay 14 ms
-ChessMoveRect: (39)	Chess 12	x = 800(771)	y = 23(11)	delay 13 ms
-ChessMoveRect: (40)	Chess 12	x = 799(771)	y = 23(11)	delay 15 ms
-ChessMoveRect: (41)	Chess 12	x = 798(771)	y = 23(11)	delay 13 ms
-ChessMoveRect: (42)	Chess 12	x = 796(771)	y = 21(11)	delay 14 ms
-ChessMoveRect: (43)	Chess 12	x = 795(771)	y = 21(11)	delay 13 ms
-ChessMoveRect: (44)	Chess 12	x = 794(771)	y = 21(11)	delay 13 ms
-ChessMoveRect: (45)	Chess 12	x = 792(771)	y = 19(11)	delay 13 ms
-ChessMoveRect: (46)	Chess 12	x = 791(771)	y = 19(11)	delay 15 ms
-ChessMoveRect: (47)	Chess 12	x = 790(771)	y = 19(11)	delay 14 ms
-ChessMoveRect: (48)	Chess 12	x = 788(771)	y = 17(11)	delay 14 ms
-ChessMoveRect: (49)	Chess 12	x = 787(771)	y = 17(11)	delay 13 ms
-ChessMoveRect: (50)	Chess 12	x = 786(771)	y = 17(11)	delay 14 ms
-ChessMoveRect: (51)	Chess 12	x = 784(771)	y = 15(11)	delay 13 ms
-ChessMoveRect: (52)	Chess 12	x = 783(771)	y = 15(11)	delay 14 ms
-ChessMoveRect: (53)	Chess 12	x = 782(771)	y = 15(11)	delay 14 ms
-ChessMoveRect: (54)	Chess 12	x = 780(771)	y = 13(11)	delay 13 ms
-ChessMoveRect: (55)	Chess 12	x = 779(771)	y = 13(11)	delay 14 ms
-ChessMoveRect: (56)	Chess 12	x = 778(771)	y = 13(11)	delay 14 ms
-ChessMoveRect: (57)	Chess 12	x = 776(771)	y = 11(11)	delay 13 ms
-ChessMoveRect: (58)	Chess 12	x = 775(771)	y = 11(11)	delay 14 ms
-ChessMoveRect: (59)	Chess 12	x = 774(771)	y = 11(11)	delay 13 ms
-ChessMoveRect: Ex	Chess 12	x = 772(771)	y = 11(11)	delay 14 ms
-ChessMoveRect: Locate Chess 12 from (772,11) to (771,11)
 ChessRotate: Chess 12	da = 2.000000	a0 = 270	at = 180.000000
-ChessRotate: (1)	Chess 12	angle = 268(180.000000)	delay 14 ms
-ChessRotate: (2)	Chess 12	angle = 266(180.000000)	delay 14 ms
-ChessRotate: (3)	Chess 12	angle = 264(180.000000)	delay 14 ms
-ChessRotate: (4)	Chess 12	angle = 262(180.000000)	delay 14 ms
-ChessRotate: (5)	Chess 12	angle = 260(180.000000)	delay 13 ms
-ChessRotate: (6)	Chess 12	angle = 258(180.000000)	delay 15 ms
-ChessRotate: (7)	Chess 12	angle = 256(180.000000)	delay 14 ms
-ChessRotate: (8)	Chess 12	angle = 254(180.000000)	delay 14 ms
-ChessRotate: (9)	Chess 12	angle = 252(180.000000)	delay 14 ms
-ChessRotate: (10)	Chess 12	angle = 250(180.000000)	delay 15 ms
-ChessRotate: (11)	Chess 12	angle = 248(180.000000)	delay 13 ms
-ChessRotate: (12)	Chess 12	angle = 246(180.000000)	delay 14 ms
-ChessRotate: (13)	Chess 12	angle = 244(180.000000)	delay 13 ms
-ChessRotate: (14)	Chess 12	angle = 242(180.000000)	delay 14 ms
-ChessRotate: (15)	Chess 12	angle = 240(180.000000)	delay 14 ms
-ChessRotate: (16)	Chess 12	angle = 238(180.000000)	delay 14 ms
-ChessRotate: (17)	Chess 12	angle = 236(180.000000)	delay 14 ms
-ChessRotate: (18)	Chess 12	angle = 234(180.000000)	delay 14 ms
-ChessRotate: (19)	Chess 12	angle = 232(180.000000)	delay 13 ms
-ChessRotate: (20)	Chess 12	angle = 230(180.000000)	delay 14 ms
-ChessRotate: (21)	Chess 12	angle = 228(180.000000)	delay 13 ms
-ChessRotate: (22)	Chess 12	angle = 226(180.000000)	delay 14 ms
-ChessRotate: (23)	Chess 12	angle = 224(180.000000)	delay 14 ms
-ChessRotate: (24)	Chess 12	angle = 222(180.000000)	delay 14 ms
-ChessRotate: (25)	Chess 12	angle = 220(180.000000)	delay 14 ms
-ChessRotate: (26)	Chess 12	angle = 218(180.000000)	delay 14 ms
-ChessRotate: (27)	Chess 12	angle = 216(180.000000)	delay 14 ms
-ChessRotate: (28)	Chess 12	angle = 214(180.000000)	delay 14 ms
-ChessRotate: (29)	Chess 12	angle = 212(180.000000)	delay 13 ms
-ChessRotate: (30)	Chess 12	angle = 210(180.000000)	delay 13 ms
-ChessRotate: (31)	Chess 12	angle = 208(180.000000)	delay 14 ms
-ChessRotate: (32)	Chess 12	angle = 206(180.000000)	delay 14 ms
-ChessRotate: (33)	Chess 12	angle = 204(180.000000)	delay 14 ms
-ChessRotate: (34)	Chess 12	angle = 202(180.000000)	delay 14 ms
-ChessRotate: (35)	Chess 12	angle = 200(180.000000)	delay 13 ms
-ChessRotate: (36)	Chess 12	angle = 198(180.000000)	delay 14 ms
-ChessRotate: (37)	Chess 12	angle = 196(180.000000)	delay 13 ms
-ChessRotate: (38)	Chess 12	angle = 194(180.000000)	delay 14 ms
-ChessRotate: (39)	Chess 12	angle = 192(180.000000)	delay 13 ms
-ChessRotate: (40)	Chess 12	angle = 190(180.000000)	delay 13 ms
-ChessRotate: (41)	Chess 12	angle = 188(180.000000)	delay 14 ms
-ChessRotate: (42)	Chess 12	angle = 186(180.000000)	delay 12 ms
-ChessRotate: (43)	Chess 12	angle = 184(180.000000)	delay 14 ms
-ChessRotate: (44)	Chess 12	angle = 182(180.000000)	delay 14 ms
-ChessRotate: (45)	Chess 12	angle = 180(180.000000)	delay 14 ms
-ChessRotate: Locate Chess 12 from 180 to 180.000000
-DiceRoll: dice 1(random)
+DiceRoll: dice 5(random)
 ChessDeparture: Chess 12	pos 71 -> 40	dir 180 -> 180
 ChessRotate: Chess 12	dx = 0	dy = 1	ex = 0	ey = 1
-ChessMoveRect: (0)	Chess 12	x = 771(762)	y = 13(106)	delay 12 ms
-ChessMoveRect: (1)	Chess 12	x = 771(762)	y = 14(106)	delay 11 ms
-ChessMoveRect: (2)	Chess 12	x = 771(762)	y = 15(106)	delay 13 ms
+ChessMove: Chess 12(Blue), pos 40 -> 44, dir 180 -> 90
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 180	at = 135.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 1	ey = 1
+ChessRotate: Chess 12	da = 2.000000	a0 = 135	at = 45.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = -1
+ChessRotate: Chess 12	da = 2.000000	a0 = 45	at = 90.000000
+ChessJump: Chess 12 jump from 44 to 48
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 12	da = 2.000000	a0 = 90	at = 135.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 1
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round4 ends;
+
+Round5 AI Red:
+DiceRoll: dice 5(random)
+GameRound: AI Red airport 4, can't departure with dice 5
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round5 ends;
+
+Round6 AI Green:
+DiceRoll: dice 1(random)
+GameRound: AI Green airport 4, can't departure with dice 1
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round6 ends;
+
+Round7 AI Yellow:
+DiceRoll: dice 4(random)
+GameRound: AI Yellow airport 4, can't departure with dice 4
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 68	state = 0	dir = 270
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round7 ends;
+
+Round8 AI Blue:
+DiceRoll: dice 6(random)
+GameRound: AI Blue airport 3, ChessClick: AI Blue chooses chess13
+departure Chess 13 with dice 6
+ChessDeparture: Chess 13 (pos = 68) moves to take-off point 71
+ChessRotate: Chess 13	dx = -2	dy = 0	ex = -1	ey = -2
+ChessRotate: Chess 13	da = 2.000000	a0 = 270	at = 180.000000
+DiceRoll: dice 6(random)
+ChessDeparture: Chess 13	pos 71 -> 40	dir 180 -> 180
+ChessRotate: Chess 13	dx = 0	dy = 1	ex = 0	ey = 1
+ChessMove: Chess 13(Blue), pos 40 -> 45, dir 180 -> 90
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 13	da = 2.000000	a0 = 180	at = 135.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 1	ey = 1
+ChessRotate: Chess 13	da = 2.000000	a0 = 135	at = 45.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 2	ey = -1
+ChessRotate: Chess 13	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round8 ends;
+
+Round9 AI Red:
+DiceRoll: dice 4(random)
+GameRound: AI Red airport 4, can't departure with dice 4
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round9 ends;
+
+Round10 AI Green:
+DiceRoll: dice 2(random)
+GameRound: AI Green airport 4, can't departure with dice 2
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round10 ends;
+
+Round11 AI Yellow:
+DiceRoll: dice 5(random)
+GameRound: AI Yellow airport 4, can't departure with dice 5
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 70	state = 0	dir = 270
+Round11 ends;
+
+Round12 AI Blue:
+DiceRoll: dice 1(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess15
+can't departure Chess 15 with dice 1
+	move Chess 15 by 1 step(s)
+ChessMove: Chess 15(Blue), pos 70 -> 71, dir 270 -> 180
+ChessRotate: Chess 15	dx = -2	dy = -1	ex = -1	ey = -2
+ChessRotate: Chess 15	da = 2.000000	a0 = 270	at = 180.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round12 ends;
+
+Round13 AI Red:
+DiceRoll: dice 3(random)
+GameRound: AI Red airport 4, can't departure with dice 3
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 57	state = 0	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round13 ends;
+
+Round14 AI Green:
+DiceRoll: dice 6(random)
+GameRound: AI Green airport 4, departure Chess 4 with dice 6
+ChessDeparture: Chess 4 (pos = 57) moves to take-off point 61
+ChessRotate: Chess 4	dx = 2	dy = 1	ex = 1	ey = 2
+ChessRotate: Chess 4	da = 2.000000	a0 = 90	at = 0.000000
+DiceRoll: dice 5(random)
+ChessDeparture: Chess 4	pos 61 -> 14	dir 0 -> 0
+ChessRotate: Chess 4	dx = 0	dy = -1	ex = 0	ey = -1
+ChessMove: Chess 4(Green), pos 14 -> 18, dir 0 -> 270
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 0	at = 315.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = -1	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 315	at = 225.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = -2	ey = 1
+ChessRotate: Chess 4	da = 2.000000	a0 = 225	at = 270.000000
+ChessJump: Chess 4 jump from 18 to 22
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = -2	ey = -1
+ChessRotate: Chess 4	da = 2.000000	a0 = 270	at = 315.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 315	at = 0.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -1
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round14 ends;
+
+Round15 AI Yellow:
+DiceRoll: dice 3(random)
+GameRound: AI Yellow airport 4, can't departure with dice 3
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 69	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round15 ends;
+
+Round16 AI Blue:
+DiceRoll: dice 3(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess14
+can't departure Chess 14 with dice 3
+	move Chess 14 by 3 step(s)
+ChessMove: Chess 14(Blue), pos 69 -> 72, dir 270 -> 270
+ChessRotate: Chess 14	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 14	dx = -2	dy = -1	ex = -1	ey = -2
+ChessRotate: Chess 14	da = 2.000000	a0 = 270	at = 180.000000
+ChessRotate: Chess 14	dx = 1	dy = 5	ex = 1	ey = 1
+ChessRotate: Chess 14	da = 2.000000	a0 = 180	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 72	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round16 ends;
+
+Round17 AI Red:
+DiceRoll: dice 1(random)
+GameRound: AI Red airport 4, can't departure with dice 1
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 59	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 72	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round17 ends;
+
+Round18 AI Green:
+DiceRoll: dice 4(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess6
+can't departure Chess 6 with dice 4
+	move Chess 6 by 4 step(s)
+ChessMove: Chess 6(Green), pos 59 -> 63, dir 90 -> 180
+ChessRotate: Chess 6	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 6	da = 2.000000	a0 = 90	at = 0.000000
+ChessRotate: Chess 6	dx = -2	dy = -10	ex = -1	ey = -1
+ChessRotate: Chess 6	da = 2.000000	a0 = 0	at = 180.000000
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 0	ey = 0
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 62	state = 0	dir = 180
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 72	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round18 ends;
+
+Round19 AI Yellow:
+DiceRoll: dice 6(random)
+GameRound: AI Yellow airport 4, departure Chess 8 with dice 6
+ChessDeparture: Chess 8 (pos = 62) moves to take-off point 66
+ChessRotate: Chess 8	dx = 0	dy = 2	ex = -2	ey = 1
+ChessRotate: Chess 8	da = 2.000000	a0 = 180	at = 90.000000
+DiceRoll: dice 5(random)
+ChessDeparture: Chess 8	pos 66 -> 27	dir 90 -> 90
+ChessRotate: Chess 8	dx = 1	dy = 0	ex = 1	ey = 0
+ChessMove: Chess 8(Yellow), pos 27 -> 31, dir 90 -> 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 8	da = 2.000000	a0 = 90	at = 45.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 8	da = 2.000000	a0 = 45	at = 315.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 8	da = 2.000000	a0 = 315	at = 0.000000
+ChessJump: Chess 8 jump from 31 to 35
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 8	da = 2.000000	a0 = 0	at = 45.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 8	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 72	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round19 ends;
+
+Round20 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess14
+can't departure Chess 14 with dice 4
+	move Chess 14 by 4 step(s)
+ChessMove: Chess 14(Blue), pos 72 -> 76, dir 270 -> 270
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = -2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 52	state = 0	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 76	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round20 ends;
+
+Round21 AI Red:
+DiceRoll: dice 6(random)
+GameRound: AI Red airport 4, departure Chess 0 with dice 6
+ChessDeparture: Chess 0 (pos = 52) moves to take-off point 56
+ChessRotate: Chess 0	dx = 1	dy = -1	ex = 2	ey = -1
+ChessRotate: Chess 0	da = 2.000000	a0 = 0	at = 270.000000
+DiceRoll: dice 4(random)
+ChessDeparture: Chess 0	pos 56 -> 1	dir 270 -> 270
+ChessRotate: Chess 0	dx = -1	dy = 0	ex = -1	ey = 0
+ChessMove: Chess 0(Red), pos 1 -> 4, dir 270 -> 135
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 270	at = 225.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = 2
+ChessRotate: Chess 0	da = 2.000000	a0 = 225	at = 135.000000
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 4	state = 1	dir = 135
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 76	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round21 ends;
+
+Round22 AI Green:
+DiceRoll: dice 5(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess6
+can't departure Chess 6 with dice 5
+	move Chess 6 by 5 step(s)
+ChessMove: Chess 6(Green), pos 63 -> 68, dir 180 -> 270
+ChessRotate: Chess 6	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 6	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 6	da = 2.000000	a0 = 180	at = 90.000000
+ChessRotate: Chess 6	dx = 9	dy = -2	ex = 1	ey = -1
+ChessRotate: Chess 6	da = 2.000000	a0 = 90	at = 270.000000
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 4	state = 1	dir = 135
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 76	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round22 ends;
+
+Round23 AI Yellow:
+DiceRoll: dice 3(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess11
+can't departure Chess 11 with dice 3
+	move Chess 11 by 3 step(s)
+ChessMove: Chess 11(Yellow), pos 65 -> 68, dir 180 -> 270
+ChessRotate: Chess 11	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 11	da = 2.000000	a0 = 180	at = 90.000000
+ChessRotate: Chess 11	dx = 9	dy = -2	ex = 1	ey = -1
+ChessRotate: Chess 11	da = 2.000000	a0 = 90	at = 270.000000
+ChessRotate: Chess 11	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: Crash chess 6, pos 68 -> 57, dir 270 -> -1331694192
+ChessRotate: Chess 6	dx = -9	dy = 8	ex = -2	ey = 2
+ChessRotate: Chess 6	da = 2.000000	a0 = 270	at = 90.000000
+Current Situation:
+Chess0	pos = 4	state = 1	dir = 135
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 76	state = 0	dir = 270
+Chess15	pos = 71	state = 0	dir = 180
+Round23 ends;
+
+Round24 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess15
+can't departure Chess 15 with dice 4
+	move Chess 15 by 4 step(s)
+ChessMove: Chess 15(Blue), pos 71 -> 75, dir 180 -> 270
+ChessRotate: Chess 15	dx = 1	dy = 5	ex = 1	ey = 1
+ChessRotate: Chess 15	da = 2.000000	a0 = 180	at = 270.000000
+ChessRotate: Chess 15	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 15	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 15	dx = 0	dy = 0	ex = -1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 4	state = 1	dir = 135
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 76	state = 0	dir = 270
+Chess15	pos = 75	state = 0	dir = 270
+Round24 ends;
+
+Round25 AI Red:
+DiceRoll: dice 2(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess1
+can't departure Chess 1 with dice 2
+	move Chess 0 by 2 step(s)
+ChessMove: Chess 0(Red), pos 4 -> 6, dir 135 -> 180
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 0	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 2
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 6	state = 1	dir = 180
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 22	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 76	state = 0	dir = 270
+Chess15	pos = 75	state = 0	dir = 270
+Round25 ends;
+
+Round26 AI Green:
+DiceRoll: dice 1(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess4
+move Chess 4 by 1 step(s)
+ChessMove: Chess 4(Green), pos 22 -> 23, dir 0 -> 0
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -1
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 6	state = 1	dir = 180
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 23	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 63	state = 0	dir = 180
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 76	state = 0	dir = 270
+Chess15	pos = 75	state = 0	dir = 270
+Round26 ends;
+
+Round27 AI Yellow:
+DiceRoll: dice 4(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess9
+can't departure Chess 9 with dice 4
+	move Chess 9 by 4 step(s)
+ChessMove: Chess 9(Yellow), pos 63 -> 67, dir 180 -> 270
+ChessRotate: Chess 9	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 9	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 9	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 9	da = 2.000000	a0 = 180	at = 90.000000
+ChessRotate: Chess 9	dx = 9	dy = -2	ex = 1	ey = -1
+ChessRotate: Chess 9	da = 2.000000	a0 = 90	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 6	state = 1	dir = 180
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 23	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 76	state = 0	dir = 270
+Chess15	pos = 75	state = 0	dir = 270
+Round27 ends;
+
+Round28 AI Blue:
+DiceRoll: dice 5(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess14
+can't departure Chess 14 with dice 5
+	move Chess 14 by 5 step(s)
+ChessMove: Chess 14(Blue), pos 76 -> 81, dir 270 -> 0
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 14	dx = 0	dy = 3	ex = -1	ey = 2
+ChessRotate: Chess 14	da = 2.000000	a0 = 270	at = 0.000000
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = -1
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 6	state = 1	dir = 180
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 23	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 81	state = 0	dir = 0
+Chess15	pos = 75	state = 0	dir = 270
+Round28 ends;
+
+Round29 AI Red:
+DiceRoll: dice 2(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess3
+can't departure Chess 3 with dice 2
+	move Chess 0 by 2 step(s)
+ChessMove: Chess 0(Red), pos 6 -> 8, dir 180 -> 270
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 0	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 225	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 8	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 23	state = 1	dir = 0
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 81	state = 0	dir = 0
+Chess15	pos = 75	state = 0	dir = 270
+Round29 ends;
+
+Round30 AI Green:
+DiceRoll: dice 1(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess6
+can't departure Chess 6 with dice 1
+	move Chess 6 by 1 step(s)
+ChessMove: Chess 6(Green), pos 57 -> 58, dir 90 -> 90
+ChessRotate: Chess 6	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: Crash chess 5, pos 58 -> 57, dir 90 -> -1331694192
+ChessRotate: Chess 5	dx = 0	dy = 0	ex = -2	ey = 0
+Current Situation:
+Chess0	pos = 8	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 23	state = 1	dir = 0
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 64	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 81	state = 0	dir = 0
+Chess15	pos = 75	state = 0	dir = 270
+Round30 ends;
+
+Round31 AI Yellow:
+DiceRoll: dice 6(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess10
+departure Chess 10 with dice 6
+ChessDeparture: Chess 10 (pos = 64) moves to take-off point 66
+ChessRotate: Chess 10	dx = 0	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 10	da = 2.000000	a0 = 180	at = 90.000000
+DiceRoll: dice 2(random)
+ChessDeparture: Chess 10	pos 66 -> 27	dir 90 -> 90
+ChessRotate: Chess 10	dx = 1	dy = 0	ex = 1	ey = 0
+ChessMove: Chess 10(Yellow), pos 27 -> 28, dir 90 -> 90
+ChessRotate: Chess 10	dx = 0	dy = 0	ex = 1	ey = 0
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 8	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 23	state = 1	dir = 0
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 28	state = 1	dir = 90
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 81	state = 0	dir = 0
+Chess15	pos = 75	state = 0	dir = 270
+Round31 ends;
+
+Round32 AI Blue:
+DiceRoll: dice 1(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess15
+can't departure Chess 15 with dice 1
+	move Chess 15 by 1 step(s)
+ChessMove: Chess 15(Blue), pos 75 -> 76, dir 270 -> 270
+ChessRotate: Chess 15	dx = 0	dy = 0	ex = -2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 8	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 23	state = 1	dir = 0
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 28	state = 1	dir = 90
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 81	state = 0	dir = 0
+Chess15	pos = 76	state = 0	dir = 270
+Round32 ends;
+
+Round33 AI Red:
+DiceRoll: dice 3(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess0
+move Chess 0 by 3 step(s)
+ChessMove: Chess 0(Red), pos 8 -> 11, dir 270 -> 270
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 11	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 23	state = 1	dir = 0
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 28	state = 1	dir = 90
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 81	state = 0	dir = 0
+Chess15	pos = 76	state = 0	dir = 270
+Round33 ends;
+
+Round34 AI Green:
+DiceRoll: dice 5(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess4
+move Chess 4 by 5 step(s)
+ChessMove: Chess 4(Green), pos 23 -> 28, dir 0 -> 90
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 0	at = 45.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 4	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 1	ey = 0
+ChessCrash: Crash chess 10, pos 28 -> 62, dir 90 -> -1331694192
+ChessRotate: Chess 10	dx = -1	dy = -2	ex = -1	ey = -1
+ChessRotate: Chess 10	da = 2.000000	a0 = 90	at = 180.000000
+Current Situation:
+Chess0	pos = 11	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 68	state = 0	dir = 270
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 81	state = 0	dir = 0
+Chess15	pos = 76	state = 0	dir = 270
+Round34 ends;
+
+Round35 AI Yellow:
+DiceRoll: dice 3(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess11
+can't departure Chess 11 with dice 3
+	move Chess 11 by 3 step(s)
+ChessMove: Chess 11(Yellow), pos 68 -> 71, dir 270 -> 180
+ChessRotate: Chess 11	dx = -1	dy = 1	ex = 0	ey = 0
+ChessRotate: Chess 11	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 11	dx = -2	dy = -1	ex = -1	ey = -2
+ChessRotate: Chess 11	da = 2.000000	a0 = 270	at = 180.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 11	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 81	state = 0	dir = 0
+Chess15	pos = 76	state = 0	dir = 270
+Round35 ends;
+
+Round36 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess14
+can't departure Chess 14 with dice 4
+	move Chess 14 by 4 step(s)
+ChessMove: Chess 14(Blue), pos 81 -> 85, dir 0 -> 90
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 14	dx = -3	dy = 0	ex = -2	ey = -1
+ChessRotate: Chess 14	da = 2.000000	a0 = 0	at = 90.000000
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 11	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 85	state = 0	dir = 90
+Chess15	pos = 76	state = 0	dir = 270
+Round36 ends;
+
+Round37 AI Red:
+DiceRoll: dice 3(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess0
+move Chess 0 by 3 step(s)
+ChessMove: Chess 0(Red), pos 11 -> 14, dir 270 -> 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 270	at = 315.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 0	da = 2.000000	a0 = 315	at = 0.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 14	state = 1	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 85	state = 0	dir = 90
+Chess15	pos = 76	state = 0	dir = 270
+Round37 ends;
+
+Round38 AI Green:
+DiceRoll: dice 4(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess5
+can't departure Chess 5 with dice 4
+	move Chess 5 by 4 step(s)
+ChessMove: Chess 5(Green), pos 57 -> 61, dir 90 -> 0
+ChessRotate: Chess 5	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 5	dx = 0	dy = 1	ex = -2	ey = 0
+ChessRotate: Chess 5	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 5	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 5	da = 2.000000	a0 = 90	at = 0.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 14	state = 1	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 35	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 85	state = 0	dir = 90
+Chess15	pos = 76	state = 0	dir = 270
+Round38 ends;
+
+Round39 AI Yellow:
+DiceRoll: dice 2(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 2 step(s)
+ChessMove: Chess 8(Yellow), pos 35 -> 37, dir 90 -> 90
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 14	state = 1	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 37	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 85	state = 0	dir = 90
+Chess15	pos = 76	state = 0	dir = 270
+Round39 ends;
+
+Round40 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess15
+can't departure Chess 15 with dice 4
+	move Chess 15 by 4 step(s)
+ChessMove: Chess 15(Blue), pos 76 -> 80, dir 270 -> 0
+ChessRotate: Chess 15	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 15	dx = 0	dy = 3	ex = -1	ey = 2
+ChessRotate: Chess 15	da = 2.000000	a0 = 270	at = 0.000000
+ChessRotate: Chess 15	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 15	dx = 0	dy = 0	ex = 0	ey = -2
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 14	state = 1	dir = 0
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 37	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 85	state = 0	dir = 90
+Chess15	pos = 80	state = 0	dir = 0
+Round40 ends;
+
+Round41 AI Red:
+DiceRoll: dice 2(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess1
+can't departure Chess 1 with dice 2
+	move Chess 0 by 2 step(s)
+ChessMove: Chess 0(Red), pos 14 -> 16, dir 0 -> 315
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 0	da = 2.000000	a0 = 0	at = 315.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 16	state = 1	dir = 315
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 60	state = 0	dir = 90
+Chess8	pos = 37	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 85	state = 0	dir = 90
+Chess15	pos = 80	state = 0	dir = 0
+Round41 ends;
+
+Round42 AI Green:
+DiceRoll: dice 4(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess7
+can't departure Chess 7 with dice 4
+	move Chess 7 by 4 step(s)
+ChessMove: Chess 7(Green), pos 60 -> 64, dir 90 -> 180
+ChessRotate: Chess 7	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 7	da = 2.000000	a0 = 90	at = 0.000000
+ChessRotate: Chess 7	dx = -2	dy = -10	ex = -1	ey = -1
+ChessRotate: Chess 7	da = 2.000000	a0 = 0	at = 180.000000
+ChessRotate: Chess 7	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 7	dx = -1	dy = 0	ex = 0	ey = 2
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 16	state = 1	dir = 315
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 64	state = 0	dir = 180
+Chess8	pos = 37	state = 1	dir = 90
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 85	state = 0	dir = 90
+Chess15	pos = 80	state = 0	dir = 0
+Round42 ends;
+
+Round43 AI Yellow:
+DiceRoll: dice 2(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 2 step(s)
+ChessMove: Chess 8(Yellow), pos 37 -> 39, dir 90 -> 135
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 8	da = 2.000000	a0 = 90	at = 135.000000
+ChessJump: Chess 8 jump from 39 to 43
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 8	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 8	da = 2.000000	a0 = 180	at = 135.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 1	ey = 1
+ChessRotate: Chess 8	da = 2.000000	a0 = 135	at = 45.000000
+ChessCrash: No crash
+ChessFly: Chess 8 flies,ChessRotate: Chess 8	da = 2.000000	a0 = 45	at = 45.000000
+No in-flight crash
+ChessRotate: Chess 8	dx = 0	dy = 3	ex = 0	ey = 2
+ChessRotate: Chess 8	da = 2.000000	a0 = 45	at = 225.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 16	state = 1	dir = 315
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 64	state = 0	dir = 180
+Chess8	pos = 3	state = 1	dir = 225
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 85	state = 0	dir = 90
+Chess15	pos = 80	state = 0	dir = 0
+Round43 ends;
+
+Round44 AI Blue:
+DiceRoll: dice 5(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess14
+can't departure Chess 14 with dice 5
+	move Chess 14 by 5 step(s)
+ChessMove: Chess 14(Blue), pos 85 -> 90, dir 90 -> 180
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 14	dx = 0	dy = -3	ex = 1	ey = -2
+ChessRotate: Chess 14	da = 2.000000	a0 = 90	at = 180.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 16	state = 1	dir = 315
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 64	state = 0	dir = 180
+Chess8	pos = 3	state = 1	dir = 225
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 80	state = 0	dir = 0
+Round44 ends;
+
+Round45 AI Red:
+DiceRoll: dice 3(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess2
+can't departure Chess 2 with dice 3
+	move Chess 0 by 3 step(s)
+ChessMove: Chess 0(Red), pos 16 -> 19, dir 315 -> 270
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = -2
+ChessRotate: Chess 0	da = 2.000000	a0 = 315	at = 225.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 1
+ChessRotate: Chess 0	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 19	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 64	state = 0	dir = 180
+Chess8	pos = 3	state = 1	dir = 225
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 80	state = 0	dir = 0
+Round45 ends;
+
+Round46 AI Green:
+DiceRoll: dice 5(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess5
+can't departure Chess 5 with dice 5
+	move Chess 5 by 5 step(s)
+ChessMove: Chess 5(Green), pos 61 -> 66, dir 0 -> 90
+ChessRotate: Chess 5	dx = -2	dy = -10	ex = -1	ey = -1
+ChessRotate: Chess 5	da = 2.000000	a0 = 0	at = 180.000000
+ChessRotate: Chess 5	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 5	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 5	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 5	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 5	da = 2.000000	a0 = 180	at = 90.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 19	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 64	state = 0	dir = 180
+Chess8	pos = 3	state = 1	dir = 225
+Chess9	pos = 67	state = 0	dir = 270
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 80	state = 0	dir = 0
+Round46 ends;
+
+Round47 AI Yellow:
+DiceRoll: dice 6(random)
+GameRound: AI Yellow airport 3, ChessClick: AI Yellow chooses chess9
+departure Chess 9 with dice 6
+ChessDeparture: Chess 9 (pos = 67) moves to take-off point 66
+ChessRotate: Chess 9	dx = -9	dy = 2	ex = -1	ey = 1
+ChessRotate: Chess 9	da = 2.000000	a0 = 270	at = 90.000000
+DiceRoll: dice 5(random)
+ChessDeparture: Chess 9	pos 66 -> 27	dir 90 -> 90
+ChessRotate: Chess 9	dx = 1	dy = 0	ex = 1	ey = 0
+ChessMove: Chess 9(Yellow), pos 27 -> 31, dir 90 -> 0
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 9	da = 2.000000	a0 = 90	at = 45.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 9	da = 2.000000	a0 = 45	at = 315.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 9	da = 2.000000	a0 = 315	at = 0.000000
+ChessJump: Chess 9 jump from 31 to 35
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 9	da = 2.000000	a0 = 0	at = 45.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 9	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 19	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 64	state = 0	dir = 180
+Chess8	pos = 3	state = 1	dir = 225
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 48	state = 1	dir = 180
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 80	state = 0	dir = 0
+Round47 ends;
+
+Round48 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess12
+move Chess 12 by 4 step(s)
+ChessMove: Chess 12(Blue), pos 48 -> 52, dir 180 -> 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 180	at = 225.000000
+ChessJump: Chess 12 jump from 0 to 4
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 12	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 12	da = 2.000000	a0 = 270	at = 225.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -1	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 225	at = 135.000000
+ChessCrash: No crash
+ChessFly: Chess 12 flies,ChessRotate: Chess 12	da = 2.000000	a0 = 135	at = 135.000000
+ChessRotate: Chess 12	dx = -2	dy = -8	ex = 0	ey = -1
+In-flight crash chess 15
+ChessRotate: Chess 15	da = 2.000000	a0 = 0	at = 270.000000
+ChessRotate: Chess 15	da = 2.000000	a0 = 270	at = 270.000000
+ChessRotate: Chess 15	da = 2.000000	a0 = 270	at = 270.000000
+ChessRotate: Chess 12	da = 2.000000	a0 = 135	at = 315.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 19	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 64	state = 0	dir = 180
+Chess8	pos = 3	state = 1	dir = 225
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 16	state = 1	dir = 315
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 69	state = 0	dir = 270
+Round48 ends;
+
+Round49 AI Red:
+DiceRoll: dice 6(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess0
+move Chess 0 by 6 step(s)
+ChessMove: Chess 0(Red), pos 19 -> 25, dir 270 -> 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = -1
+ChessRotate: Chess 0	da = 2.000000	a0 = 270	at = 315.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 0	da = 2.000000	a0 = 315	at = 0.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -1
+ChessJump: Chess 0 jump from 25 to 29
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 0	da = 2.000000	a0 = 0	at = 45.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 0	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 0	da = 2.000000	a0 = 90	at = 45.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 29	state = 1	dir = 45
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 64	state = 0	dir = 180
+Chess8	pos = 3	state = 1	dir = 225
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 16	state = 1	dir = 315
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 69	state = 0	dir = 270
+Round49 ends;
+
+Round50 AI Green:
+DiceRoll: dice 1(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess7
+can't departure Chess 7 with dice 1
+	move Chess 7 by 1 step(s)
+ChessMove: Chess 7(Green), pos 64 -> 65, dir 180 -> 180
+ChessRotate: Chess 7	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 29	state = 1	dir = 45
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 65	state = 0	dir = 180
+Chess8	pos = 3	state = 1	dir = 225
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 16	state = 1	dir = 315
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 69	state = 0	dir = 270
+Round50 ends;
+
+Round51 AI Yellow:
+DiceRoll: dice 1(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 1 step(s)
+ChessMove: Chess 8(Yellow), pos 3 -> 4, dir 225 -> 135
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -1	ey = 2
+ChessRotate: Chess 8	da = 2.000000	a0 = 225	at = 135.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 29	state = 1	dir = 45
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 65	state = 0	dir = 180
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 16	state = 1	dir = 315
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 69	state = 0	dir = 270
+Round51 ends;
+
+Round52 AI Blue:
+DiceRoll: dice 3(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess12
+move Chess 12 by 3 step(s)
+ChessMove: Chess 12(Blue), pos 16 -> 19, dir 315 -> 270
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -1	ey = -2
+ChessRotate: Chess 12	da = 2.000000	a0 = 315	at = 225.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = 1
+ChessRotate: Chess 12	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 29	state = 1	dir = 45
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 65	state = 0	dir = 180
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 19	state = 1	dir = 270
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 69	state = 0	dir = 270
+Round52 ends;
+
+Round53 AI Red:
+DiceRoll: dice 1(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess3
+can't departure Chess 3 with dice 1
+	move Chess 0 by 1 step(s)
+ChessMove: Chess 0(Red), pos 29 -> 30, dir 45 -> 315
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 0	da = 2.000000	a0 = 45	at = 315.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 30	state = 1	dir = 315
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 58	state = 0	dir = 90
+Chess7	pos = 65	state = 0	dir = 180
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 19	state = 1	dir = 270
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 69	state = 0	dir = 270
+Round53 ends;
+
+Round54 AI Green:
+DiceRoll: dice 5(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess6
+can't departure Chess 6 with dice 5
+	move Chess 6 by 5 step(s)
+ChessMove: Chess 6(Green), pos 58 -> 63, dir 90 -> 180
+ChessRotate: Chess 6	dx = 0	dy = 1	ex = -2	ey = 0
+ChessRotate: Chess 6	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 6	da = 2.000000	a0 = 90	at = 0.000000
+ChessRotate: Chess 6	dx = -2	dy = -10	ex = -1	ey = -1
+ChessRotate: Chess 6	da = 2.000000	a0 = 0	at = 180.000000
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 30	state = 1	dir = 315
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 66	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 65	state = 0	dir = 180
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 19	state = 1	dir = 270
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 69	state = 0	dir = 270
+Round54 ends;
+
+Round55 AI Yellow:
+DiceRoll: dice 4(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess10
+can't departure Chess 10 with dice 4
+	move Chess 10 by 4 step(s)
+ChessMove: Chess 10(Yellow), pos 62 -> 66, dir 180 -> 90
+ChessRotate: Chess 10	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 10	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 10	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 10	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 10	da = 2.000000	a0 = 180	at = 90.000000
+ChessCrash: Crash chess 5, pos 66 -> 57, dir 90 -> -1331694192
+ChessRotate: Chess 5	dx = 0	dy = 6	ex = 2	ey = 0
+Current Situation:
+Chess0	pos = 30	state = 1	dir = 315
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 65	state = 0	dir = 180
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 71	state = 0	dir = 180
+Chess12	pos = 19	state = 1	dir = 270
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 69	state = 0	dir = 270
+Round55 ends;
+
+Round56 AI Blue:
+DiceRoll: dice 2(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess15
+can't departure Chess 15 with dice 2
+	move Chess 15 by 2 step(s)
+ChessMove: Chess 15(Blue), pos 69 -> 71, dir 270 -> 180
+ChessRotate: Chess 15	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 15	dx = -2	dy = -1	ex = -1	ey = -2
+ChessRotate: Chess 15	da = 2.000000	a0 = 270	at = 180.000000
+ChessCrash: Crash chess 11, pos 71 -> 62, dir 180 -> -1331694192
+ChessRotate: Chess 11	dx = -7	dy = 0	ex = -1	ey = 2
+Current Situation:
+Chess0	pos = 30	state = 1	dir = 315
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 65	state = 0	dir = 180
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 19	state = 1	dir = 270
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round56 ends;
+
+Round57 AI Red:
+DiceRoll: dice 4(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess2
+can't departure Chess 2 with dice 4
+	move Chess 0 by 4 step(s)
+ChessMove: Chess 0(Red), pos 30 -> 34, dir 315 -> 90
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 0	da = 2.000000	a0 = 315	at = 0.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 0	da = 2.000000	a0 = 0	at = 45.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 45	at = 90.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 34	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 65	state = 0	dir = 180
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 19	state = 1	dir = 270
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round57 ends;
+
+Round58 AI Green:
+DiceRoll: dice 1(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess7
+can't departure Chess 7 with dice 1
+	move Chess 7 by 1 step(s)
+ChessMove: Chess 7(Green), pos 65 -> 66, dir 180 -> 90
+ChessRotate: Chess 7	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 7	da = 2.000000	a0 = 180	at = 90.000000
+ChessCrash: Crash chess 10, pos 66 -> 63, dir 90 -> -1331694192
+ChessRotate: Chess 10	dx = 1	dy = -2	ex = 2	ey = -1
+ChessRotate: Chess 10	da = 2.000000	a0 = 90	at = 180.000000
+Current Situation:
+Chess0	pos = 34	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 66	state = 0	dir = 90
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 19	state = 1	dir = 270
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round58 ends;
+
+Round59 AI Yellow:
+DiceRoll: dice 3(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess10
+can't departure Chess 10 with dice 3
+	move Chess 10 by 3 step(s)
+ChessMove: Chess 10(Yellow), pos 63 -> 66, dir 180 -> 90
+ChessRotate: Chess 10	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 10	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 10	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 10	da = 2.000000	a0 = 180	at = 90.000000
+ChessCrash: Crash chess 7, pos 66 -> 58, dir 90 -> -1331694192
+ChessRotate: Chess 7	dx = 1	dy = 6	ex = 2	ey = 1
+Current Situation:
+Chess0	pos = 34	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 58	state = 0	dir = 90
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 19	state = 1	dir = 270
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round59 ends;
+
+Round60 AI Blue:
+DiceRoll: dice 1(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess12
+move Chess 12 by 1 step(s)
+ChessMove: Chess 12(Blue), pos 19 -> 20, dir 270 -> 315
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = -1
+ChessRotate: Chess 12	da = 2.000000	a0 = 270	at = 315.000000
+ChessJump: Chess 12 jump from 20 to 24
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 12	da = 2.000000	a0 = 315	at = 0.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -1
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 34	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 58	state = 0	dir = 90
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 24	state = 1	dir = 0
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round60 ends;
+
+Round61 AI Red:
+DiceRoll: dice 2(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess0
+move Chess 0 by 2 step(s)
+ChessMove: Chess 0(Red), pos 34 -> 36, dir 90 -> 90
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 36	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 58	state = 0	dir = 90
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 24	state = 1	dir = 0
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round61 ends;
+
+Round62 AI Green:
+DiceRoll: dice 1(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess7
+can't departure Chess 7 with dice 1
+	move Chess 7 by 1 step(s)
+ChessMove: Chess 7(Green), pos 58 -> 59, dir 90 -> 90
+ChessRotate: Chess 7	dx = 0	dy = 1	ex = -2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 36	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 4	state = 1	dir = 135
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 24	state = 1	dir = 0
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round62 ends;
+
+Round63 AI Yellow:
+DiceRoll: dice 6(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 6 step(s)
+ChessMove: Chess 8(Yellow), pos 4 -> 10, dir 135 -> 270
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 8	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 8	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 8	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 36	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 24	state = 1	dir = 0
+Chess13	pos = 45	state = 1	dir = 90
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round63 ends;
+
+Round64 AI Blue:
+DiceRoll: dice 5(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess13
+move Chess 13 by 5 step(s)
+ChessMove: Chess 13(Blue), pos 45 -> 50, dir 90 -> 180
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 13	da = 2.000000	a0 = 90	at = 135.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 13	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 1
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 36	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 24	state = 1	dir = 0
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round64 ends;
+
+Round65 AI Red:
+DiceRoll: dice 2(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess2
+can't departure Chess 2 with dice 2
+	move Chess 0 by 2 step(s)
+ChessMove: Chess 0(Red), pos 36 -> 38, dir 90 -> 90
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 38	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 63	state = 0	dir = 180
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 24	state = 1	dir = 0
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round65 ends;
+
+Round66 AI Green:
+DiceRoll: dice 5(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess6
+can't departure Chess 6 with dice 5
+	move Chess 6 by 5 step(s)
+ChessMove: Chess 6(Green), pos 63 -> 68, dir 180 -> 270
+ChessRotate: Chess 6	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 6	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 6	da = 2.000000	a0 = 180	at = 90.000000
+ChessRotate: Chess 6	dx = 9	dy = -2	ex = 1	ey = -1
+ChessRotate: Chess 6	da = 2.000000	a0 = 90	at = 270.000000
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 38	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 24	state = 1	dir = 0
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round66 ends;
+
+Round67 AI Yellow:
+DiceRoll: dice 1(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess11
+can't departure Chess 11 with dice 1
+	move Chess 11 by 1 step(s)
+ChessMove: Chess 11(Yellow), pos 62 -> 63, dir 180 -> 180
+ChessRotate: Chess 11	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 38	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 24	state = 1	dir = 0
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round67 ends;
+
+Round68 AI Blue:
+DiceRoll: dice 5(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess12
+move Chess 12 by 5 step(s)
+ChessMove: Chess 12(Blue), pos 24 -> 29, dir 0 -> 45
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 12	da = 2.000000	a0 = 0	at = 45.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 12	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 12	da = 2.000000	a0 = 90	at = 45.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 38	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round68 ends;
+
+Round69 AI Red:
+DiceRoll: dice 5(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess1
+can't departure Chess 1 with dice 5
+	move Chess 0 by 5 step(s)
+ChessMove: Chess 0(Red), pos 38 -> 43, dir 90 -> 45
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 90	at = 135.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 0	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 0	da = 2.000000	a0 = 180	at = 135.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = 1
+ChessRotate: Chess 0	da = 2.000000	a0 = 135	at = 45.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 43	state = 1	dir = 45
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 28	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round69 ends;
+
+Round70 AI Green:
+DiceRoll: dice 6(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess4
+move Chess 4 by 6 step(s)
+ChessMove: Chess 4(Green), pos 28 -> 34, dir 90 -> 90
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 4	da = 2.000000	a0 = 90	at = 45.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 4	da = 2.000000	a0 = 45	at = 315.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 315	at = 0.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 4	da = 2.000000	a0 = 0	at = 45.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 4	da = 2.000000	a0 = 45	at = 90.000000
+ChessJump: Chess 4 jump from 34 to 38
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 43	state = 1	dir = 45
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 38	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 66	state = 0	dir = 90
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round70 ends;
+
+Round71 AI Yellow:
+DiceRoll: dice 5(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess10
+can't departure Chess 10 with dice 5
+	move Chess 10 by 5 step(s)
+ChessMove: Chess 10(Yellow), pos 66 -> 71, dir 90 -> 180
+ChessRotate: Chess 10	dx = 9	dy = -2	ex = 1	ey = -1
+ChessRotate: Chess 10	da = 2.000000	a0 = 90	at = 270.000000
+ChessRotate: Chess 10	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 10	dx = -1	dy = 1	ex = 0	ey = 0
+ChessRotate: Chess 10	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 10	dx = -2	dy = -1	ex = -1	ey = -2
+ChessRotate: Chess 10	da = 2.000000	a0 = 270	at = 180.000000
+ChessCrash: Crash chess 15, pos 71 -> 67, dir 180 -> -1331694192
+ChessRotate: Chess 15	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 15	da = 2.000000	a0 = 180	at = 270.000000
+Current Situation:
+Chess0	pos = 43	state = 1	dir = 45
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 38	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 71	state = 0	dir = 180
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 90	state = 0	dir = 180
+Chess15	pos = 67	state = 0	dir = 270
+Round71 ends;
+
+Round72 AI Blue:
+DiceRoll: dice 2(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess14
+can't departure Chess 14 with dice 2
+	move Chess 14 by 2 step(s)
+ChessMove: Chess 14(Blue), pos 90 -> 92, dir 180 -> 180
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = 1
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 43	state = 1	dir = 45
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 38	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 71	state = 0	dir = 180
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 92	state = 0	dir = 180
+Chess15	pos = 67	state = 0	dir = 270
+Round72 ends;
+
+Round73 AI Red:
+DiceRoll: dice 1(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess1
+can't departure Chess 1 with dice 1
+	move Chess 0 by 1 step(s)
+ChessMove: Chess 0(Red), pos 43 -> 44, dir 45 -> 90
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = -1
+ChessRotate: Chess 0	da = 2.000000	a0 = 45	at = 90.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 44	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 38	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 68	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 71	state = 0	dir = 180
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 92	state = 0	dir = 180
+Chess15	pos = 67	state = 0	dir = 270
+Round73 ends;
+
+Round74 AI Green:
+DiceRoll: dice 2(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess6
+can't departure Chess 6 with dice 2
+	move Chess 6 by 2 step(s)
+ChessMove: Chess 6(Green), pos 68 -> 70, dir 270 -> 270
+ChessRotate: Chess 6	dx = -1	dy = 1	ex = 0	ey = 0
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 44	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 38	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 70	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 71	state = 0	dir = 180
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 92	state = 0	dir = 180
+Chess15	pos = 67	state = 0	dir = 270
+Round74 ends;
+
+Round75 AI Yellow:
+DiceRoll: dice 2(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess11
+can't departure Chess 11 with dice 2
+	move Chess 11 by 2 step(s)
+ChessMove: Chess 11(Yellow), pos 63 -> 65, dir 180 -> 180
+ChessRotate: Chess 11	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 11	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 44	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 38	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 70	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 71	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 92	state = 0	dir = 180
+Chess15	pos = 67	state = 0	dir = 270
+Round75 ends;
+
+Round76 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess15
+can't departure Chess 15 with dice 4
+	move Chess 15 by 4 step(s)
+ChessMove: Chess 15(Blue), pos 67 -> 71, dir 270 -> 180
+ChessRotate: Chess 15	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 15	dx = -1	dy = 1	ex = 0	ey = 0
+ChessRotate: Chess 15	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 15	dx = -2	dy = -1	ex = -1	ey = -2
+ChessRotate: Chess 15	da = 2.000000	a0 = 270	at = 180.000000
+ChessCrash: Crash chess 10, pos 71 -> 62, dir 180 -> -1331694192
+ChessRotate: Chess 10	dx = -7	dy = 0	ex = -1	ey = 2
+Current Situation:
+Chess0	pos = 44	state = 1	dir = 90
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 38	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 70	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 92	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round76 ends;
+
+Round77 AI Red:
+DiceRoll: dice 6(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess0
+move Chess 0 by 6 step(s)
+ChessMove: Chess 0(Red), pos 44 -> 50, dir 90 -> 180
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 0	da = 2.000000	a0 = 90	at = 135.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 0	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 180	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 72	state = 2	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 38	state = 1	dir = 90
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 70	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 92	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round77 ends;
+
+Round78 AI Green:
+DiceRoll: dice 3(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess4
+move Chess 4 by 3 step(s)
+ChessMove: Chess 4(Green), pos 38 -> 41, dir 90 -> 180
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 4	da = 2.000000	a0 = 90	at = 135.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 4	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = 2
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 72	state = 2	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 70	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 65	state = 0	dir = 180
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 92	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round78 ends;
+
+Round79 AI Yellow:
+DiceRoll: dice 2(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess11
+can't departure Chess 11 with dice 2
+	move Chess 11 by 2 step(s)
+ChessMove: Chess 11(Yellow), pos 65 -> 67, dir 180 -> 270
+ChessRotate: Chess 11	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 11	da = 2.000000	a0 = 180	at = 90.000000
+ChessRotate: Chess 11	dx = 9	dy = -2	ex = 1	ey = -1
+ChessRotate: Chess 11	da = 2.000000	a0 = 90	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 72	state = 2	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 70	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 92	state = 0	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round79 ends;
+
+Round80 AI Blue:
+DiceRoll: dice 3(random)
+GameRound: AI Blue airport 2, ChessClick: AI Blue chooses chess14
+can't departure Chess 14 with dice 3
+	move Chess 14 by 3 step(s)
+ChessMove: Chess 14(Blue), pos 92 -> 95, dir 180 -> 180
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 14	dx = 0	dy = 0	ex = 0	ey = 2
+ChessMove: Chess 14 finish
+Current Situation:
+Chess0	pos = 72	state = 2	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 70	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round80 ends;
+
+Round81 AI Red:
+DiceRoll: dice 5(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess1
+can't departure Chess 1 with dice 5
+	move Chess 0 by 5 step(s)
+ChessMove: Chess 0(Red), pos 72 -> 77, dir 270 -> 270
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessMove: Chess 0 finish
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 70	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round81 ends;
+
+Round82 AI Green:
+DiceRoll: dice 4(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess6
+can't departure Chess 6 with dice 4
+	move Chess 6 by 4 step(s)
+ChessMove: Chess 6(Green), pos 70 -> 74, dir 270 -> 270
+ChessRotate: Chess 6	dx = -2	dy = -1	ex = -1	ey = -2
+ChessRotate: Chess 6	da = 2.000000	a0 = 270	at = 180.000000
+ChessRotate: Chess 6	dx = 1	dy = 5	ex = 1	ey = 1
+ChessRotate: Chess 6	da = 2.000000	a0 = 180	at = 270.000000
+ChessRotate: Chess 6	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 6	dx = 0	dy = 0	ex = -1	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 10	state = 1	dir = 270
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round82 ends;
+
+Round83 AI Yellow:
+DiceRoll: dice 1(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 1 step(s)
+ChessMove: Chess 8(Yellow), pos 10 -> 11, dir 270 -> 270
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -2	ey = 0
+ChessJump: Chess 8 jump from 11 to 15
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 8	da = 2.000000	a0 = 270	at = 315.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 8	da = 2.000000	a0 = 315	at = 0.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 15	state = 1	dir = 0
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 29	state = 1	dir = 45
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round83 ends;
+
+Round84 AI Blue:
+DiceRoll: dice 2(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess12
+move Chess 12 by 2 step(s)
+ChessMove: Chess 12(Blue), pos 29 -> 31, dir 45 -> 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 1	ey = -1
+ChessRotate: Chess 12	da = 2.000000	a0 = 45	at = 315.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 12	da = 2.000000	a0 = 315	at = 0.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 55	state = 0	dir = 0
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 15	state = 1	dir = 0
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round84 ends;
+
+Round85 AI Red:
+DiceRoll: dice 6(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess3
+departure Chess 3 with dice 6
+ChessDeparture: Chess 3 (pos = 55) moves to take-off point 56
+ChessRotate: Chess 3	dx = 0	dy = -2	ex = 2	ey = -1
+ChessRotate: Chess 3	da = 2.000000	a0 = 0	at = 270.000000
+DiceRoll: dice 5(random)
+ChessDeparture: Chess 3	pos 56 -> 1	dir 270 -> 270
+ChessRotate: Chess 3	dx = -1	dy = 0	ex = -1	ey = 0
+ChessMove: Chess 3(Red), pos 1 -> 5, dir 270 -> 180
+ChessRotate: Chess 3	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 3	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 3	da = 2.000000	a0 = 270	at = 225.000000
+ChessRotate: Chess 3	dx = 0	dy = 0	ex = -1	ey = 2
+ChessRotate: Chess 3	da = 2.000000	a0 = 225	at = 135.000000
+ChessRotate: Chess 3	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 3	da = 2.000000	a0 = 135	at = 180.000000
+ChessJump: Chess 3 jump from 5 to 9
+ChessRotate: Chess 3	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 3	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 3	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 3	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 3	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 3	dx = 0	dy = 0	ex = -2	ey = 0
+ChessCrash: No crash
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 57	state = 0	dir = 90
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 15	state = 1	dir = 0
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 62	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round85 ends;
+
+Round86 AI Green:
+DiceRoll: dice 5(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess5
+can't departure Chess 5 with dice 5
+	move Chess 5 by 5 step(s)
+ChessMove: Chess 5(Green), pos 57 -> 62, dir 90 -> 180
+ChessRotate: Chess 5	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 5	dx = 0	dy = 1	ex = -2	ey = 0
+ChessRotate: Chess 5	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 5	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 5	da = 2.000000	a0 = 90	at = 0.000000
+ChessRotate: Chess 5	dx = -2	dy = -10	ex = -1	ey = -1
+ChessRotate: Chess 5	da = 2.000000	a0 = 0	at = 180.000000
+ChessCrash: Crash chess 10, pos 62 -> 63, dir 180 -> -1331694192
+ChessRotate: Chess 10	dx = 1	dy = 0	ex = 0	ey = 0
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 62	state = 0	dir = 180
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 15	state = 1	dir = 0
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round86 ends;
+
+Round87 AI Yellow:
+DiceRoll: dice 2(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 2 step(s)
+ChessMove: Chess 8(Yellow), pos 15 -> 17, dir 0 -> 225
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 8	da = 2.000000	a0 = 0	at = 315.000000
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -1	ey = -2
+ChessRotate: Chess 8	da = 2.000000	a0 = 315	at = 225.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 62	state = 0	dir = 180
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 17	state = 1	dir = 225
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 50	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round87 ends;
+
+Round88 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess13
+move Chess 13 by 4 step(s)
+ChessMove: Chess 13(Blue), pos 50 -> 54, dir 180 -> 0
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 13	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 13	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = -2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 62	state = 0	dir = 180
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 17	state = 1	dir = 225
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 2	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round88 ends;
+
+Round89 AI Red:
+DiceRoll: dice 2(random)
+GameRound: AI Red airport 2, ChessClick: AI Red chooses chess1
+can't departure Chess 1 with dice 2
+	move Chess 0 by 2 step(s)
+ChessMove: Chess 0(Red), pos 77 -> 79, dir 270 -> 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 75	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 41	state = 1	dir = 180
+Chess5	pos = 62	state = 0	dir = 180
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 17	state = 1	dir = 225
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 2	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round89 ends;
+
+Round90 AI Green:
+DiceRoll: dice 4(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess4
+move Chess 4 by 4 step(s)
+ChessMove: Chess 4(Green), pos 41 -> 45, dir 180 -> 90
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 4	da = 2.000000	a0 = 180	at = 135.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 1	ey = 1
+ChessRotate: Chess 4	da = 2.000000	a0 = 135	at = 45.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 2	ey = -1
+ChessRotate: Chess 4	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 4	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 75	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 62	state = 0	dir = 180
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 17	state = 1	dir = 225
+Chess9	pos = 35	state = 1	dir = 90
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 2	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round90 ends;
+
+Round91 AI Yellow:
+DiceRoll: dice 6(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess9
+move Chess 9 by 6 step(s)
+ChessMove: Chess 9(Yellow), pos 35 -> 41, dir 90 -> 180
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 9	da = 2.000000	a0 = 90	at = 135.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 9	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 2
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 75	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 62	state = 0	dir = 180
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 17	state = 1	dir = 225
+Chess9	pos = 41	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 2	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round91 ends;
+
+Round92 AI Blue:
+DiceRoll: dice 3(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess13
+move Chess 13 by 3 step(s)
+ChessMove: Chess 13(Blue), pos 2 -> 5, dir 270 -> 180
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 13	da = 2.000000	a0 = 270	at = 225.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = -1	ey = 2
+ChessRotate: Chess 13	da = 2.000000	a0 = 225	at = 135.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 13	da = 2.000000	a0 = 135	at = 180.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 75	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 62	state = 0	dir = 180
+Chess6	pos = 74	state = 0	dir = 270
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 17	state = 1	dir = 225
+Chess9	pos = 41	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 5	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round92 ends;
+
+Round93 AI Red:
+DiceRoll: dice 1(random)
+GameRound: AI Red airport 2, ChessClick: AI Red chooses chess0
+move Chess 0 by 1 step(s)
+ChessMove: Chess 0(Red), pos 75 -> 76, dir 270 -> 270
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = 0
+ChessCrash: Crash chess 6, pos 74 -> 57, dir 270 -> -1331694192
+ChessRotate: Chess 6	dx = -7	dy = 3	ex = -1	ey = 2
+ChessRotate: Chess 6	da = 2.000000	a0 = 270	at = 90.000000
+Current Situation:
+Chess0	pos = 74	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 62	state = 0	dir = 180
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 59	state = 0	dir = 90
+Chess8	pos = 17	state = 1	dir = 225
+Chess9	pos = 41	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 5	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round93 ends;
+
+Round94 AI Green:
+DiceRoll: dice 3(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess7
+can't departure Chess 7 with dice 3
+	move Chess 7 by 3 step(s)
+ChessMove: Chess 7(Green), pos 59 -> 62, dir 90 -> 180
+ChessRotate: Chess 7	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 7	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 7	da = 2.000000	a0 = 90	at = 0.000000
+ChessRotate: Chess 7	dx = -2	dy = -10	ex = -1	ey = -1
+ChessRotate: Chess 7	da = 2.000000	a0 = 0	at = 180.000000
+ChessCrash: Crash chess 5, pos 62 -> 58, dir 180 -> -1331694192
+ChessRotate: Chess 5	dx = 1	dy = 8	ex = 0	ey = 2
+ChessRotate: Chess 5	da = 2.000000	a0 = 180	at = 90.000000
+Current Situation:
+Chess0	pos = 74	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 62	state = 0	dir = 180
+Chess8	pos = 17	state = 1	dir = 225
+Chess9	pos = 41	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 5	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round94 ends;
+
+Round95 AI Yellow:
+DiceRoll: dice 1(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 1 step(s)
+ChessMove: Chess 8(Yellow), pos 17 -> 18, dir 225 -> 270
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -2	ey = 1
+ChessRotate: Chess 8	da = 2.000000	a0 = 225	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 74	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 62	state = 0	dir = 180
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 41	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 5	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round95 ends;
+
+Round96 AI Blue:
+DiceRoll: dice 1(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess13
+move Chess 13 by 1 step(s)
+ChessMove: Chess 13(Blue), pos 5 -> 6, dir 180 -> 180
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 2
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 74	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 9	state = 1	dir = 270
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 62	state = 0	dir = 180
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 41	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 6	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round96 ends;
+
+Round97 AI Red:
+DiceRoll: dice 6(random)
+GameRound: AI Red airport 2, ChessClick: AI Red chooses chess2
+departure Chess 2 with dice 6
+ChessDeparture: Chess 2 (pos = 54) moves to take-off point 56
+ChessRotate: Chess 2	dx = 1	dy = -2	ex = 2	ey = -1
+ChessRotate: Chess 2	da = 2.000000	a0 = 0	at = 270.000000
+DiceRoll: dice 5(random)
+ChessDeparture: Chess 2	pos 56 -> 1	dir 270 -> 270
+ChessRotate: Chess 2	dx = -1	dy = 0	ex = -1	ey = 0
+ChessMove: Chess 2(Red), pos 1 -> 5, dir 270 -> 180
+ChessRotate: Chess 2	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 2	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 2	da = 2.000000	a0 = 270	at = 225.000000
+ChessRotate: Chess 2	dx = 0	dy = 0	ex = -1	ey = 2
+ChessRotate: Chess 2	da = 2.000000	a0 = 225	at = 135.000000
+ChessRotate: Chess 2	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 2	da = 2.000000	a0 = 135	at = 180.000000
+ChessJump: Chess 2 jump from 5 to 9
+ChessRotate: Chess 2	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 2	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 2	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 2	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 2	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 2	dx = 0	dy = 0	ex = -2	ey = 0
+ChessCrash: Crash chess 3, pos 9 -> 52, dir 270 -> -1331694272
+ChessRotate: Chess 3	dx = 3	dy = -1	ex = 0	ey = 0
+ChessRotate: Chess 3	da = 2.000000	a0 = 270	at = 0.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 74	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 9	state = 1	dir = 270
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 62	state = 0	dir = 180
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 41	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 6	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round97 ends;
+
+Round98 AI Green:
+DiceRoll: dice 4(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess7
+can't departure Chess 7 with dice 4
+	move Chess 7 by 4 step(s)
+ChessMove: Chess 7(Green), pos 62 -> 66, dir 180 -> 90
+ChessRotate: Chess 7	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 7	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 7	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 7	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 7	da = 2.000000	a0 = 180	at = 90.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 74	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 9	state = 1	dir = 270
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 66	state = 0	dir = 90
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 41	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 6	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round98 ends;
+
+Round99 AI Yellow:
+DiceRoll: dice 2(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess9
+move Chess 9 by 2 step(s)
+ChessMove: Chess 9(Yellow), pos 41 -> 43, dir 180 -> 45
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 9	da = 2.000000	a0 = 180	at = 135.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 1	ey = 1
+ChessRotate: Chess 9	da = 2.000000	a0 = 135	at = 45.000000
+ChessJump: Chess 9 jump from 43 to 47
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 2	ey = -1
+ChessRotate: Chess 9	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 9	da = 2.000000	a0 = 90	at = 135.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 9	da = 2.000000	a0 = 135	at = 180.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 74	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 9	state = 1	dir = 270
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 66	state = 0	dir = 90
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 6	state = 1	dir = 180
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round99 ends;
+
+Round100 AI Blue:
+DiceRoll: dice 3(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess13
+move Chess 13 by 3 step(s)
+ChessMove: Chess 13(Blue), pos 6 -> 9, dir 180 -> 270
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 13	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 13	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 13	dx = 0	dy = 0	ex = -2	ey = 0
+ChessCrash: Crash chess 2, pos 9 -> 54, dir 270 -> -1331694192
+ChessRotate: Chess 2	dx = 3	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 2	da = 2.000000	a0 = 270	at = 0.000000
+Current Situation:
+Chess0	pos = 74	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 66	state = 0	dir = 90
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round100 ends;
+
+Round101 AI Red:
+DiceRoll: dice 4(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess1
+can't departure Chess 1 with dice 4
+	move Chess 0 by 4 step(s)
+ChessMove: Chess 0(Red), pos 74 -> 78, dir 270 -> 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 270	at = 180.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 180	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 72	state = 2	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 66	state = 0	dir = 90
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round101 ends;
+
+Round102 AI Green:
+DiceRoll: dice 2(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess7
+can't departure Chess 7 with dice 2
+	move Chess 7 by 2 step(s)
+ChessMove: Chess 7(Green), pos 66 -> 68, dir 90 -> 270
+ChessRotate: Chess 7	dx = 9	dy = -2	ex = 1	ey = -1
+ChessRotate: Chess 7	da = 2.000000	a0 = 90	at = 270.000000
+ChessRotate: Chess 7	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 72	state = 2	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 63	state = 0	dir = 180
+Chess11	pos = 67	state = 0	dir = 270
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round102 ends;
+
+Round103 AI Yellow:
+DiceRoll: dice 4(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess10
+can't departure Chess 10 with dice 4
+	move Chess 10 by 4 step(s)
+ChessMove: Chess 10(Yellow), pos 63 -> 67, dir 180 -> 270
+ChessRotate: Chess 10	dx = -1	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 10	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 10	dx = -1	dy = 1	ex = -2	ey = 1
+ChessRotate: Chess 10	da = 2.000000	a0 = 180	at = 90.000000
+ChessRotate: Chess 10	dx = 9	dy = -2	ex = 1	ey = -1
+ChessRotate: Chess 10	da = 2.000000	a0 = 90	at = 270.000000
+ChessCrash: Crash chess 11, pos 67 -> 62, dir 270 -> -1331694192
+ChessRotate: Chess 11	dx = -8	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 11	da = 2.000000	a0 = 270	at = 180.000000
+Current Situation:
+Chess0	pos = 72	state = 2	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 31	state = 1	dir = 0
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round103 ends;
+
+Round104 AI Blue:
+DiceRoll: dice 5(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess12
+move Chess 12 by 5 step(s)
+ChessMove: Chess 12(Blue), pos 31 -> 36, dir 0 -> 90
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = -2
+ChessRotate: Chess 12	da = 2.000000	a0 = 0	at = 45.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 12	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 1	ey = 0
+ChessJump: Chess 12 jump from 36 to 40
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 12	da = 2.000000	a0 = 90	at = 135.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 135	at = 180.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 72	state = 2	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 40	state = 1	dir = 180
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round104 ends;
+
+Round105 AI Red:
+DiceRoll: dice 5(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess3
+can't departure Chess 3 with dice 5
+	move Chess 0 by 5 step(s)
+ChessMove: Chess 0(Red), pos 72 -> 77, dir 270 -> 270
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessMove: Chess 0 finish
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 58	state = 0	dir = 90
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 40	state = 1	dir = 180
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round105 ends;
+
+Round106 AI Green:
+DiceRoll: dice 3(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess5
+can't departure Chess 5 with dice 3
+	move Chess 5 by 3 step(s)
+ChessMove: Chess 5(Green), pos 58 -> 61, dir 90 -> 0
+ChessRotate: Chess 5	dx = 0	dy = 1	ex = -2	ey = 0
+ChessRotate: Chess 5	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 5	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 5	da = 2.000000	a0 = 90	at = 0.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 62	state = 0	dir = 180
+Chess12	pos = 40	state = 1	dir = 180
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round106 ends;
+
+Round107 AI Yellow:
+DiceRoll: dice 1(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess11
+can't departure Chess 11 with dice 1
+	move Chess 11 by 1 step(s)
+ChessMove: Chess 11(Yellow), pos 62 -> 63, dir 180 -> 180
+ChessRotate: Chess 11	dx = 1	dy = 0	ex = 0	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 40	state = 1	dir = 180
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round107 ends;
+
+Round108 AI Blue:
+DiceRoll: dice 6(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess12
+move Chess 12 by 6 step(s)
+ChessMove: Chess 12(Blue), pos 40 -> 46, dir 180 -> 135
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 180	at = 135.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 1	ey = 1
+ChessRotate: Chess 12	da = 2.000000	a0 = 135	at = 45.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = -1
+ChessRotate: Chess 12	da = 2.000000	a0 = 45	at = 90.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 2	ey = 1
+ChessRotate: Chess 12	da = 2.000000	a0 = 90	at = 135.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 77	state = 4	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 46	state = 1	dir = 135
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round108 ends;
+
+Round109 AI Red:
+DiceRoll: dice 1(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess3
+can't departure Chess 3 with dice 1
+	move Chess 0 by 1 step(s)
+ChessMove: Chess 0(Red), pos 77 -> 78, dir 270 -> 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 76	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 61	state = 0	dir = 0
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 46	state = 1	dir = 135
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round109 ends;
+
+Round110 AI Green:
+DiceRoll: dice 3(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess5
+can't departure Chess 5 with dice 3
+	move Chess 5 by 3 step(s)
+ChessMove: Chess 5(Green), pos 61 -> 64, dir 0 -> 180
+ChessRotate: Chess 5	dx = -2	dy = -10	ex = -1	ey = -1
+ChessRotate: Chess 5	da = 2.000000	a0 = 0	at = 180.000000
+ChessRotate: Chess 5	dx = 1	dy = 0	ex = 0	ey = 0
+ChessRotate: Chess 5	dx = -1	dy = 0	ex = 0	ey = 2
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 76	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 64	state = 0	dir = 180
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 18	state = 1	dir = 270
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 46	state = 1	dir = 135
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round110 ends;
+
+Round111 AI Yellow:
+DiceRoll: dice 2(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess8
+move Chess 8 by 2 step(s)
+ChessMove: Chess 8(Yellow), pos 18 -> 20, dir 270 -> 315
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -1	ey = 0
+ChessRotate: Chess 8	dx = 0	dy = 0	ex = -2	ey = -1
+ChessRotate: Chess 8	da = 2.000000	a0 = 270	at = 315.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 76	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 64	state = 0	dir = 180
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 20	state = 1	dir = 315
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 46	state = 1	dir = 135
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round111 ends;
+
+Round112 AI Blue:
+DiceRoll: dice 2(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess12
+move Chess 12 by 2 step(s)
+ChessMove: Chess 12(Blue), pos 46 -> 48, dir 135 -> 180
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 1
+ChessJump: Chess 12 jump from 48 to 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 180	at = 225.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 76	state = 3	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 64	state = 0	dir = 180
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 20	state = 1	dir = 315
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 0	state = 1	dir = 225
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round112 ends;
+
+Round113 AI Red:
+DiceRoll: dice 5(random)
+GameRound: AI Red airport 3, ChessClick: AI Red chooses chess1
+can't departure Chess 1 with dice 5
+	move Chess 0 by 5 step(s)
+ChessMove: Chess 0(Red), pos 76 -> 81, dir 270 -> 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 1	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 270	at = 180.000000
+ChessJump: Chess 0 jump from 49 to 1
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 0	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 0	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 0	da = 2.000000	a0 = 225	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 1	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 64	state = 0	dir = 180
+Chess6	pos = 57	state = 0	dir = 90
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 20	state = 1	dir = 315
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 0	state = 1	dir = 225
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round113 ends;
+
+Round114 AI Green:
+DiceRoll: dice 5(random)
+GameRound: AI Green airport 3, ChessClick: AI Green chooses chess6
+can't departure Chess 6 with dice 5
+	move Chess 6 by 5 step(s)
+ChessMove: Chess 6(Green), pos 57 -> 62, dir 90 -> 180
+ChessRotate: Chess 6	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 6	dx = 0	dy = 1	ex = -2	ey = 0
+ChessRotate: Chess 6	dx = 0	dy = 0	ex = 2	ey = 0
+ChessRotate: Chess 6	dx = 1	dy = 0	ex = 1	ey = 2
+ChessRotate: Chess 6	da = 2.000000	a0 = 90	at = 0.000000
+ChessRotate: Chess 6	dx = -2	dy = -10	ex = -1	ey = -1
+ChessRotate: Chess 6	da = 2.000000	a0 = 0	at = 180.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 1	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 64	state = 0	dir = 180
+Chess6	pos = 62	state = 0	dir = 180
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 20	state = 1	dir = 315
+Chess9	pos = 47	state = 1	dir = 180
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 0	state = 1	dir = 225
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round114 ends;
+
+Round115 AI Yellow:
+DiceRoll: dice 6(random)
+GameRound: AI Yellow airport 2, ChessClick: AI Yellow chooses chess9
+move Chess 9 by 6 step(s)
+ChessMove: Chess 9(Yellow), pos 47 -> 53, dir 180 -> 0
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 1
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 9	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 9	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 9	da = 2.000000	a0 = 225	at = 270.000000
+Current Situation:
+Chess0	pos = 1	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 64	state = 0	dir = 180
+Chess6	pos = 62	state = 0	dir = 180
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 20	state = 1	dir = 315
+Chess9	pos = 1	state = 1	dir = 270
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 0	state = 1	dir = 225
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round115 ends;
+
+Round116 AI Blue:
+DiceRoll: dice 4(random)
+GameRound: AI Blue airport 1, ChessClick: AI Blue chooses chess12
+move Chess 12 by 4 step(s)
+ChessMove: Chess 12(Blue), pos 0 -> 4, dir 225 -> 135
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 12	da = 2.000000	a0 = 225	at = 270.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 12	da = 2.000000	a0 = 270	at = 225.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -1	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 225	at = 135.000000
+ChessJump: Chess 12 jump from 4 to 8
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 135	at = 180.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = 0	ey = 2
+ChessRotate: Chess 12	da = 2.000000	a0 = 180	at = 225.000000
+ChessRotate: Chess 12	dx = 0	dy = 0	ex = -2	ey = 0
+ChessRotate: Chess 12	da = 2.000000	a0 = 225	at = 270.000000
+ChessCrash: No crash
+Current Situation:
+Chess0	pos = 1	state = 1	dir = 270
+Chess1	pos = 53	state = 0	dir = 0
+Chess2	pos = 54	state = 0	dir = 0
+Chess3	pos = 52	state = 0	dir = 0
+Chess4	pos = 45	state = 1	dir = 90
+Chess5	pos = 64	state = 0	dir = 180
+Chess6	pos = 62	state = 0	dir = 180
+Chess7	pos = 68	state = 0	dir = 270
+Chess8	pos = 20	state = 1	dir = 315
+Chess9	pos = 1	state = 1	dir = 270
+Chess10	pos = 67	state = 0	dir = 270
+Chess11	pos = 63	state = 0	dir = 180
+Chess12	pos = 8	state = 1	dir = 270
+Chess13	pos = 9	state = 1	dir = 270
+Chess14	pos = 95	state = 4	dir = 180
+Chess15	pos = 71	state = 0	dir = 180
+Round116 ends;
+
+Round117 AI Red:
+DiceRoll: dice 4(random)

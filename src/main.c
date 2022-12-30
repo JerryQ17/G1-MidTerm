@@ -13,6 +13,8 @@ int SDL_main(int argc, char *argv[]) {
   }
   //加载所有表面和纹理
   main_load();
+  //播放音乐
+  Mix_PlayMusic(bgm, -1);
   //进入主事件循环
   main_event_loop();
   return 0;
@@ -88,8 +90,6 @@ void main_render(void){   //渲染mainUI
 }
 
 void main_event_loop(void) {  //主事件循环
-  //播放音乐
-  Mix_PlayMusic(bgm, -1);
   //主事件循环
   SDL_Event MainEvent;
   while (SDL_WaitEvent(&MainEvent)) {
@@ -126,7 +126,7 @@ void main_event_loop(void) {  //主事件循环
           int open_readme = system("start README.md");
           if (open_readme) {
             main_render();
-            draw_text("Failed to get help:(", 400, 569);
+            draw_text("Failed to get help:(", 400, 569, true);
             recordf("MainEventLoop: Failed to open readme\n");
           }
         }

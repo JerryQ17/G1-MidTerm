@@ -17,7 +17,7 @@
 
 //宏定义
 
-#define DEBUG
+//#define DEBUG
 
 #define WIN_WIDTH 1280        //窗口宽度
 #define WIN_HEIGHT 720        //窗口高度
@@ -185,7 +185,7 @@ void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos);
 void chess_jump(int num);
 
 //draw.c中的函数声明
-void draw_text(char *text, int x, int y);
-void draw_number(int num, int x, int y);
+void draw_text(char *text, int x, int y, bool pre);
+void draw_number(int num, int x, int y, bool pre);
 
 #endif

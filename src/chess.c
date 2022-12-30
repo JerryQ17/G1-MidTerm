@@ -76,7 +76,7 @@ void chess_move(int num, int step){       //棋子移动
   //是否到达终点
   if (Chess[num].pos == 77 || Chess[num].pos == 83 || Chess[num].pos == 89 || Chess[num].pos == 95){
     recordf("ChessMove: Chess %d finish\n", num);
-    draw_text("Congratulations!", 0, 210);
+    draw_text("Congratulations!", 0, 210, true);
     Chess[num].state = FINISH;
     SDL_Delay(500);
     return;
@@ -119,10 +119,10 @@ void chess_move_rect(int num, int xt, int yt){    //棋子rect移动
     }
     game_render();
     uint32_t current_time = SDL_GetTicks();
-    long long delay_time = (int)(ANIMATION_TIME / FRAME_RATE) - (current_time - begin_time);
+    int delay_time = (int)((ANIMATION_TIME / FRAME_RATE) - (current_time - begin_time));
     if (delay_time > 0) SDL_Delay(delay_time);
 #ifdef DEBUG
-    recordf("ChessMoveRect: (%d)\tChess %d\tx = %d(%d)\ty = %d(%d)\tdelay %lld ms\n", i, num, Chess[num].rect.x, xt, Chess[num].rect.y, yt, delay_time);
+    recordf("ChessMoveRect: (%d)\tChess %d\tx = %d(%d)\ty = %d(%d)\tdelay %d ms\n", i, num, Chess[num].rect.x, xt, Chess[num].rect.y, yt, delay_time);
 #endif
   }
   //末误差补偿
@@ -136,10 +136,10 @@ void chess_move_rect(int num, int xt, int yt){    //棋子rect移动
     }
     game_render();
     uint32_t current_time = SDL_GetTicks();
-    long long delay_time = (int)(ANIMATION_TIME / FRAME_RATE) - (current_time - begin_time);
+    int delay_time = (int)((ANIMATION_TIME / FRAME_RATE) - (current_time - begin_time));
     if (delay_time > 0) SDL_Delay(delay_time);
 #ifdef DEBUG
-    recordf("ChessMoveRect: Ex\tChess %d\tx = %d(%d)\ty = %d(%d)\tdelay %lld ms\n", num, Chess[num].rect.x, xt, Chess[num].rect.y, yt, delay_time);
+    recordf("ChessMoveRect: Ex\tChess %d\tx = %d(%d)\ty = %d(%d)\tdelay %d ms\n", num, Chess[num].rect.x, xt, Chess[num].rect.y, yt, delay_time);
 #endif
   }
   //定位rect
@@ -158,10 +158,10 @@ void chess_rotate(int num, double angle_t){   //棋子旋转
     Chess[num].dir < angle_t ? (Chess[num].dir += CHESS_ROTATE_SPEED) : (Chess[num].dir -= CHESS_ROTATE_SPEED);
     game_render();
     uint32_t current_time = SDL_GetTicks();
-    long long delay_time = (int)(ANIMATION_TIME / FRAME_RATE) - (current_time - begin_time);
+    int delay_time = (int)((ANIMATION_TIME / FRAME_RATE) - (current_time - begin_time));
     if (delay_time > 0) SDL_Delay(delay_time);
 #ifdef DEBUG
-    recordf("ChessRotate: (%d)\tChess %d\tangle = %d(%lf)\tdelay %lld ms\n", i++, num, Chess[num].dir, angle_t, delay_time);
+    recordf("ChessRotate: (%d)\tChess %d\tangle = %d(%lf)\tdelay %d ms\n", i++, num, Chess[num].dir, angle_t, delay_time);
 #endif
   }
   //定位direction
@@ -177,6 +177,7 @@ void chess_departure(int num){   //棋子起飞
   chess_move_line(num, take_off_pos);
   int departure_value = dice_roll();
   dice_present(departure_value);
+  SDL_Delay(500);
   int departure_pos = (int)(current_state.player * 13 - 12);
   recordf("ChessDeparture: Chess %d\tpos %d -> %d\tdir %d -> %d\n",
           num, Chess[num].pos, departure_pos, Chess[num].dir, vec[departure_pos].dir);
