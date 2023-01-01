@@ -83,12 +83,13 @@ void chess_move(int num, int step){       //棋子移动
     SDL_Delay(500);
     return;
   }
-  //跳跃处理
-  chess_jump(num);
-  //碰撞处理
-  chess_crash(num);
   //滑行道处理
-  chess_fly(num);
+  if(!chess_fly(num)){
+    //跳跃处理
+    chess_jump(num);
+    //碰撞处理
+    chess_crash(num);
+  }
 }
 
 void chess_move_line(int num, int vec_t){  //棋子线性移动的动画
@@ -260,21 +261,26 @@ void chess_crash(int num){ //碰撞处理
   }else recordf("ChessCrash: No crash\n");
 }
 
-void chess_fly(int num){    //滑行道判断与处理
+bool chess_fly(int num){    //滑行道判断与处理
   //判断是否滑行
   if (num < 4 && Chess[num].pos == 17) {  //红色
     chess_fly_crash(num, 17, 86, 29);
     chess_crash(num);
+    return true;
   }else if (num > 3 && num < 8 && Chess[num].pos == 30) {  //绿色
     chess_fly_crash(num, 30, 92, 42);
     chess_crash(num);
+    return true;
   }else if (current_state.total_number > 2 && num > 7 && num < 12 && Chess[num].pos == 43) {   //黄色
     chess_fly_crash(num, 43, 74, 3);
     chess_crash(num);
+    return true;
   }else if (current_state.total_number > 3 && num > 11 && num < 16 && Chess[num].pos == 4) {   //蓝色
     chess_fly_crash(num, 4, 80, 16);
     chess_crash(num);
+    return true;
   }
+  return false;
 }
 
 void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos){

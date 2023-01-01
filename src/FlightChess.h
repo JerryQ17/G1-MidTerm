@@ -181,7 +181,7 @@ void chess_rotate(int num, double angle_t);
 void chess_departure(int num);
 int chess_click(void);
 void chess_crash(int num);
-void chess_fly(int num);
+bool chess_fly(int num);
 void chess_fly_crash(int num, int depart_pos, int crash_pos, int dest_pos);
 void chess_jump(int num);
 
