@@ -46,6 +46,7 @@ typedef enum color{           //定义颜色
   GREEN = 2,                  //绿 = 2
   YELLOW = 3,                 //黄 = 3
   BLUE = 4,                   //蓝 = 4
+  BLANK = 5
 }color;
 
 typedef enum direction{       //定义棋子指向

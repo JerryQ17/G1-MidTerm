@@ -35,9 +35,11 @@ void chess_init(void){  //初始化棋子
 }
 
 void chess_move(int num, int step){       //棋子移动
-  recordf("ChessMove: Chess %d(%s), pos %d -> %d, dir %d -> %d\n",
-                      num, current_state.color_str, Chess[num].pos, Chess[num].pos + step,
-                      Chess[num].dir, vec[Chess[num].pos + step].dir);
+  if (Chess[num].state == FINISH){
+    recordf("ChessMove: Invalid move of Chess %d\n", num);
+    return;
+  }
+  recordf("ChessMove: Chess %d(%s), pos %d, dir %d, step %d\n", num, current_state.color_str, Chess[num].pos, Chess[num].dir, step);
   //线性移动
   for (int i = 0; i < step; i++){
     if (Chess[num].pos == 51) chess_move_line(num, 0);                                                 //走完一圈
@@ -108,7 +110,7 @@ void chess_move_rect(int num, int xt, int yt){    //棋子rect移动
   dy = (int)((yt - vec[Chess[num].pos].y) / FRAME_RATE),
   ex = (int)((xt - vec[Chess[num].pos].x - FRAME_RATE * dx) / ERROR_STEP),
   ey = (int)((yt - vec[Chess[num].pos].y - FRAME_RATE * dy) / ERROR_STEP);
-  recordf("ChessRotate: Chess %d\tdx = %d\tdy = %d\tex = %d\tey = %d\n", num, dx, dy, ex, ey);
+  recordf("ChessMoveRect: Chess %d\tdx = %d\tdy = %d\tex = %d ey = %d\n", num, dx, dy, ex, ey);
   for (int i = 0; i < FRAME_RATE; i++) {
     uint32_t begin_time = SDL_GetTicks();
     Chess[num].rect.x += dx;
@@ -151,7 +153,6 @@ void chess_move_rect(int num, int xt, int yt){    //棋子rect移动
 }
 
 void chess_rotate(int num, double angle_t){   //棋子旋转
-  int i = 1;
   recordf("ChessRotate: Chess %d\tda = %lf\ta0 = %d\tat = %lf\n", num, CHESS_ROTATE_SPEED, Chess[num].dir, angle_t);
   while (fabs(Chess[num].dir - angle_t) > 1) {
     uint32_t begin_time = SDL_GetTicks();
@@ -161,6 +162,7 @@ void chess_rotate(int num, double angle_t){   //棋子旋转
     int delay_time = (int)((ANIMATION_TIME / FRAME_RATE) - (current_time - begin_time));
     if (delay_time > 0) SDL_Delay(delay_time);
 #ifdef DEBUG
+    static int i = 1;
     recordf("ChessRotate: (%d)\tChess %d\tangle = %d(%lf)\tdelay %d ms\n", i++, num, Chess[num].dir, angle_t, delay_time);
 #endif
   }

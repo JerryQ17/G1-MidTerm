@@ -34,8 +34,32 @@ void game(void){
     for (int i = 0; i < current_state.total_number; i++){
       if (current_state.win[i]) flag_stop++;
     }
-    if (flag_stop >= 3){
+    if (flag_stop >= current_state.total_number - 1){
       draw_text("Game Over", 0, 265, true);
+      recordf("Game: Game over, ");
+      for (int i = 0; i < current_state.total_number; i++){
+        if (!current_state.win[i]){
+          switch (i) {
+            case 0:
+              recordf("Red lose\n");
+              break;
+            case 1:
+              recordf("Green lose\n");
+              break;
+            case 2:
+              recordf("Yellow lose\n");
+              break;
+            case 3:
+              recordf("Blue lose\n");
+              break;
+            default:
+              recordf("Error occurred, quit\n");
+              quit(EXIT_FAILURE);
+              break;
+          }
+
+        }
+      }
       SDL_Delay(2000);
       return;
     }
@@ -172,6 +196,14 @@ void game_state_adjust(void){   //调整游戏状态
   else if (current_state.player == GREEN) strcat(current_state.color_str, "Green");
   else if (current_state.player == YELLOW) strcat(current_state.color_str, "Yellow");
   else if (current_state.player == BLUE) strcat(current_state.color_str, "Blue");
+  //计算胜利人数
+  for (int i = 0, flag = 0; i < current_state.total_number * 4; i++){
+    if (i % 4 == 0){
+      if (flag == 4) current_state.win[i / 4] = true;
+      flag = 0;
+    }
+    if (Chess[i].state == FINISH) flag++;
+  }
 }
 
 void game_event(void){   //游戏事件
@@ -188,7 +220,7 @@ void game_event(void){   //游戏事件
         break;
       case SDL_KEYDOWN: //按下键盘
         switch (GameEvent.key.keysym.sym) {
-        case SDLK_RETURN:case SDLK_SPACE: //回车和空格都可以进入游戏回合
+          case SDLK_RETURN:case SDLK_SPACE: //回车和空格都可以进入游戏回合
             game_round();
             return;
           case SDLK_ESCAPE: //Esc
@@ -242,14 +274,14 @@ void game_round(void){    //游戏回合
         return;
       }
     }else{
-      while (Chess[chess_clicked].state == AIRPORT){
+      while (Chess[chess_clicked].state == AIRPORT || Chess[chess_clicked].state == FINISH){
         recordf("GameRound: can't departure Chess %d with dice %d\n", chess_clicked, roll_value);
         if (current_state.player_type == Player) {
           draw_text("Invalid Choice", 0, 210, true);
           chess_clicked = chess_click();
         }else{
-          for (int i = (int)current_state.player * 4 - 4; i < current_state.player; i++){
-            if (Chess[i].state != AIRPORT) {
+          for (int i = (int)current_state.player * 4 - 4; i < current_state.player * 4; i++){
+            if (Chess[i].state != AIRPORT && Chess[chess_clicked].state != FINISH) {
               chess_clicked = i;
               break;
             }

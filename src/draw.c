@@ -6,6 +6,9 @@ void draw_text(char *text, int x, int y, bool pre){   //根据参数渲染文本
   FontRect = (SDL_Rect){x, y, FontSurface->w, FontSurface->h};
   SDL_RenderCopy(Renderer, FontTexture, NULL, &FontRect);
   if (pre) SDL_RenderPresent(Renderer);
+  //末处理
+  SDL_FreeSurface(FontSurface);
+  SDL_DestroyTexture(FontTexture);
 }
 
 void draw_number(int num, int x, int y, bool pre){   //根据参数渲染数字
@@ -27,4 +30,7 @@ void draw_number(int num, int x, int y, bool pre){   //根据参数渲染数字
   NumberFontRect = (SDL_Rect){x, y, NumberFontSurface->w, NumberFontSurface->h};
   SDL_RenderCopy(Renderer, NumberFontTexture, NULL, &NumberFontRect);
   if (pre) SDL_RenderPresent(Renderer);
+  //末处理
+  SDL_FreeSurface(NumberFontSurface);
+  SDL_DestroyTexture(NumberFontTexture);
 }
