@@ -29,6 +29,7 @@ void game(void){
       recordf("Chess%d\tpos = %d\tstate = %d\tdir = %d\n", i, Chess[i].pos, Chess[i].state, Chess[i].dir);
     }
     recordf("Round%d ends;\n\n", current_state.round);
+    game_state_adjust();
     //判断游戏是否结束
     int flag_stop = 0;
     for (int i = 0; i < current_state.total_number; i++){
@@ -57,7 +58,6 @@ void game(void){
               quit(EXIT_FAILURE);
               break;
           }
-
         }
       }
       SDL_Delay(2000);
@@ -69,7 +69,6 @@ void game(void){
       else current_state.player++;
       if (!current_state.win[current_state.player]) break;
     }
-    game_state_adjust();
     SDL_Delay(1000);
     current_state.round++;
   }
